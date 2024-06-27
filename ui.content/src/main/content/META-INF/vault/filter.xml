@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/kbank" mode="merge"/>
+    <filter root="/content/kbank" mode="merge"/>
+    <filter root="/content/dam/kbank" mode="merge">
+        <exclude pattern="/content/dam/kbank(/.*)?"/>
+        <include pattern="/content/dam/kbank/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/kbank/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/kbank" mode="merge"/>
+</workspaceFilter>

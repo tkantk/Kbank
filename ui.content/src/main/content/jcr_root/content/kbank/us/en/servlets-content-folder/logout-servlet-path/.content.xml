@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-06-17T22:46:56.093+05:30"
+            cq:lastReplicatedBy_publish="admin"
+            cq:lastReplicationAction_publish="Activate"
+            cq:template="/conf/kbank/settings/wcm/templates/landing-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Logout Servlet Path"
+            sling:resourceType="kbank/components/logout"/>
+</jcr:root>

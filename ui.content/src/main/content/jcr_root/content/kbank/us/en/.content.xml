@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:redirectTarget="/content/kbank/us/en/personal"
+            cq:template="/conf/kbank/settings/wcm/templates/landing-page-template"
+            jcr:description="Credit Card, Account, Loans and Financial Solutions for personal customers by KBank"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Welcome to Personal Banking - KASIKORNBANK"
+            sling:resourceType="kbank/components/page"
+            pageTitle="Peronal - Home"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <carousel
+                        cq:styleIds="[1555545421827]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/carousel"
+                        accessibilityAutoItemTitles="false"
+                        autopauseDisabled="false"
+                        autoplay="false"
+                        delay="5000">
+                    <item_1571954853062
+                            cq:panelTitle="Easy way to off debt"
+                            cq:styleIds="[1555539443529]"
+                            jcr:description="&lt;p>With kbank Adventures, you don&amp;#39;t just see the world you experinec eit aldkjfa sflkjasfasf.&lt;/p>&#xd;&#xa;"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Easy way to off debt"
+                            sling:resourceType="kbank/components/teaser"
+                            actionsEnabled="true"
+                            alt="Personal Debt"
+                            altValueFromDAM="false"
+                            descriptionFromPage="true"
+                            fileReference="/content/dam/kbank-shared/en/carousel/need-img_1-en.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/kbank/us/en/adventures"
+                                    linkTarget="_self"
+                                    text="View Details"/>
+                        </actions>
+                    </item_1571954853062>
+                    <item_1572035298405
+                            cq:panelTitle="Best Investment"
+                            cq:styleIds="[1555539443529]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/teaser"
+                            actionsEnabled="true"
+                            altValueFromDAM="true"
+                            descriptionFromPage="true"
+                            fileReference="/content/dam/kbank-shared/en/carousel/need-img_2.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/kbank/us/en/magazine/san-diego-surf"
+                                    linkTarget="_self"
+                                    text="Full Article"/>
+                        </actions>
+                    </item_1572035298405>
+                    <teaser
+                            cq:panelTitle="Want to borrow money"
+                            cq:styleIds="[1555539443529]"
+                            jcr:description="&lt;p>A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted.&lt;/p>&#xd;&#xa;"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/teaser"
+                            actionsEnabled="true"
+                            altValueFromDAM="true"
+                            descriptionFromPage="false"
+                            fileReference="/content/dam/kbank-shared/en/carousel/need-img_3.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/kbank/us/en/adventures/downhill-skiing-wyoming"
+                                    linkTarget="_self"
+                                    text="View Trip"/>
+                        </actions>
+                    </teaser>
+                    <item_1714980619225
+                            cq:panelTitle="Get your money’s worth"
+                            cq:styleIds="[1555539443529]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/teaser"
+                            altValueFromDAM="true"
+                            descriptionFromPage="true"
+                            fileReference="/content/dam/kbank-shared/en/carousel/need-img_4.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="true"/>
+                    <item_1714980665169
+                            cq:panelTitle="How to be THE WISDOM"
+                            cq:styleIds="[1555539443529]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/teaser"
+                            altValueFromDAM="true"
+                            descriptionFromPage="true"
+                            fileReference="/content/dam/kbank-shared/en/carousel/need-img_6.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="true"/>
+                </carousel>
+                <container
+                        cq:styleIds="[1554340406437]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <teaser
+                            cq:styleIds="[1555539443529]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Camping in Western Australia"
+                            sling:resourceType="kbank/components/teaser"
+                            actionsEnabled="true"
+                            descriptionFromPage="true"
+                            fileReference="/content/dam/kbank-shared/en/magazine/western-australia/adobestock-156407519.jpeg"
+                            id="featured-teaser-home"
+                            pretitle="Featured Article"
+                            textIsRich="true"
+                            titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/kbank/us/en/magazine/western-australia"
+                                    text="Full Article"/>
+                        </actions>
+                    </teaser>
+                    <title
+                            cq:styleIds="[1568996484405]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Recent Articles"
+                            sling:resourceType="kbank/components/title"
+                            type="h2"/>
+                    <image_list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/image-list"
+                            childDepth="1"
+                            listFrom="static"
+                            pages="[/content/kbank/us/en/magazine/guide-la-skateparks,/content/kbank/us/en/magazine/ski-touring,/content/kbank/us/en/magazine/arctic-surfing,/content/kbank/us/en/magazine/san-diego-surf]"
+                            parentPage="/content/kbank/us/en/magazine"
+                            sortOrder="desc"
+                            tagsMatch="any"/>
+                    <button_copy
+                            cq:styleIds="[1570236090914]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="All Articles"
+                            sling:resourceType="kbank/components/button"
+                            accessibilityLabel="read our articles"
+                            linkTarget="_self"
+                            linkURL="/content/kbank/us/en/magazine"/>
+                    <separator
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <title_15771435
+                            cq:styleIds="[1568996484405]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Next Adventures"
+                            sling:resourceType="kbank/components/title"
+                            type="h2"/>
+                </container>
+                <teaser
+                        cq:styleIds="[1572035150600]"
+                        jcr:description="&lt;p>With kbank Adventures, you don't just see the world-- you experience its cultures, flavors and wonders.&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Experience the world with us"
+                        sling:resourceType="kbank/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="true"
+                        fileReference="/content/dam/kbank-shared/en/adventures/climbing-new-zealand/adobestock-140634652.jpeg"
+                        textIsRich="true"
+                        titleFromPage="true">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/kbank/us/en/adventures/climbing-new-zealand"
+                                text="See Trip"/>
+                    </actions>
+                </teaser>
+                <container_1679842506
+                        cq:styleIds="[1554340406437]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Where do you want to go?"
+                            sling:resourceType="kbank/components/title"
+                            type="h3"/>
+                    <image_list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/image-list"
+                            childDepth="1"
+                            listFrom="children"
+                            maxItems="4"
+                            orderBy="title"
+                            parentPage="/content/kbank/us/en/adventures"
+                            sortOrder="desc"
+                            tagsMatch="any"/>
+                    <button
+                            cq:styleIds="[1570236090914]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="All Trips"
+                            sling:resourceType="kbank/components/button"
+                            accessibilityLabel="explore our adventures"
+                            linkTarget="_self"
+                            linkURL="/content/kbank/us/en/adventures"/>
+                    <separator
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                </container_1679842506>
+            </container>
+        </root>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"/>
+    </jcr:content>
+    <personal/>
+    <errors/>
+    <faqs/>
+    <register/>
+    <servlets-content-folder/>
+    <admin/>
+    <email-approval-page/>
+</jcr:root>

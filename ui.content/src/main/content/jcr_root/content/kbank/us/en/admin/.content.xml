@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-06-25T23:51:54.229+05:30"
+            cq:lastReplicatedBy_publish="admin"
+            cq:lastReplicationAction_publish="Activate"
+            cq:template="/conf/kbank/settings/wcm/templates/landing-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Admin"
+            jcr:uuid="9b2b7d84-4864-456c-bf68-57fb00bae0bf"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"/>
+                    <admin_form
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/form/admin-form"
+                            actionUrl="/content/kbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kbank/components/container">
+                            <field-6
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Type"
+                                    sling:resourceType="kbank/components/form/options"
+                                    hideTitle="true"
+                                    name="type"
+                                    rows="1"
+                                    source="local"
+                                    type="drop-down"
+                                    usePlaceholder="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="false"
+                                            text="Send Personalized Email"
+                                            value="email"/>
+                                    <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="false"
+                                            text="Send Bulk Personalized Email"
+                                            value="bulkEmail"/>
+                                    <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="true"
+                                            text="Send Approval Email"
+                                            value="approval"/>
+                                </items>
+                            </field-6>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Send Email"
+                                    sling:resourceType="kbank/components/form/button"
+                                    id="admin-form"
+                                    type="submit"/>
+                        </container>
+                    </admin_form>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

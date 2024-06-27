@@ -1,0 +1,71 @@
+/*
+ *  Copyright 2019 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/* kbank Register In Form Default Style */
+
+.kbank-register-form {
+  .aem-GridColumn {
+    padding: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+fieldset.cmp-form-options {
+  margin: 10px 0;
+  font-family: $font-family-sans-serif;
+}
+
+.cmp-form-options__field {
+    border: 1px solid $gray-light;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: $font-size-small;
+    font-weight: $font-weight-semi-bold;
+  }
+.cmp-form-options__field.cmp-form-options__field--drop-down {
+  height: 48px;
+  width: 100%;
+}
+
+cmp-form-options__legend {
+    font-size: $font-size-small;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .cmp-form-options__options--error {
+    border: solid 1px $pink;
+  }
+
+.error-bar {
+  display: none; /* Initially hidden */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+}
+
+.success-bar {
+  display: none; /* Initially hidden */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid green;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+}

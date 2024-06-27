@@ -1,0 +1,214 @@
+/*
+ *  Copyright 2018 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+ 
+//** kbank Specific Fonts
+$icomoon-font-family: "kbank-icon-font" !default;
+$icomoon-font-path: "../resources/fonts" !default;
+
+$kbankicon-menu: "\e916";
+$kbankicon-google: "\e900";
+$kbankicon-twitter: "\e901";
+$kbankicon-facebook: "\e902";
+$kbankicon-instagram: "\e903";
+$kbankicon-social-share: "\e904";
+$kbankicon-map: "\e905";
+$kbankicon-alert: "\e906";
+$kbankicon-download: "\e907";
+$kbankicon-info: "\e908";
+$kbankicon-email: "\e909";
+$kbankicon-comment: "\e90a";
+$kbankicon-share: "\e90b";
+$kbankicon-user: "\e90c";
+$kbankicon-home: "\e90d";
+$kbankicon-right-arrow: "\e90e";
+$kbankicon-left-arrow: "\e90f";
+$kbankicon-minus: "\e910";
+$kbankicon-plus: "\e911";
+$kbankicon-location: "\e912";
+$kbankicon-search: "\e913";
+$kbankicon-delete: "\e914";
+$kbankicon-cart: "\e915";
+$kbankicon-lock: "\e98f";
+$kbankicon-unlocked: "\e990";
+$kbankicon-play3: "\ea1c";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@mixin kbankiconstyle(){
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: '#{$icomoon-font-family}' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   font-size: 1.25rem;
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+[class$="__icon"], [class*="__icon"], [class$="-icon"], [class*="-icon"]{
+  @include kbankiconstyle();
+}
+
+.kbankicon-menu {
+  &:before {
+    content: $kbankicon-menu;
+  }
+}
+.kbankicon-google {
+  &:before {
+    content: $kbankicon-google;
+  }
+}
+.kbankicon-twitter {
+  &:before {
+    content: $kbankicon-twitter;
+  }
+}
+.kbankicon-facebook {
+  &:before {
+    content: $kbankicon-facebook;
+  }
+}
+.kbankicon-instagram {
+  &:before {
+    content: $kbankicon-instagram;
+  }
+}
+.kbankicon-social-share {
+  &:before {
+    content: $kbankicon-social-share;
+  }
+}
+.kbankicon-map {
+  &:before {
+    content: $kbankicon-map;
+  }
+}
+.kbankicon-alert {
+  &:before {
+    content: $kbankicon-alert;
+  }
+}
+.kbankicon-download {
+  &:before {
+    content: $kbankicon-download;
+  }
+}
+.kbankicon-info {
+  &:before {
+    content: $kbankicon-info;
+  }
+}
+.kbankicon-email {
+  &:before {
+    content: $kbankicon-email;
+  }
+}
+.kbankicon-comment {
+  &:before {
+    content: $kbankicon-comment;
+  }
+}
+.kbankicon-share {
+  &:before {
+    content: $kbankicon-share;
+  }
+}
+.kbankicon-user {
+  &:before {
+    content: $kbankicon-user;
+  }
+}
+.kbankicon-home {
+  &:before {
+    content: $kbankicon-home;
+  }
+}
+.kbankicon-right-arrow {
+  &:before {
+    content: $kbankicon-right-arrow;
+  }
+}
+.kbankicon-left-arrow {
+  &:before {
+    content: $kbankicon-left-arrow;
+  }
+}
+.kbankicon-minus {
+  &:before {
+    content: $kbankicon-minus;
+  }
+}
+.kbankicon-plus {
+  &:before {
+    content: $kbankicon-plus;
+  }
+}
+.kbankicon-location {
+  &:before {
+    content: $kbankicon-location;
+  }
+}
+.kbankicon-search {
+  &:before {
+    content: $kbankicon-search;
+  }
+}
+.kbankicon-delete {
+  &:before {
+    content: $kbankicon-delete;
+  }
+}
+.kbankicon-cart {
+  &:before {
+    content: $kbankicon-cart;
+  }
+}
+
+.kbankicon-menu {
+  &:before {
+    content: $kbankicon-menu;
+  }
+}
+.kbankicon-lock {
+  &:before {
+    content: $kbankicon-lock;
+  }
+}
+.kbankicon-unlocked {
+  &:before {
+    content: $kbankicon-unlocked;
+  }
+}
+.kbankicon-play3 {
+  &:before {
+    content: $kbankicon-play3;
+  }
+}
+

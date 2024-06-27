@@ -1,0 +1,113 @@
+/*
+ *  Copyright 2019 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/* kbank Article Card Default Style */
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
+@import 'mixins';
+
+.blog-wrapper{
+  padding:15px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:wrap;
+  .blog-card{
+    @include transition(.3s);
+    max-width:300px;
+    margin:15px;
+    background:#fff;
+    border:1px solid #00a94f;
+    text-align:center;
+    cursor:pointer;
+    &:hover{
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+      .card-img{
+        img{
+          opacity:0.8;
+        }
+      }
+    }
+    .card-img{
+      position:relative;
+      text-align:center;
+      background:#00a94f;
+      img{
+        @include transition(.3s);
+        max-height:180px;
+        width:100%;
+        border-bottom:4px solid #00a94f;
+      }
+      &:before{
+        content:'';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-top: solid 10px #00a94f;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+      }
+      h1{
+        position:absolute;
+        margin:0;
+        font-size:28px;
+        bottom:15px;
+        width:100%;
+        color:#fff;
+        font-family: 'Slabo 27px', serif;
+      }
+    }
+    .card-details{
+      margin-top:30px;
+      font-family: 'Roboto', sans-serif;
+      color:#3C3C3C;
+      span{
+        padding:0 30px;
+        i{
+          margin-right:5px;
+        }
+
+      }
+    }
+    .card-text{
+      padding:30px 15px;
+      font-family: 'Roboto', sans-serif;
+      line-height:22px;
+    }
+    .read-more{
+      @include transition(.3s);
+      display:inline-block;
+      width:auto;
+      text-align:center;
+      text-transform:uppercase;
+      background:#00a94f;
+      color:#fff;
+      padding:15px;
+      margin-bottom:30px;
+      font-family: 'Oswald', sans-serif;
+      &:hover{
+        background: darken(#00a94f,20%);
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+

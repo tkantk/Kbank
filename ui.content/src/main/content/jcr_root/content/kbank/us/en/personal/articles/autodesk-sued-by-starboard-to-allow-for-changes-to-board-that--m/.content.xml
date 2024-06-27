@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-06-17T20:52:32.594+05:30"
+            cq:lastReplicatedBy_publish="admin"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/investment]"
+            cq:template="/conf/kbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Autodesk sued by Starboard to allow for changes to board that ‘misled’ investors"
+            jcr:uuid="78f7487f-ca63-4b00-8282-a7612393eeed"
+            sling:resourceType="kbank/components/page"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/kbank-shared/en/articles/autodesk-sued-by-starboard-to-allow-for-changes-to-board-that--misled--investors"
+                            paragraphScope="all"
+                            text="Autodesk sued by Starboard to allow for changes to board that ‘misled’ investors Activist investor Starboard Value, which currently has a $500 million stake in Autodesk Inc., said Monday that it is filing a lawsuit against the design-software company in order to nominate new directors to the board, which Starboard alleges “misled” shareholders. Starboard said it issued a letter to fellow shareholders regarding its belief that Autodesk’s board of directors “manipulated the corporate machinery and perpetuated an entrenchment scheme by failing to disclose material malfeasance regarding the company’s accounting and disclosure practices prior to the deadline to nominate director candidates for election at the 2024 Annual Meeting of Shareholders.” Starboard’s actions to make changes at Autodesk were first reported by the Wall Street Journal. Autodesk responded to Starboard’s letter by saying it maintains an “open dialogue” with its shareholders, including Starboard, “with whom we have sought to engage constructively since they first reached out in early June.” Shares of San Francisco-based Autodesk ADSK, 4.94% rallied 4.9% in morning trading, to put it on track for the highest close since April 12. Through Friday, the stock had tumbled 12.9% since April 1, which was when the company disclosed it had launched an accounting probe. Starboard said it was filing a lawsuit in Delaware to force Autodesk to delay the shareholder meeting, currently scheduled for July 16, and to reopen the window to nominate board members. The activist investor said in its letter that Autodesk started its investigation into accounting of free cash flow at the beginning of March. That was “well ahead” of the deadline to nominate board members, but Starboard said the company “misled” investors by waiting to disclose the investigation to the U.S. Securities and Exchange Commission until April 1. In its statement on Monday, Autodesk said it did not receive any proposals are director nominations by the March 23 deadline for nominations. “Starboard is seeking to leverage a now-completed internal investigation that resulted in no financial restatement as a pretext for re-opening the advance notice period,” Autodesk said. “Autodesk’s board considered the request from Starboard and determined that re-opening the advance notice period would not be in the best interests of Autodesk or its shareholders.” In late May, Autodesk said the internal investigation had found no fault in its practices and that there was no need to restate or adjust any financial statements. In its annual report filed earlier this month, Autodesk said it was cooperating with the Securities and Exchange Commission and the U.S. Attorney’s Office following its internal probe. Starboard’s stake in Autodesk represents about 1% of Autodesk’s market capitalization of $48.8 billion as of Friday’s close. The investor said it believes Autodesk has “an opportunity to create significant shareholder value by meaningfully improving its combination of growth and profitability,” as well as adopting more friendly shareholder-return policies. Starboard said it believed Autodesk can “significantly” cut costs in a number of its cost centers and should refrain from material acquisitions. And given the stock’s current valuation, Starboard believes repurchasing shares would be the “best use of capital” for the company. Autodesk said in a quarterly filing last week that for the quarter ending April 30, it had repurchased 33,000 shares for about $8.4 million. That left $4.7 billion remaining in its share-repurchase program. Autodesk’s stock has now lost 2.7% year to date, while the SPDR S&amp;P Software &amp; Services exchange-traded fund XSW has slipped 4% and the S&amp;P 500 index SPX has rallied 14.1%."
+                            variationName="master">
+                        <par18
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

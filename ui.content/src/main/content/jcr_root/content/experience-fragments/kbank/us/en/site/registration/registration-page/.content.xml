@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:tags="[]"
+            cq:template="/conf/kbank/settings/wcm/templates/experience-fragment-web-variation-template"
+            cq:xfVariantType="web"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Registration (Page)"
+            sling:resourceType="kbank/components/xfpage">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1570043787082]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container">
+                <title
+                        cq:styleIds="[1568996484405]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sign Up"
+                        sling:resourceType="kbank/components/title"/>
+                <title_1943245182
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Register for more beniefits"
+                        sling:resourceType="kbank/components/title"
+                        type="h3"/>
+                <sign_up_form
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/form/register-form"
+                        actionUrl="/bin/kbank/register"
+                        redirectUrl="/content/kbank/us/en.html">
+                    <container
+                            cq:styleIds="[1570043787082]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/container">
+                        <field-1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="First Name"
+                                sling:resourceType="kbank/components/form/text"
+                                helpMessage="FIRSTNAME"
+                                hideTitle="true"
+                                name="j_firstname"
+                                rows="1"
+                                type="text"
+                                usePlaceholder="true"/>
+                        <field-2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Last Name"
+                                sling:resourceType="kbank/components/form/text"
+                                helpMessage="LASTNAME"
+                                hideTitle="true"
+                                name="j_lastname"
+                                rows="1"
+                                type="text"
+                                usePlaceholder="true"/>
+                        <field-3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Email"
+                                sling:resourceType="kbank/components/form/text"
+                                helpMessage="EMAIL"
+                                hideTitle="true"
+                                name="j_email"
+                                rows="1"
+                                type="email"
+                                usePlaceholder="true"/>
+                        <field-4
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="PASSWORD"
+                                sling:resourceType="kbank/components/form/text"
+                                helpMessage="PASSWORD"
+                                hideTitle="true"
+                                name="j_password"
+                                rows="1"
+                                type="password"
+                                usePlaceholder="true"/>
+                        <field-5
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="INTERESTS"
+                                sling:resourceType="kbank/components/form/options"
+                                helpMessage="INTERESTS"
+                                hideTitle="true"
+                                name="j_interests"
+                                rows="1"
+                                source="local"
+                                type="checkbox"
+                                usePlaceholder="true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Interest Rate Cuts"
+                                        value="Interest Rate Cuts"/>
+                                <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Global Economic Growth"
+                                        value="Global Economic Growth"/>
+                                <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Tech Giants"
+                                        value="Tech Giants"/>
+                                <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Cryptocurrency Market"
+                                        value="Cryptocurrency Market"/>
+                                <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Investment Opportunities"
+                                        value="Investment Opportunities"/>
+                                <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Mutual Funds"
+                                        value="Mutual Funds"/>
+                                <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Credit Card"
+                                        value="Credit Card"/>
+                                <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Home Loans"
+                                        value="Home Loans"/>
+                                <item8
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Personal Loans"
+                                        value="Personal Loans"/>
+                                <item9
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Auto Loans"
+                                        value="Auto Loans"/>
+                                <item10
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Properties"
+                                        value="Properties"/>
+                                <item11
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="Digital Assets"
+                                        value="Digital Assets"/>
+                                <item12
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="BitCoin"
+                                        value="BitCoin"/>
+                            </items>
+                        </field-5>
+                        <button-1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="REGISTER"
+                                sling:resourceType="kbank/components/form/button"
+                                type="submit"/>
+                    </container>
+                </sign_up_form>
+                <separator
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/separator"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

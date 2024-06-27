@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="cq:Template">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-06-03T00:44:10.517+05:30"
+            cq:lastReplicatedBy_publish="tushark@adobe.com"
+            cq:lastReplicationAction_publish="Activate"
+            cq:templateType="/conf/kbank/settings/wcm/template-types/content-page"
+            jcr:mixinTypes="[cq:ReplicationStatus2]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Content Page Template"
+            status="enabled"/>
+</jcr:root>

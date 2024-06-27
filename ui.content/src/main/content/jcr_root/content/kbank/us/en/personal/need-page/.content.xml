@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-06-17T16:01:32.325+05:30"
+            cq:lastReplicatedBy_publish="admin"
+            cq:lastReplicationAction_publish="Activate"
+            cq:template="/conf/kbank/settings/wcm/templates/adventure-page-template"
+            jcr:description="Includes financial products You can choose according to your needs, whether it's what to invest in, managing expenses, wanting to be THE WISDOM, getting rid of debt, wanting to borrow money."
+            jcr:mixinTypes="[cq:ReplicationStatus2]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Need Page"
+            sling:resourceType="kbank/components/page"
+            navTitle="Personal Need"
+            pageTitle="Collection of KBank products, choose according to your lifestyle - Kasikorn Bank"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any"
+            socialMedia="[facebook,pinterest]">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <breadcrumb
+                        cq:styleIds="[1570236596118]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/breadcrumb"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="4"/>
+                <container_fixed
+                        cq:styleIds="[1554340406437]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <container_1875744
+                            cq:styleIds="[1554340388221]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/container"
+                            backgroundImageReference="/content/dam/kbank-shared/en/common/bg-head-need.jpg"
+                            layout="responsiveGrid">
+                        <title
+                                cq:styleIds="[1568996484405,1568996427017]"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Are you looking for products?"
+                                sling:resourceType="kbank/components/title"
+                                linkTarget="_self"
+                                type="h1"/>
+                    </container_1875744>
+                    <tabs
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/tabs"
+                            accessibilityLabel="Are you looking for products?"
+                            activeItem="item_1">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                        </cq:responsive>
+                        <item_1
+                                cq:panelTitle="I want to pay off debt."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 1"
+                                sling:resourceType="kbank/components/container"
+                                layout="responsiveGrid">
+                            <container
+                                    cq:styleIds="[1554340388221]"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kbank/components/container"
+                                    backgroundColor="#eafdf3"
+                                    layout="responsiveGrid">
+                                <title
+                                        cq:styleIds="[1715009484296,1568996420379]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Want us to help you solve your debt?"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h3"/>
+                                <title_738772374
+                                        cq:styleIds="[1715009484296,1715018946128]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Manage debt to make life better"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="kbank/components/container"
+                                        layout="responsiveGrid">
+                                    <container_1167747666
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container">
+                                        <title
+                                                cq:styleIds="[1568996484405,1568996420379]"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="3 important things to help get out of debt"
+                                                sling:resourceType="kbank/components/title"
+                                                linkTarget="_self"
+                                                type="h4"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="7"/>
+                                        </cq:responsive>
+                                        <text
+                                                cq:styleIds="[1571074070335]"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;ul class=&quot;cmp-list&quot;>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo&quot;>&lt;img src=&quot;/content/dam/kbank/en/icons/emoji1.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>plan&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>in installments Make a payment plan, don't let the money leak. You should choose to pay off your debt.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;with the highest interest rate first And don't forget to reserve some money for your own expenses&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;as well.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>Reduce flowers&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Consolidate debt to reduce burden Believe it or not, just by lowering your interest by 3%, you might be able to pay off your debt.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;Cheaper by tens of thousands We believe that interest can be planned.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji3.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>manage&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Increase income, manage expenses Try to earn extra income and consult.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;Expert for debt management&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                    </container_1167747666>
+                                    <container
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container"
+                                            backgroundColor="#d5f9e2"
+                                            layout="responsiveGrid">
+                                        <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;p class=&quot;cmp-text cmp-txt-block&quot;>Not being in debt is a great blessing. But necessity makes us borrow.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;KBank wants to make it easier for you to manage your debt. increase independence&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;In living life for you&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/image"
+                                                altValueFromDAM="true"
+                                                displayPopupTitle="true"
+                                                fileReference="/content/dam/kbank-shared/en/site/photocontent.jpg"
+                                                imageFromPageImage="false"
+                                                isDecorative="false"
+                                                linkTarget="_self"
+                                                titleValueFromDAM="true"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="4"/>
+                                        </cq:responsive>
+                                    </container>
+                                </container>
+                            </container>
+                        </item_1>
+                        <item_2
+                                cq:panelTitle="What should I invest in?"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="kbank/components/container"
+                                layout="responsiveGrid">
+                            <container
+                                    cq:styleIds="[1554340388221]"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kbank/components/container"
+                                    backgroundColor="#eafdf3"
+                                    layout="responsiveGrid">
+                                <title
+                                        cq:styleIds="[1715009484296,1568996420379]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Want to invest to grow How to choose an investment?"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h3"/>
+                                <title_738772374
+                                        cq:styleIds="[1715009484296,1715018946128]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="We are ready to offer a variety of investment methods that are suitable for you."
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="kbank/components/container"
+                                        layout="responsiveGrid">
+                                    <container_1167747666
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container">
+                                        <title
+                                                cq:styleIds="[1568996484405,1568996420379]"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="3 things you need to know before investing"
+                                                sling:resourceType="kbank/components/title"
+                                                linkTarget="_self"
+                                                type="h4"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="7"/>
+                                        </cq:responsive>
+                                        <text
+                                                cq:styleIds="[1571074070335]"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;ul class=&quot;cmp-list&quot;>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo&quot;>&lt;img src=&quot;/content/dam/kbank/en/icons/emoji-b1-2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>understand&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Investing is not equal to savings. Investing is risky. Make sure to choose an asset that suits your risk tolerance.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-b2-2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>study&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Study the information well before starting to invest. to understand to the risk and the form of compensation that will be received&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-b3-2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>follow&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Choose the one that suits you, follow and adjust regularly.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;And don't forget to update on investing with K WEALTH.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                    </container_1167747666>
+                                    <container
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container"
+                                            backgroundColor="#d5f9e2"
+                                            layout="responsiveGrid">
+                                        <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;p class=&quot;cmp-text cmp-txt-block&quot;>K WEALTH investment expert team From Kasikorn Bank To make every money matter easy&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/image"
+                                                alt="K Wealth"
+                                                altValueFromDAM="false"
+                                                displayPopupTitle="true"
+                                                fileReference="/content/dam/kbank-shared/en/site/photocontent2-2.jpg"
+                                                imageFromPageImage="false"
+                                                isDecorative="false"
+                                                linkTarget="_self"
+                                                titleValueFromDAM="true"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="4"/>
+                                        </cq:responsive>
+                                    </container>
+                                </container>
+                            </container>
+                        </item_2>
+                        <item_3
+                                cq:panelTitle="I want to borrow money to spend."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="kbank/components/container"
+                                layout="responsiveGrid">
+                            <container
+                                    cq:styleIds="[1554340388221]"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kbank/components/container"
+                                    backgroundColor="#eafdf3"
+                                    layout="responsiveGrid">
+                                <title
+                                        cq:styleIds="[1715009484296,1568996420379]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Let us take care of you..."
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h3"/>
+                                <title_738772374
+                                        cq:styleIds="[1715009484296,1715018946128]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Because sometimes it is necessary"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="kbank/components/container"
+                                        layout="responsiveGrid">
+                                    <container_1167747666
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container">
+                                        <title
+                                                cq:styleIds="[1568996484405,1568996420379]"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="3 important things that help you get a loan easily"
+                                                sling:resourceType="kbank/components/title"
+                                                linkTarget="_self"
+                                                type="h4"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="7"/>
+                                        </cq:responsive>
+                                        <text
+                                                cq:styleIds="[1571074070335]"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;ul class=&quot;cmp-list&quot;>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo&quot;>&lt;img src=&quot;/content/dam/kbank/en/icons/emoji-c1.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>Check&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Check your borrowing ability to see if there is remaining credit limit.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;Is that enough? The debt should not exceed 40% of income.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;as well.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-c2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>interest&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>By saving on interest, you'll also save money on repaying your debt.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;The more collateral you have, the cheaper the interest and the easier it is to borrow.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-c3.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>ready&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Plan your finances and have good credit. and plan ready to pay.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;You will be ready to receive the loan in time.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                    </container_1167747666>
+                                    <container
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container"
+                                            backgroundColor="#d5f9e2"
+                                            layout="responsiveGrid">
+                                        <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;p class=&quot;cmp-text cmp-txt-block&quot;>Allowing you to always receive credit in time for your needs.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/image"
+                                                alt="Photo COntent"
+                                                altValueFromDAM="false"
+                                                displayPopupTitle="true"
+                                                fileReference="/content/dam/kbank-shared/en/site/photocontent3.jpg"
+                                                imageFromPageImage="false"
+                                                isDecorative="false"
+                                                linkTarget="_self"
+                                                titleValueFromDAM="true"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="4"/>
+                                        </cq:responsive>
+                                    </container>
+                                </container>
+                            </container>
+                        </item_3>
+                        <item_4
+                                cq:panelTitle="Manage expenses, get the most out of your money"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="kbank/components/container"
+                                layout="responsiveGrid">
+                            <container
+                                    cq:styleIds="[1554340388221]"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kbank/components/container"
+                                    backgroundColor="#eafdf3"
+                                    layout="responsiveGrid">
+                                <title
+                                        cq:styleIds="[1715009484296,1568996420379]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Let's start making the most of your money. And you will know how much you saved."
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h3"/>
+                                <title_738772374
+                                        cq:styleIds="[1715009484296,1715018946128]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Lifestyle doesn't change. but save more"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="kbank/components/container"
+                                        layout="responsiveGrid">
+                                    <container_1167747666
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container">
+                                        <title
+                                                cq:styleIds="[1568996484405,1568996420379]"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="3 important points that will help you spend the same amount of money as before But it's even more worth it."
+                                                sling:resourceType="kbank/components/title"
+                                                linkTarget="_self"
+                                                type="h4"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="7"/>
+                                        </cq:responsive>
+                                        <text
+                                                cq:styleIds="[1571074070335]"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;ul class=&quot;cmp-list&quot;>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo&quot;>&lt;img src=&quot;/content/dam/kbank/en/icons/emoji-d1.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>money back&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>You may not know that credit cards can make your spending worthwhile.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;Even more than cash Or transfer a scan that doesn't get anything at all. With a credit card that has cash back&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;as well.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-d2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>manage&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Manage your money, both your income and expenses. make your money&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;Does not escape from sight Make your spending more accurate&lt;/p>&#xd;&#xa;&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-d3.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>Special privileges&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Receive various special privileges Allows you to save money, such as buying things online. with credit card Get both discounts and cashback.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                    </container_1167747666>
+                                    <container
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container"
+                                            backgroundColor="#d5f9e2"
+                                            layout="responsiveGrid">
+                                        <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;p class=&quot;cmp-text cmp-txt-block&quot;>You might not know what you're missing. Wouldn't it be better if you spent the same in life but saved more?&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/image"
+                                                alt="Photo COntent"
+                                                altValueFromDAM="false"
+                                                displayPopupTitle="true"
+                                                fileReference="/content/dam/kbank-shared/en/site/photocontent4.jpg"
+                                                imageFromPageImage="false"
+                                                isDecorative="false"
+                                                linkTarget="_self"
+                                                titleValueFromDAM="true"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="4"/>
+                                        </cq:responsive>
+                                    </container>
+                                </container>
+                            </container>
+                        </item_4>
+                        <item_5
+                                cq:panelTitle="I want to be THE WISDOM."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="kbank/components/container"
+                                layout="responsiveGrid">
+                            <container
+                                    cq:styleIds="[1554340388221]"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kbank/components/container"
+                                    backgroundColor="#eafdf3"
+                                    layout="responsiveGrid">
+                                <title
+                                        cq:styleIds="[1715009484296,1568996420379]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="I want to be THE WISDOM. What should I do?"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h3"/>
+                                <title_738772374
+                                        cq:styleIds="[1715009484296,1715018946128]"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Superior privileges that you can have"
+                                        sling:resourceType="kbank/components/title"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="kbank/components/container"
+                                        layout="responsiveGrid">
+                                    <container_1167747666
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container">
+                                        <title
+                                                cq:styleIds="[1568996484405,1568996420379]"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="3 ways to become THE WISDOM"
+                                                sling:resourceType="kbank/components/title"
+                                                linkTarget="_self"
+                                                type="h4"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="7"/>
+                                        </cq:responsive>
+                                        <text
+                                                cq:styleIds="[1571074070335]"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;ul class=&quot;cmp-list&quot;>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo&quot;>&lt;img src=&quot;/content/dam/kbank/en/icons/emoji-f1.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>invest&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Invest until you reach 10 million baht with Kasikorn Bank.&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;(Can combine funds with fixed deposits or combine funds with insurance)&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-f2.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>Protection&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>There are insurance products for insurance premiums from 1 million baht or more.&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li class=&quot;cmp-list__item&quot;>&lt;div class=&quot;cmp-image cmp-image__logo &quot;>&lt;img class=&quot;img-src&quot; src=&quot;/content/dam/kbank/en/icons/emoji-f3.png&quot; alt=&quot;emoji&quot;>&lt;/div>&#xd;&#xa;&lt;div class=&quot;cmp-text cmp-txt-info&quot;>&lt;h4 class=&quot;h1 title&quot;>&lt;b>Saving money&lt;/b>&lt;/h4>&#xd;&#xa;&lt;p class=&quot;cmp-txt-desc&quot;>Savings with Kasikorn Bank totaling 10 million baht (can combine fixed deposits with funds or fixed deposits with insurance)&lt;/p>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                    </container_1167747666>
+                                    <container
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="kbank/components/container"
+                                            backgroundColor="#d5f9e2"
+                                            layout="responsiveGrid">
+                                        <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/text"
+                                                text="&lt;p class=&quot;cmp-text cmp-txt-block&quot;>“The Symbol of Smart Success”&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;the ultimate in superior privileges&lt;br class=&quot;hidden-w1199&quot;>&#xd;&#xa;For the success of living a perfect life&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="kbank/components/image"
+                                                alt="Wisdom"
+                                                altValueFromDAM="false"
+                                                displayPopupTitle="true"
+                                                fileReference="/content/dam/kbank-shared/en/site/photocontent6.jpg"
+                                                imageFromPageImage="false"
+                                                isDecorative="false"
+                                                linkTarget="_self"
+                                                titleValueFromDAM="true"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                    jcr:primaryType="nt:unstructured"
+                                                    offset="0"
+                                                    width="4"/>
+                                        </cq:responsive>
+                                    </container>
+                                </container>
+                            </container>
+                        </item_5>
+                    </tabs>
+                </container_fixed>
+            </container>
+        </root>
+        <image
+                jcr:primaryType="nt:unstructured"
+                file_x0040_MoveFrom="/libs/wcm/core/content/sites/createpagewizard/jcr:content/image/file.sftmp">
+            <file/>
+        </image>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"
+                fileName="Collection of KBank products, choose according to your lifestyle - Kasikorn Bank.png">
+            <file/>
+        </cq:featuredimage>
+    </jcr:content>
+</jcr:root>

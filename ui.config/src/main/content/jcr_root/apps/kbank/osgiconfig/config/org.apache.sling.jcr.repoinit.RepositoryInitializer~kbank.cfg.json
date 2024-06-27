@@ -1,0 +1,11 @@
+{
+    "scripts": [
+        "create group kbank-user-group",
+        "set properties on authorizable (kbank-users)/profile\n set givenName to \"Kbank User Group\"\nend",
+        "create path (sling:OrderedFolder) /content/dam/kbank",
+        "create path (nt:unstructured) /content/dam/kbank/jcr:content",
+        "set properties on /content/dam/kbank/jcr:content\n  set cq:conf{String} to /conf/kbank\n  set jcr:title{String} to \"KBank\"\nend",
+        "create service user kbank-service-user with forced path /home/users/system/kbank",
+        "set ACL for kbank-service-user\n allow jcr:all on /content\n allow jcr:all on /apps\n allow jcr:all on /home\n allow jcr:all on /etc\n allow jcr:all on /conf\nend"
+    ]
+}
