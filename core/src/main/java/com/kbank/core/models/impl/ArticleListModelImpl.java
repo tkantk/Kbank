@@ -139,8 +139,11 @@ public class ArticleListModelImpl implements ArticleListModel {
 
             if (session != null) {
                 User currentUser = (User) userManager.getAuthorizable(currentUserSession.getUserID());
-                if (currentUser != null && !"anonymous".equals(currentUser.getID()) && session.getNode(currentUser.getPath()).hasNode("profile") && currentUser.hasProperty("profile/aidata"))  {
+                if (currentUser != null && !"anonymous".equals(currentUser.getID()) &&
+                        session.getNode(currentUser.getPath()).hasNode("profile") &&
+                        currentUser.hasProperty("profile/email"))  {
                     //JsonObject data = JsonParser.parseString(currentUser.getProperty("profile/aidata")[0].getString()).getAsJsonObject();
+                    assert aepUtilService != null;
                     String interests = aepUtilService.getInterestsFromAEP(currentUser.getProperty("profile/email")[0].getString());
                     JsonObject data = aiGeneratedPersonalizedDataService.getPersonalizedAIGeneratedData(interests, "articlelist", null, null, request);
                     items = data.getAsJsonArray("data");

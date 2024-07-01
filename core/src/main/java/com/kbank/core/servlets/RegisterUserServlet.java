@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.AIGeneratedPersonalizedDataService;
 import com.kbank.core.services.GenericRestClient;
 import com.kbank.core.services.ResourceResolverService;
@@ -55,6 +56,9 @@ public class RegisterUserServlet extends SlingAllMethodsServlet {
 
     @Reference
     private AIGeneratedPersonalizedDataService aiGeneratedPersonalizedDataService;
+
+    @Reference
+    private AEPUtilService aepUtilService;
 
     private static final String USER_CREATION_PATH = "/home/users/kbank";
 
@@ -184,85 +188,10 @@ public class RegisterUserServlet extends SlingAllMethodsServlet {
         // Send user registration data to Adobe Experience Platform
         try {
             final String url = "https://dcs.adobedc.net/collection/2d40237daa1d3f1bd77fc6f23f5e406a137f003cf77d64ae8684dd07a99ec817";
-            JsonObject aepResponse = genericRestClient.post(url, createAEPRequestData(username, firstName, lastName, email, country, interests), JsonObject.class, generateHeadersForAEP());
+            JsonObject aepResponse = genericRestClient.post(url, aepUtilService.createAEPRequestData(username, firstName, lastName, email, country, interests), JsonObject.class, aepUtilService.generateHeadersForAEP());
             log.info("User registration data sent to AEP: {}", aepResponse);
         } catch (Exception e) {
             log.error("Failed to send user registration data to AEP", e);
         }
-    }
-
-    private Map<String, String> generateHeadersForAEP() {
-        Map<String, String> headers = new HashMap<>();
-        headers.put("Content-Type", "application/json");
-        headers.put("sandbox-name", "usecase-demo");
-        headers.put("x-adobe-flow-id", "3c8ba9ca-72f3-496a-8d3a-19e3890c8ad4");
-        return headers;
-    }
-
-    private JsonObject createAEPRequestData(String username, String firstName, String lastName, String email, String country, String[] interests) {
-        JsonObject requestData = new JsonObject();
-        JsonObject schemaRefHeader = new JsonObject();
-        schemaRefHeader.addProperty("id", "https://ns.adobe.com/gdccsc/schemas/4e76bbbf79770dfd0f03138ae7bc98f50e075fbe709a58ca");
-        schemaRefHeader.addProperty("contentType", "application/vnd.adobe.xed-full+json;version=1.0");
-
-
-        JsonObject header = new JsonObject();
-        header.add("schemaRef", schemaRefHeader);
-        header.addProperty("imsOrgId", "C683509F655B5C760A495E7E@AdobeOrg");
-        header.addProperty("datasetId", "6665ea8ed2e8fc2c683b17b4");
-
-        JsonObject schemaRefBody = new JsonObject();
-        schemaRefBody.addProperty("id", "https://ns.adobe.com/gdccsc/schemas/4e76bbbf79770dfd0f03138ae7bc98f50e075fbe709a58ca");
-        schemaRefBody.addProperty("contentType", "application/vnd.adobe.xed-full+json;version=1.0");
-
-        JsonObject xdmMeta = new JsonObject();
-        xdmMeta.add("schemaRef", schemaRefBody);
-
-        JsonObject systemIdentifier = new JsonObject();
-        systemIdentifier.addProperty("crmId", username);
-
-        JsonObject gdccsc = new JsonObject();
-        gdccsc.addProperty("Interest", String.join(", ", interests));
-        gdccsc.add("systemIdentifier", systemIdentifier);
-
-        JsonObject name = new JsonObject();
-        name.addProperty("courtesyTitle", "Mr");
-        name.addProperty("firstName", firstName);
-        name.addProperty("fullName", firstName + " " + lastName);
-        name.addProperty("lastName", lastName);
-        name.addProperty("middleName", "");
-        name.addProperty("suffix", "");
-
-        JsonObject person = new JsonObject();
-        person.addProperty("birthDate", "2004-01-12");
-        person.addProperty("birthDayAndMonth", "01-12");
-        person.addProperty("birthYear", 2004);
-        person.addProperty("gender", "male");
-        person.addProperty("maritalStatus", "married");
-        person.add("name", name);
-        person.addProperty("nationality", country);
-
-        JsonObject personalEmail = new JsonObject();
-        personalEmail.addProperty("address", username);
-        personalEmail.addProperty("primary", true);
-        personalEmail.addProperty("status", "active");
-
-        JsonObject xdmEntity = new JsonObject();
-        xdmEntity.add("_gdccsc", gdccsc);
-        xdmEntity.add("person", person);
-        xdmEntity.add("personalEmail", personalEmail);
-
-        JsonObject body = new JsonObject();
-        body.add("xdmMeta", xdmMeta);
-        body.add("xdmEntity", xdmEntity);
-
-        JsonObject root = new JsonObject();
-        root.add("header", header);
-        root.add("body", body);
-
-        Gson gson = new Gson();
-        requestData = gson.toJsonTree(root).getAsJsonObject();
-
-        return requestData;
     }
 }
