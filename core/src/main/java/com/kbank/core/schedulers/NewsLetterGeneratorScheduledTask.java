@@ -50,18 +50,6 @@ public class NewsLetterGeneratorScheduledTask implements Runnable {
     private static final String USER_PATH = "/home/users/kbank";
     private boolean enabled;
 
-    private static final String CLIENT_ID = "scoe-hackathon-app";
-    private static final String CLIENT_SECRET = "s8e-0KET_sozfAH-x3qp7Mn1agaJzvyi2IOg";
-    private static final String TOKEN_CODE = "eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEtc3RnMS1rZXktcGFjLTEuY2VyIiwia2lkIjoiaW1zX25hMS1zdGcxLWtleS1wYWMtMSIsIml0dCI6InBhYyJ9.eyJpZCI6InNjb2UtaGFja2F0aG9uLWFwcF9zdGciLCJ0eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwiY2xpZW50X2lkIjoic2NvZS1oYWNrYXRob24tYXBwIiwidXNlcl9pZCI6InNjb2UtaGFja2F0aG9uLWFwcEBBZG9iZUlEIiwiYXMiOiJpbXMtbmExLXN0ZzEiLCJvdG8iOmZhbHNlLCJjcmVhdGVkX2F0IjoiMTY5MTA0MTcyMDYwNCIsInNjb3BlIjoic3lzdGVtIn0.ZRUy3wSFFOdimL_G5TXPLfPtfnVA06kn2RPEl86Vo0fhEZuSzV7YskMhrZueGnwIA_1mC2V_67g4szWALiIoqVhw-ezNNHDu6O-MlG6fzIKchpdud01jXM5rpu13pjk1R1eFa2jwxiglW_Kx0MpRQfpHhRjQb3gk4uOWoynt8kJjC9fDyNES51khuE91AbkBtyRwva8wE_aaRFyFNcghNkT0T0ptQT0HyMjpfXWlO01cjJRdFPUp6e6trPJpImIEjqJZ-258wBW8229yHWHbWNrLTrnYo-iwY9Fs-M9yZFvrQoFc_kiS8529muYoIL1igkx4DKx9dsUbqKe7d7aW8g";
-
-    private static final Map<String, String[]> userToSegmentMap = new HashMap<>();
-    // Static block to populate the map
-    static {
-        userToSegmentMap.put("tushark@adobe.com", new String[]{"4ca4b377-d89f-4889-b376-2a7c5f8cf067"});
-        userToSegmentMap.put("sunilkumars@adobe.com", new String[]{"4ca4b377-d89f-4889-b376-2a7c5f8cf067"});
-        userToSegmentMap.put("abhishri@adobe.com", new String[]{"4ca4b377-d89f-4889-b376-2a7c5f8cf067"});
-    }
-
     @Reference
     private Scheduler scheduler;
 
@@ -101,7 +89,7 @@ public class NewsLetterGeneratorScheduledTask implements Runnable {
         LOG.info("NewsLetterGeneratorScheduledTask is running");
         try {
             List<User> users = getUsers();
-            final String token = aepUtilService.getLoginToken(CLIENT_ID, CLIENT_SECRET, TOKEN_CODE);
+            final String token = aepUtilService.getLoginToken(aepUtilService.getClientIDEmerald(), aepUtilService.getClientSecretEmerald(), aepUtilService.getTokenCodeEmerald());
             Map<String, String> headers = new HashMap<>();
             headers.put("Authorization", "Bearer " + token);
             headers.put("x-api-key", "scoe-hackathon-app");

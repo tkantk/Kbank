@@ -1,13 +1,16 @@
 package com.kbank.core.services.impl;
 
 import com.google.gson.*;
+import com.kbank.core.schedulers.NewsLetterGeneratorScheduledTask;
 import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.GenericRestClient;
 import com.kbank.core.utils.JSONUtil;
 import com.kbank.core.utils.impl.JSONUtilImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,10 +22,25 @@ import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Component(service = AEPUtilService.class, immediate = true)
+@Designate(ocd = AEPUtilServiceImpl.Config.class)
 public class AEPUtilServiceImpl implements AEPUtilService {
+
+    public @interface Config {
+        String clientIdEmerald() default "scoe-hackathon-app";
+        String clientSecretEmerald() default "s8e-0KET_sozfAH-x3qp7Mn1agaJzvyi2IOg";
+        String tokenCodeEmerald() default "eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEtc3RnMS1rZXktcGFjLTEuY2VyIiwia2lkIjoiaW1zX25hMS1zdGcxLWtleS1wYWMtMSIsIml0dCI6InBhYyJ9.eyJpZCI6InNjb2UtaGFja2F0aG9uLWFwcF9zdGciLCJ0eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwiY2xpZW50X2lkIjoic2NvZS1oYWNrYXRob24tYXBwIiwidXNlcl9pZCI6InNjb2UtaGFja2F0aG9uLWFwcEBBZG9iZUlEIiwiYXMiOiJpbXMtbmExLXN0ZzEiLCJvdG8iOmZhbHNlLCJjcmVhdGVkX2F0IjoiMTY5MTA0MTcyMDYwNCIsInNjb3BlIjoic3lzdGVtIn0.ZRUy3wSFFOdimL_G5TXPLfPtfnVA06kn2RPEl86Vo0fhEZuSzV7YskMhrZueGnwIA_1mC2V_67g4szWALiIoqVhw-ezNNHDu6O-MlG6fzIKchpdud01jXM5rpu13pjk1R1eFa2jwxiglW_Kx0MpRQfpHhRjQb3gk4uOWoynt8kJjC9fDyNES51khuE91AbkBtyRwva8wE_aaRFyFNcghNkT0T0ptQT0HyMjpfXWlO01cjJRdFPUp6e6trPJpImIEjqJZ-258wBW8229yHWHbWNrLTrnYo-iwY9Fs-M9yZFvrQoFc_kiS8529muYoIL1igkx4DKx9dsUbqKe7d7aW8g";
+        String emeraldBaseUrl() default "https://emerald-stage.adobe.io/collection/Segment_Topic_Prediction_Data/asset";
+        String aepSandBoxName() default "usecase-demo";
+        String xAdobeId() default "3c8ba9ca-72f3-496a-8d3a-19e3890c8ad4";
+        String aepTokenBaseUrl() default "https://ims-na1-stg1.adobelogin.com/ims/token/v1?grant_type=authorization_code";
+        String aepSegmentBaseUrl() default "https://edge.adobedc.net/ee/v2/interact?dataStreamId=7241cbb6-d82e-4bb3-b196-eb4204e79f8d";
+        String aepLoginTokenBaseUrl() default "https://ims-na1.adobelogin.com/ims/token/v3";
+        String aepProfileClientId() default "ccfdaca258624f76975b5b088c97effe";
+        String aepProfileClientSecret() default "p8e-MQTENIOVbzCK8IbvOIBaGIZqTBKDWEcg";
+        String aepProfileScope() default "cjm.suppression_service.client.delete,cjm.suppression_service.client.all,openid,session,AdobeID,read_organizations,additional_info.projectedProductContext";
+    }
 
     private static final Logger log = LoggerFactory.getLogger(AEPUtilService.class);
 
@@ -31,20 +49,40 @@ public class AEPUtilServiceImpl implements AEPUtilService {
 
     private JSONUtil jsonUtil;
 
-    private static final String CLIENT_ID = "scoe-hackathon-app";
-    private static final String CLIENT_SECRET = "s8e-0KET_sozfAH-x3qp7Mn1agaJzvyi2IOg";
-    private static final String TOKEN_CODE = "eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEtc3RnMS1rZXktcGFjLTEuY2VyIiwia2lkIjoiaW1zX25hMS1zdGcxLWtleS1wYWMtMSIsIml0dCI6InBhYyJ9.eyJpZCI6InNjb2UtaGFja2F0aG9uLWFwcF9zdGciLCJ0eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwiY2xpZW50X2lkIjoic2NvZS1oYWNrYXRob24tYXBwIiwidXNlcl9pZCI6InNjb2UtaGFja2F0aG9uLWFwcEBBZG9iZUlEIiwiYXMiOiJpbXMtbmExLXN0ZzEiLCJvdG8iOmZhbHNlLCJjcmVhdGVkX2F0IjoiMTY5MTA0MTcyMDYwNCIsInNjb3BlIjoic3lzdGVtIn0.ZRUy3wSFFOdimL_G5TXPLfPtfnVA06kn2RPEl86Vo0fhEZuSzV7YskMhrZueGnwIA_1mC2V_67g4szWALiIoqVhw-ezNNHDu6O-MlG6fzIKchpdud01jXM5rpu13pjk1R1eFa2jwxiglW_Kx0MpRQfpHhRjQb3gk4uOWoynt8kJjC9fDyNES51khuE91AbkBtyRwva8wE_aaRFyFNcghNkT0T0ptQT0HyMjpfXWlO01cjJRdFPUp6e6trPJpImIEjqJZ-258wBW8229yHWHbWNrLTrnYo-iwY9Fs-M9yZFvrQoFc_kiS8529muYoIL1igkx4DKx9dsUbqKe7d7aW8g";
-    private static final String SANDBOX_NAME = "usecase-demo";
-    private static final String X_ADOBE_ID = "3c8ba9ca-72f3-496a-8d3a-19e3890c8ad4";
+    private String CLIENT_ID_EMERALD;
+    private String CLIENT_SECRET_EMERALD;
+    private String TOKEN_CODE_EMERALD;
 
-    private static final String AEP_TOKEN_BASE_URL = "https://ims-na1-stg1.adobelogin.com/ims/token/v1?grant_type=authorization_code";
-    private static final String EMERALD_BASE_URL = "https://emerald-stage.adobe.io/collection/Segment_Topic_Prediction_Data/asset";
-    private static final String AEP_SEGMENT_BASE_URL = "https://edge.adobedc.net/ee/v2/interact?dataStreamId=7241cbb6-d82e-4bb3-b196-eb4204e79f8d";
+    private String SANDBOX_NAME;
+    private String X_ADOBE_ID;
 
-    private static final String AEP_LOGIN_TOKEN_BASE_URL = "https://ims-na1.adobelogin.com/ims/token/v3";
-    private static final String AEP_PROFILE_CLIENT_ID = "ccfdaca258624f76975b5b088c97effe";
-    private static final String AEP_PROFILE_CLIENT_SECRET = "p8e-MQTENIOVbzCK8IbvOIBaGIZqTBKDWEcg";
-    private static final String AEP_PROFILE_SCOPE = "cjm.suppression_service.client.delete,cjm.suppression_service.client.all,openid,session,AdobeID,read_organizations,additional_info.projectedProductContext";
+    private String AEP_TOKEN_BASE_URL;
+    private String EMERALD_BASE_URL;
+    private String AEP_SEGMENT_BASE_URL;
+
+    private String AEP_LOGIN_TOKEN_BASE_URL;
+    private String AEP_PROFILE_CLIENT_ID;
+    private String AEP_PROFILE_CLIENT_SECRET;
+    private String AEP_PROFILE_SCOPE;
+
+    private Config config;
+
+    @Activate
+    protected void activate(Config config) {
+        this.config = config;
+        this.CLIENT_ID_EMERALD = config.clientIdEmerald();
+        this.CLIENT_SECRET_EMERALD = config.clientSecretEmerald();
+        this.TOKEN_CODE_EMERALD = config.tokenCodeEmerald();
+        this.EMERALD_BASE_URL = config.emeraldBaseUrl();
+        this.SANDBOX_NAME = config.aepSandBoxName();
+        this.X_ADOBE_ID = config.xAdobeId();
+        this.AEP_TOKEN_BASE_URL = config.aepTokenBaseUrl();
+        this.AEP_SEGMENT_BASE_URL = config.aepSegmentBaseUrl();
+        this.AEP_LOGIN_TOKEN_BASE_URL = config.aepLoginTokenBaseUrl();
+        this.AEP_PROFILE_CLIENT_ID = config.aepProfileClientId();
+        this.AEP_PROFILE_CLIENT_SECRET = config.aepProfileClientSecret();
+        this.AEP_PROFILE_SCOPE = config.aepProfileScope();
+    }
 
     @Override
     public String getLoginToken(String clientID, String clientSecret, String tokenCode) throws IOException, URISyntaxException, InterruptedException {
@@ -284,6 +322,21 @@ public String getInterestsFromAEP(String emailID) throws IOException, URISyntaxE
         JsonElement firstElement = jsonUtil.getFirstElement(response);
         JsonObject nestedObject = firstElement.getAsJsonObject();
         return nestedObject.get("entity").getAsJsonObject();
+    }
+
+    @Override
+    public String getClientIDEmerald() {
+        return config.clientIdEmerald();
+    }
+
+    @Override
+    public String getClientSecretEmerald() {
+        return config.clientSecretEmerald();
+    }
+
+    @Override
+    public String getTokenCodeEmerald() {
+        return config.tokenCodeEmerald();
     }
 
     public static List<String> getSegmentIds(JsonObject jsonObject) {

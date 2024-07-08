@@ -15,4 +15,7 @@ public interface AEPUtilService {
     public Map<String, String> generateHeadersForAEP();
     public String getLoginTokenForProfile() throws IOException, URISyntaxException, InterruptedException;
     public JsonObject getProfileData(String emailID) throws IOException, URISyntaxException, InterruptedException;
+    public String getClientIDEmerald();
+    public String getClientSecretEmerald();
+    public String getTokenCodeEmerald();
 }
