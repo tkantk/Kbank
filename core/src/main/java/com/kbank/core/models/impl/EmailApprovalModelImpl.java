@@ -242,6 +242,11 @@ public class EmailApprovalModelImpl implements EmailAprovalModel {
         }
 
         @Override
+        public String getFullDescription() {
+            return article;
+        }
+
+        @Override
         public String getURL() {
             return url;
         }

@@ -1,6 +1,5 @@
 package com.kbank.core.schedulers;
 
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.kbank.core.models.User;
 import com.kbank.core.services.AEPUtilService;
@@ -29,8 +28,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -89,7 +86,7 @@ public class NewsLetterGeneratorScheduledTask implements Runnable {
         LOG.info("NewsLetterGeneratorScheduledTask is running");
         try {
             List<User> users = getUsers();
-            final String token = aepUtilService.getLoginToken(aepUtilService.getClientIDEmerald(), aepUtilService.getClientSecretEmerald(), aepUtilService.getTokenCodeEmerald());
+            final String token = aepUtilService.getLoginTokenEMERALD(aepUtilService.getClientIDEmerald(), aepUtilService.getClientSecretEmerald(), aepUtilService.getTokenCodeEmerald());
             Map<String, String> headers = new HashMap<>();
             headers.put("Authorization", "Bearer " + token);
             headers.put("x-api-key", "scoe-hackathon-app");

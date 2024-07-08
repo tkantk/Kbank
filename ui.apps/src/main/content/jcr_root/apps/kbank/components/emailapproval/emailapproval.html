@@ -57,7 +57,39 @@
             e.preventDefault();
             submitForm('decline');
         });
+
+        var popupTriggers = document.querySelectorAll('.popup-trigger');
+        var closeButtons = document.querySelectorAll('.popup-close');
+
+        popupTriggers.forEach(function(trigger) {
+            trigger.addEventListener('click', function(event) {
+                event.preventDefault();
+                var popupId = this.getAttribute('data-popup-id');
+                showPopup(popupId);
+            });
+        });
+
+        closeButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var popupId = this.getAttribute('data-popup-id');
+                closePopup(popupId);
+            });
+        });
+
     });
+    function showPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        if (popup) {
+            popup.style.display = 'block';
+        }
+    }
+
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        if (popup) {
+            popup.style.display = 'none';
+        }
+    }
 </script>
 <style type="text/css">
     .approve-button {
@@ -87,6 +119,146 @@
         cursor: pointer;
         border-radius: 4px;
     }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    .popup-content {
+        position: relative;
+        background-color: #ffffff;
+        margin: 50px auto;
+        padding: 30px;
+        max-width: 600px;
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        transform: translateY(20px);
+        animation: slideUp 0.3s ease-out forwards;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .popup-title {
+        font-size: 2em;
+        font-weight: 700;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .popup-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 20px;
+    }
+
+    .popup-description {
+        font-size: 1.1em;
+        color: #34495e;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: justify;
+        letter-spacing: 0.3px;
+    }
+
+    .popup-description p {
+        margin-bottom: 15px;
+    }
+
+    .popup-description strong {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .popup-description em {
+        font-style: italic;
+        color: #7f8c8d;
+    }
+
+    .popup-description ul, .popup-description ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .popup-description li {
+        margin-bottom: 8px;
+    }
+
+    .popup-link {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #3498db;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9em;
+    }
+
+    .popup-link:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 1.8em;
+        background: none;
+        border: none;
+        color: #bdc3c7;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .close-btn:hover {
+        color: #7f8c8d;
+        transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+        to { transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+        .popup-content {
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .popup-title {
+            font-size: 1.7em;
+        }
+
+        .popup-description {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    }
 </style>
 <sly data-sly-use.aiDataList="com.kbank.core.models.EmailAprovalModel">
     <table class="container" style="width: 100%; max-width: 600px; margin: auto; background-color: white; padding: 20px; border-collapse: collapse;">
@@ -112,8 +284,19 @@
                                     <td style="padding: 10px; box-sizing: border-box; border: 1px solid #ccc; margin: 5px; background-color: #e0f7fa;">
                                         <img src="${item.image}" alt="Asia-Pacific markets" style="width: 100%; height: auto; margin-bottom: 10px;">
                                         <h3 style="margin-top: 0; font-size: 16px;">${item.title}</h3>
-                                        <p style="font-size: 14px;">${item.description} <a href="${item.uRL}" style="color: #007bff; text-decoration: none;">Read More</a></p>
+                                        <p style="font-size: 14px;">${item.description}  <a href="#" class="popup-trigger" data-popup-id="articlePopup${itemList.index}">Read More</a></p>
                                     </td>
+                                    <div id="articlePopup${itemList.index}" class="popup">
+                                        <div class="popup-content">
+                                            <button class="close-btn popup-close" data-popup-id="articlePopup${itemList.index}">&times;</button>
+                                            <h2 class="popup-title">${item.title}</h2>
+                                            <img src="${item.image}" alt="Article Image" class="popup-image">
+                                            <div class="popup-description">
+                                                ${item.fullDescription}
+                                            </div>
+                                            <a href="${item.uRL}" class="popup-link">Check this story at the source</a>
+                                        </div>
+                                    </div>
                                 </sly>
                             </sly>
                         </tr>
@@ -125,8 +308,19 @@
                                 <td style="padding: 10px; box-sizing: border-box; border: 1px solid #ccc; margin: 5px; background-color: #e0f7fa;">
                                     <img src="${item.image}" alt="Asia-Pacific markets" style="width: 100%; height: auto; margin-bottom: 10px;">
                                     <h3 style="margin-top: 0; font-size: 16px;">${item.title}</h3>
-                                    <p style="font-size: 14px;">${item.description} <a href="${item.uRL}" style="color: #007bff; text-decoration: none;">Read More</a></p>
+                                    <p style="font-size: 14px;">${item.description}  <a href="#" class="popup-trigger" data-popup-id="articlePopup${itemList.index}">Read More</a></p>
                                 </td>
+                                <div id="articlePopup${itemList.index}" class="popup">
+                                    <div class="popup-content">
+                                        <button class="close-btn popup-close" data-popup-id="articlePopup${itemList.index}">&times;</button>
+                                        <h2 class="popup-title">${item.title}</h2>
+                                        <img src="${item.image}" alt="Article Image" class="popup-image">
+                                        <div class="popup-description">
+                                            ${item.fullDescription}
+                                        </div>
+                                        <a href="${item.uRL}" class="popup-link">Check this story at the source</a>
+                                    </div>
+                                </div>
                             </sly>
                         </sly>
                     </tr>
@@ -143,8 +337,19 @@
                                 <td style="padding: 10px; box-sizing: border-box; border: 1px solid #ccc; margin: 5px; background-color: #e0f7fa;">
                                     <img src="${item.image}" alt="Asia-Pacific markets" style="width: 100%; height: auto; margin-bottom: 10px;">
                                     <h3 style="margin-top: 0; font-size: 16px;">${item.title}</h3>
-                                    <p style="font-size: 14px;">${item.description} <a href="${item.uRL}" style="color: #007bff; text-decoration: none;">Read More</a></p>
+                                    <p style="font-size: 14px;">${item.description}  <a href="#" class="popup-trigger" data-popup-id="articlePopup${itemList.index}">Read More</a></p>
                                 </td>
+                                <div id="articlePopup${itemList.index}" class="popup">
+                                    <div class="popup-content">
+                                        <button class="close-btn popup-close" data-popup-id="articlePopup${itemList.index}">&times;</button>
+                                        <h2 class="popup-title">${item.title}</h2>
+                                        <img src="${item.image}" alt="Article Image" class="popup-image">
+                                        <div class="popup-description">
+                                            ${item.fullDescription}
+                                        </div>
+                                        <a href="${item.uRL}" class="popup-link">Check this story at the source</a>
+                                    </div>
+                                </div>
                             </sly>
                         </sly>
                     </tr>

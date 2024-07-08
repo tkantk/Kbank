@@ -1,7 +1,6 @@
 package com.kbank.core.services.impl;
 
 import com.google.gson.*;
-import com.kbank.core.schedulers.NewsLetterGeneratorScheduledTask;
 import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.GenericRestClient;
 import com.kbank.core.utils.JSONUtil;
@@ -11,6 +10,7 @@ import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +27,7 @@ import java.util.*;
 @Designate(ocd = AEPUtilServiceImpl.Config.class)
 public class AEPUtilServiceImpl implements AEPUtilService {
 
+    @ObjectClassDefinition(name = "AEP Helper Service", description = "AEP Helper Service")
     public @interface Config {
         String clientIdEmerald() default "scoe-hackathon-app";
         String clientSecretEmerald() default "s8e-0KET_sozfAH-x3qp7Mn1agaJzvyi2IOg";
@@ -37,6 +38,7 @@ public class AEPUtilServiceImpl implements AEPUtilService {
         String aepTokenBaseUrl() default "https://ims-na1-stg1.adobelogin.com/ims/token/v1?grant_type=authorization_code";
         String aepSegmentBaseUrl() default "https://edge.adobedc.net/ee/v2/interact?dataStreamId=7241cbb6-d82e-4bb3-b196-eb4204e79f8d";
         String aepLoginTokenBaseUrl() default "https://ims-na1.adobelogin.com/ims/token/v3";
+        String aepOrganizationID() default "C683509F655B5C760A495E7E@AdobeOrg";
         String aepProfileClientId() default "ccfdaca258624f76975b5b088c97effe";
         String aepProfileClientSecret() default "p8e-MQTENIOVbzCK8IbvOIBaGIZqTBKDWEcg";
         String aepProfileScope() default "cjm.suppression_service.client.delete,cjm.suppression_service.client.all,openid,session,AdobeID,read_organizations,additional_info.projectedProductContext";
@@ -64,6 +66,7 @@ public class AEPUtilServiceImpl implements AEPUtilService {
     private String AEP_PROFILE_CLIENT_ID;
     private String AEP_PROFILE_CLIENT_SECRET;
     private String AEP_PROFILE_SCOPE;
+    private String AEP_ORG_ID;
 
     private Config config;
 
@@ -82,10 +85,11 @@ public class AEPUtilServiceImpl implements AEPUtilService {
         this.AEP_PROFILE_CLIENT_ID = config.aepProfileClientId();
         this.AEP_PROFILE_CLIENT_SECRET = config.aepProfileClientSecret();
         this.AEP_PROFILE_SCOPE = config.aepProfileScope();
+        this.AEP_ORG_ID = config.aepOrganizationID();
     }
 
     @Override
-    public String getLoginToken(String clientID, String clientSecret, String tokenCode) throws IOException, URISyntaxException, InterruptedException {
+    public String getLoginTokenEMERALD(String clientID, String clientSecret, String tokenCode) throws IOException, URISyntaxException, InterruptedException {
 
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/x-www-form-urlencoded");
@@ -226,7 +230,7 @@ public String getInterestsFromAEP(String emailID) throws IOException, URISyntaxE
 
         JsonObject header = new JsonObject();
         header.add("schemaRef", schemaRefHeader);
-        header.addProperty("imsOrgId", "C683509F655B5C760A495E7E@AdobeOrg");
+        header.addProperty("imsOrgId", AEP_ORG_ID);
         header.addProperty("datasetId", "6665ea8ed2e8fc2c683b17b4");
 
         JsonObject schemaRefBody = new JsonObject();
@@ -294,7 +298,7 @@ public String getInterestsFromAEP(String emailID) throws IOException, URISyntaxE
     }
 
     @Override
-    public String getLoginTokenForProfile() throws IOException, URISyntaxException, InterruptedException {
+    public String getLoginTokenForIO() throws IOException, URISyntaxException, InterruptedException {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/x-www-form-urlencoded");
 
@@ -310,12 +314,12 @@ public String getInterestsFromAEP(String emailID) throws IOException, URISyntaxE
 
     @Override
     public JsonObject getProfileData(String emailID) throws IOException, URISyntaxException, InterruptedException {
-        final String token = getLoginTokenForProfile();
+        final String token = getLoginTokenForIO();
         Map<String, String> headers = new HashMap<>();
         headers.put("Authorization", "Bearer " + token);
-        headers.put("x-api-key", "ccfdaca258624f76975b5b088c97effe");
-        headers.put("x-gw-ims-org-id", "C683509F655B5C760A495E7E@AdobeOrg");
-        headers.put("x-sandbox-name", "usecase-demo");
+        headers.put("x-api-key", AEP_PROFILE_CLIENT_ID);
+        headers.put("x-gw-ims-org-id", AEP_ORG_ID);
+        headers.put("x-sandbox-name", SANDBOX_NAME);
         final String url = "https://platform.adobe.io/data/core/ups/access/entities?schema.name=_xdm.context.profile&entityId="+emailID+"&entityIdNS=Ulcrmid&fields=_gdccsc.Interest";
         JsonObject response = genericRestClient.get(url, StringUtils.EMPTY, JsonObject.class, headers);
         jsonUtil = new JSONUtilImpl();
@@ -337,6 +341,21 @@ public String getInterestsFromAEP(String emailID) throws IOException, URISyntaxE
     @Override
     public String getTokenCodeEmerald() {
         return config.tokenCodeEmerald();
+    }
+
+    @Override
+    public String getAEPORGID() {
+        return config.aepOrganizationID();
+    }
+
+    @Override
+    public String getAEPAPIKey() {
+        return config.aepProfileClientId();
+    }
+
+    @Override
+    public String getAEPSandboxName() {
+        return config.aepSandBoxName();
     }
 
     public static List<String> getSegmentIds(JsonObject jsonObject) {

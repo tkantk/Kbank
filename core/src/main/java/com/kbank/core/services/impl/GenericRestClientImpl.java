@@ -37,7 +37,7 @@ public class GenericRestClientImpl implements GenericRestClient {
             HttpRequest request = requestBuilder.build();
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-            if (response.statusCode() != 200) {
+            if (response.statusCode() != 200 && response.statusCode() != 201 && response.statusCode() != 202) {
                 throw new RuntimeException("Failed : HTTP error code : " + response.statusCode());
             }
 
@@ -62,7 +62,7 @@ public class GenericRestClientImpl implements GenericRestClient {
 
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-            if (response.statusCode() != 200) {
+            if (response.statusCode() != 200 && response.statusCode() != 201 && response.statusCode() != 202) {
                 throw new RuntimeException("Failed : HTTP error code : " + response.statusCode());
             }
 

@@ -1,42 +1,59 @@
 package com.kbank.core.services.impl;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.kbank.core.services.FireFlyService;
 import com.kbank.core.services.GenericRestClient;
 import com.kbank.core.utils.JSONUtil;
-import com.kbank.core.utils.impl.JSONUtilImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.StringJoiner;
 
 @Component(service = FireFlyService.class, immediate = true)
+@Designate(ocd = FireFlyServiceImpl.Config.class)
 public class FireFlyServiceImpl implements FireFlyService {
+
+    @ObjectClassDefinition(name = "FireFly Image Generation Service", description = "FireFly Image Generation Service")
+    public @interface Config {
+        String clientID() default "c1618baee6eb4cbe888c0e8f01570f72";
+        String clientValue() default "p8e-5nadX6dgrbXWf-CxTcTPJxDdTXV7L0m3";
+        String grantType() default "client_credentials";
+        String scope() default "openid%2CAdobeID,session,additional_info,read_organizations,firefly_api,ff_apis";
+        String tokenURL() default "https://ims-na1.adobelogin.com/ims/token/v3";
+        String imageGenerateURL() default "https://firefly-api.adobe.io/v2/images/generate";
+    }
 
     private static Logger log = LoggerFactory.getLogger(FireFlyServiceImpl.class);
 
-    private static String CLIENT_ID = "c1618baee6eb4cbe888c0e8f01570f72";
-    private static String CLIENT_VALUE = "p8e-5nadX6dgrbXWf-CxTcTPJxDdTXV7L0m3";
-    private static String GRANT_TYPE = "client_credentials";
-    private static String SCOPE = "openid%2CAdobeID,session,additional_info,read_organizations,firefly_api,ff_apis";
-    private static String TOKEN_URL = "https://ims-na1.adobelogin.com/ims/token/v3";
-    private static String IMAGE_GENERATE_URL = "https://firefly-api.adobe.io/v2/images/generate";
+    private static String CLIENT_ID;
+    private static String CLIENT_VALUE;
+    private static String GRANT_TYPE;
+    private static String SCOPE;
+    private static String TOKEN_URL;
+    private static String IMAGE_GENERATE_URL;
+
+    @Activate
+    protected void activate(Config config) {
+        this.CLIENT_ID = config.clientID();
+        this.CLIENT_VALUE = config.clientValue();
+        this.GRANT_TYPE = config.grantType();
+        this.SCOPE = config.scope();
+        this.TOKEN_URL = config.tokenURL();
+        this.IMAGE_GENERATE_URL = config.imageGenerateURL();
+    }
 
     @Reference
     private GenericRestClient genericRestClient;
