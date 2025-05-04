@@ -12,3 +12,4 @@ import '../components/form/sign-in-form/sign-in-form.js';
 import '../components/contentfragment/js/contributor.js';
 import  '../components/form/register-form/register-form.js';
 import '../components/form/admin-form/admin-form.js';
+import '../components/articlecard/articlecard.js';

@@ -16,15 +16,10 @@
 
 <!--/* image-list.html */-->
 
-<div  class="blog-wrapper"
+<div id="blogContainer" class="blog-wrapper"
      data-sly-use.articleList="com.kbank.core.models.ArticleListModel"
-     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-     data-sly-use.itemTemplate="item.html"
      data-sly-test.hasContent="${!articleList.empty}"
-     data-sly-list.item="${articleList.listItems}"
-     data-cmp-data-layer="${articleList.data.json}">
-    <div class="blog-card"
-        data-cmp-data-layer="${item.data.json}"
-        data-sly-call="${itemTemplate.item @ item = item}"></div>
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent, classAppend='blog-wrapper'}"></sly>

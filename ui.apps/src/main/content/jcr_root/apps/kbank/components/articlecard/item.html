@@ -5,4 +5,15 @@
     <div class="card-details"></div>
     <div class="card-text"><p>${item.description}</p></div>
     <div class="read-more"><a href="${item.URL}" target="_blank">Read More</a></div>
+    <div id="articlePopup${item.index}" class="popup">
+        <div class="popup-content">
+            <button class="close-btn popup-close" data-popup-id="articlePopup${item.index}">&times;</button>
+            <h2 class="popup-title">${item.title}</h2>
+            <img src="${item.image}" alt="Article Image" class="popup-image">
+            <div class="popup-description">
+                ${item.fullDescription}
+            </div>
+            <a href="${item.URL}" class="popup-link">Check this story at the source</a>
+        </div>
+    </div>
 </template>

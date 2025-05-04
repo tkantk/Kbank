@@ -61,6 +61,8 @@ public interface ArticleListModel {
          */
         String getDescription();
 
+        String getFullDescription();
+
         /**
          * @return the url to the Page the Image List item represents.
          */

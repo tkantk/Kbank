@@ -1,6 +1,6 @@
 {
   "alloworigin": ["http://localhost:3000"],
-  "allowedpaths": ["/(content|conf)/kbank.*"],
+  "allowedpaths": ["/(content|conf)/wbank.*"],
   "supportedheaders": [
     "Authorization",
     "Origin",

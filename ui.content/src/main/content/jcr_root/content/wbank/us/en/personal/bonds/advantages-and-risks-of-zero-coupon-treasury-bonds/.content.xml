@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/zero-coupon-bonds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Advantages and Risks of Zero-Coupon Treasury Bonds"
+            jcr:uuid="ecf720fc-794b-4d8d-9bd2-b0b811ddeaec"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/bonds/advantages-and-risks-of-zero-coupon-treasury-bonds"
+                            paragraphScope="all"
+                            text="Advantages and Risks of Zero-Coupon Treasury Bonds Zero-coupon U.S. Treasury bonds are also known as Treasury zeros, and they often rise dramatically in price when stock prices fall. They are also very sensitive to interest rates. While these bonds have many risks, they also come with plenty of advantages that may be appealing to investors. KEY TAKEAWAYS Zero-coupon U.S. Treasury bonds are also known as Treasury zeros, and they often rise dramatically in price when stock prices fall. Zero-coupon U.S. Treasury bonds can move up significantly when the Fed cuts rates aggressively. Treasury zeros can easily fall significantly if the Fed raises interest rates. Buying Treasury zeros has become much more straightforward with ETFs. Unique Advantages of Zero-Coupon Treasury Bonds Treasury zeros zoom up in price when the Federal Reserve cuts rates, which helps them protect stock holdings at precisely the right time. The responsiveness of bond prices to interest rate changes increases with the term to maturity and decreases with interest payments. Thus, the most responsive bond has a long time to maturity (usually 20 to 30 years) and makes no interest payments. Therefore, long-dated zero-coupon bonds respond the most to interest rate changes. When the economy is under pressure, the Federal Reserve usually cuts rates to provide stimulus. This should send all bond prices up, but corporate and emerging market bonds are frequently already down because of increased default risk during recessions. U.S. Treasury bonds are often considered free of default risk, and the Fed sometimes buys them directly to stimulate the economy. Treasury zeros are in an ideal position to profit, particularly, if they are long-dated. Zero-coupon U.S. Treasury bonds can move up significantly when the Fed cuts rates aggressively. These gains can more than offset stock-related losses, so Treasury zeros are often an excellent hedge for stock investors. They also have solid long-run returns, similar to long-term Treasuries. If an investor wants to bet on a bear market, Treasury zeros frequently perform dramatically better than inverse ETFs and short-selling stocks. Unique Risks of Zero-Coupon Treasury Bonds Because of their sensitivity to interest rates, zero-coupon Treasury bonds have incredibly high interest rate risk. Treasury zeros fall significantly if the Fed raises interest rates. They also have no interest payments to cushion a fall. Zero-coupon U.S. Treasury bonds have a poor risk-return profile when held alone. Long-dated zero-coupon Treasury bonds are more volatile than the stock market, but they offer the lower long-run returns of U.S. Treasuries. Even worse, there is no guarantee that they will go up when stocks do poorly. Finally, Treasury zeros face a high risk of inflation. As is well known, inflation is bad for the bond market. Treasury zeros are the most aggressive investment possible in the bond market without using leverage or derivatives. Persistently high inflation is often accompanied by repeated interest rate hikes, which would cause significant losses for zero-coupon Treasury bonds. On top of that, inflation reduces the value of the principal. How to Buy Zero-Coupon Bonds Buying Treasury zeros has become much more straightforward with ETFs. The Vanguard Extended Duration Treasury ETF (EDV) went up about 70% in 2008 because of Fed interest rate cuts during the financial crisis.1 The PIMCO 25+ Year Zero Coupon U.S. Treasury Index Exchange-Traded Fund (ZROZ) also gives investors full access to the returns of zero-coupon Treasury bonds.2 It is possible to buy Treasury zeros the old-fashioned way. Zero-coupon government bonds can be purchased directly from the Treasury at the time they are issued. After the initial offering, they can be purchased on the open market through a brokerage account. Other types of zero-coupon bonds can also be purchased using a brokerage account. Other Types of Zero-Coupon Bonds Zero-coupon bonds come in many varieties. They may be issued by federal, state, and local governments or by corporations. Perhaps the most familiar zero-coupon bonds for many investors are the old Series EE savings bonds, which were often given as gifts to small children. These bonds were popular because people could buy them in small denominations. For example, a $50 bond could be purchased for $25. The child would keep the bond for many years and receive $50 when it matured. The terms of the savings bond program have changed, and the bonds are now only available in electronic form. They still exist, and they are still a valid example of how zero-coupon bonds work.3 Corporations also issue zero-coupon bonds. In a twist on these offerings, some zero-coupon corporate bonds can be converted into shares of stock. These bonds are called convertibles. Banks and brokerage firms can also create zero-coupon bonds. These entities take a regular bond and remove the coupon to create a pair of new securities. This process is often referred to as stripping because the coupon is stripped away from the debt instrument. General Advantages of Zero-Coupon Bonds Why would anyone want a bond without the interest? Well, for one thing, zero-coupon bonds are bought for a fraction of face value. For example, a $20,000 bond can be purchased for far less than half of that amount. Then there are the tax exemptions. If issued by a government entity, the interest generated by a zero-coupon bond is often exempt from federal income tax, and usually from state and local income taxes too. Various local municipalities are significant issuers of zero-coupon bonds. Some of these bonds are triple tax-free, with the income they generate exempt from income tax at the federal, state, and local levels. In either case, paying less in taxes is always good news. It puts a higher percentage of the earnings generated into investors' pockets instead of Uncle Sam's. Unfortunately, interest income from corporate zeros is taxable.4 When a bond is bought below its par value, it is trading at a discount. If you need a specific amount of income on a particular date in the future, zero-coupon bonds may be a perfect choice. Consider, for example, funding college for your offspring. If your goal is to help the child pay for an education, it is relatively easy to predict the year that the child will need the money. Purchasing zero-coupon bonds that mature at that time can be a convenient way to help cover the expense. Zero-coupon bonds are also appealing to investors who wish to pass wealth on to their heirs but are concerned about income taxes or gift taxes. If a zero-coupon bond is purchased for $1,000 and given away as a gift, the gift giver will have used only $1,000 of their yearly gift tax exclusion. The recipient, on the other hand, will receive significantly more than $1,000 when the bond matures. Similarly, tax-free zero-coupon bonds make excellent gifts for children who generate enough annual income to be subject to taxation on earnings. The bonds will provide income for the children without increasing their tax liabilities. General Risks of Zero-Coupon Bonds Zero-coupon bonds may not reach maturity for decades, so it is essential to buy bonds from creditworthy entities. Some of them are issued with provisions that permit them to be paid out (called) before maturity. Investors counting on a specific payout on a particular date should be aware of these provisions to avoid the implications of what professional investors refer to as call risk. Also, the daily prices of zero-coupon bonds fluctuate on the open markets. Investors who sell them before maturity may receive more or less money than they originally paid. It can be a wild ride. Because they do not pay any periodic interest, zero-coupon bonds tend to be more volatile than their conventional counterparts. Of course, if held until maturity, the payout will be predetermined and does not change. How Are Zero-Coupon Treasuries Taxed? Zero-coupon Treasuries are taxed as if you were receiving annual interest income, even though you won't receive any income until the bond matures. It is required by the IRS to report the interest income that you would receive and to pay the difference between the purchase price and the amount received at maturity on a prorated basis. Why Buy Zero-Coupon Treasury Bonds? Because zero-coupon Treasuries are more sensitive to interest rates than regular coupon bonds, investors can speculate with them when they expect interest rates to change, earning them higher returns than if they just invested in coupon bonds. What Are the 3 Types of Treasuries? The three types of Treasuries are bonds, notes, and bills. Each of these has a different maturity date. Bonds mature between 20 and 30 years, notes between two and five years, and bills within a year. The Bottom Line Zero-coupon Treasury bonds come with unique advantages and risks. Before deciding to invest in any, make sure you understand the investment. If you have any doubts, always consult with a financial advisor to confirm if the investment meets your financial goals and risk tolerance. SPONSORED Trade on the Go. Anywhere, Anytime One of the world's largest crypto-asset exchanges is ready for you. Enjoy competitive fees and dedicated customer support while trading securely. You'll also have access to Binance tools that make it easier than ever to view your trade history, manage auto-investments, view price charts, and make conversions with zero fees. Make an account for free and join millions of traders and investors on the global crypto market."
+                            variationName="master">
+                        <par40
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

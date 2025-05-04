@@ -5,10 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.kbank.core.schedulers.NewsLetterGeneratorScheduledTask;
-import com.kbank.core.services.AEPUtilService;
-import com.kbank.core.services.AIGeneratedPersonalizedDataService;
-import com.kbank.core.services.EmailService;
-import com.kbank.core.services.ResourceResolverService;
+import com.kbank.core.services.*;
 import com.kbank.core.utils.KbankUserServiceUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.jackrabbit.api.security.user.Authorizable;
@@ -62,6 +59,12 @@ public class SendApprovedEmail extends SlingAllMethodsServlet {
     @Reference
     private ResourceResolverService resourceResolverService;
 
+    @Reference
+    private AJOUtilService ajoUtilService;
+
+    @Reference
+    private AIGeneratedPersonalizedDataService aiGeneratedPersonalizedDataService;
+
     private static final String CONTENT_TEMPLATE_PATH = "/apps/kbank/components/email_templates/news-letter.html";
 
     @Override
@@ -101,7 +104,7 @@ public class SendApprovedEmail extends SlingAllMethodsServlet {
                 jsonResponse.addProperty("message", "Invalid action parameter");
             }
 
-        } catch (RepositoryException | LoginException e) {
+        } catch (RepositoryException | LoginException | URISyntaxException | InterruptedException e) {
             log.error("Error getting user profile details", e);
             jsonResponse.addProperty("status", "error");
             jsonResponse.addProperty("message", "Error sending personalized email");
@@ -110,8 +113,8 @@ public class SendApprovedEmail extends SlingAllMethodsServlet {
         out.print(jsonResponse.toString());
     }
 
-    private void createAndSendEmail(String aiData, String emailID, ResourceResolver resourceResolver) {
-        Map<String, String> placeholders = new HashMap<>();
+    private void createAndSendEmail(String aiData, String emailID, ResourceResolver resourceResolver) throws IOException, URISyntaxException, InterruptedException {
+        JsonObject placeholders = new JsonObject();
         JsonArray filteredResponse = new JsonArray();
         // Create a JsonParser instance
         JsonParser jsonParser = new JsonParser();
@@ -127,27 +130,29 @@ public class SendApprovedEmail extends SlingAllMethodsServlet {
         LocalDate currentDate = LocalDate.now();
         // Define the desired format
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy");
-        placeholders.put("currentDate", currentDate.format(formatter));
+        placeholders.addProperty("currentDate", currentDate.format(formatter));
         for (int i = 0; i < filteredResponse.size(); i++) {
             JsonObject article = filteredResponse.get(i).getAsJsonObject();
             if (i<=5) {
-                placeholders.put("image" + i, article.get("urlToImage").getAsString());
-                placeholders.put("headlineTitle" + i, article.get("heading").getAsString());
-                placeholders.put("headlineLink" + i, article.get("url").getAsString());
+                placeholders.addProperty("image" + i, article.get("urlToImage").getAsString());
+                placeholders.addProperty("headlineTitle" + i, article.get("heading").getAsString());
+                placeholders.addProperty("headlineLink" + i, article.get("url").getAsString());
                 if (article.get("article").getAsString().length() > 50) {
-                    placeholders.put("headlineDescription" + i, article.get("article").getAsString().substring(0, 50) + "...");
+                    placeholders.addProperty("headlineDescription" + i, article.get("article").getAsString().substring(0, 50) + "...");
                 }
             } else {
-                placeholders.put("image" + i, article.get("urlToImage").getAsString());
-                placeholders.put("viewTitle" + i, article.get("heading").getAsString());
-                placeholders.put("viewLink" + i, article.get("url").getAsString());
+                placeholders.addProperty("image" + i, article.get("urlToImage").getAsString());
+                placeholders.addProperty("viewTitle" + i, article.get("heading").getAsString());
+                placeholders.addProperty("viewLink" + i, article.get("url").getAsString());
                 if (article.get("article").getAsString().length() > 50) {
-                    placeholders.put("viewDescription" + i, article.get("article").getAsString().substring(0, 50) + "...");
+                    placeholders.addProperty("viewDescription" + i, article.get("article").getAsString().substring(0, 50) + "...");
                 }
             }
         }
-        placeholders.put("name", getName(emailID));
-        emailService.sendEmail(emailID, "Market Watch: Momentum missing ahead of expiry", placeholders, CONTENT_TEMPLATE_PATH);
+        placeholders.addProperty("name", getName(emailID));
+        //emailService.sendEmail(emailID, "Market Watch: Momentum missing ahead of expiry", placeholders, CONTENT_TEMPLATE_PATH);
+        JsonObject articleRequest = ajoUtilService.createAJOTransactionalMessageRequest(emailID, aiGeneratedPersonalizedDataService.getArticleCampaignID(), placeholders);
+        ajoUtilService.sendTransactionEmail(articleRequest);
     }
 
     public String getName(String email) {

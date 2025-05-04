@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-08-07T14:32:40.962Z"
+            cq:lastReplicatedBy_publish="eranti@adobe.com"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-mutual-funds]"
+            cq:template="/conf/wbank/settings/wcm/templates/landing-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Mutual Fund"
+            jcr:uuid="a371f7c8-7746-45a4-97d0-986f99beb702"
+            sling:resourceType="kbank/components/page"
+            navTitle="Mutual Fund"
+            pageTitle="Mutual Fund"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <breadcrumb
+                        cq:styleIds="[1570236596118]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/breadcrumb"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="4"/>
+                <container_fixed
+                        cq:styleIds="[1554340406437]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <carousel_copy_copy
+                            cq:styleIds="[1555545421827]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/carousel">
+                        <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kbank/components/image"
+                                alt="Studying"
+                                altValueFromDAM="false"
+                                displayPopupTitle="true"
+                                fileReference="/content/dam/wbank/en/site/products/mutual funds.jpg"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                titleValueFromDAM="true"/>
+                    </carousel_copy_copy>
+                    <title
+                            cq:styleIds="[1568996484405]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"/>
+                    <list
+                            cq:styleIds="[1554340350631]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"
+                            childDepth="1"
+                            displayItemAsTeaser="false"
+                            linkItems="true"
+                            listFrom="children"
+                            parentPage="/content/wbank/us/en/personal/mutual-fund"
+                            showDescription="true"
+                            showModificationDate="true"
+                            sortOrder="asc"
+                            tagsMatch="any"/>
+                </container_fixed>
+            </container>
+        </root>
+        <image
+                jcr:primaryType="nt:unstructured"
+                file_x0040_MoveFrom="/libs/wcm/core/content/sites/createpagewizard/jcr:content/image/file.sftmp">
+            <file/>
+        </image>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="true"
+                fileReference="/content/dam/wbank/en/site/products/Mutual_Fund_Product.png"/>
+    </jcr:content>
+    <are-flexi-cap-funds-worth-their-salt-/>
+    <do-funds-with-a-lower-number-of-stocks-perform-better--/>
+    <what-are-alternative-investment-funds-/>
+    <why-you-should-increase-your-mutual-fund-sips-every-year/>
+</jcr:root>

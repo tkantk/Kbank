@@ -368,10 +368,10 @@
             <!-- Success bar -->
             <div id="successBar" class="alert success-bar" role="alert"></div>
             <td style="text-align: center; padding: 20px;">
-                <form action="/content/kbank/us/en/servlets-content-folder/send-approved-email/jcr:content.json" method="GET">
+                <form action="/content/wbank/us/en/servlets-content-folder/send-approved-email/jcr:content.json" method="GET">
                     <input type="hidden" name="emailId" value="${aiDataList.email}">
-                    <button onclick="submitForm('approve')" type="submit" name="type" value="approve" class="approve-button">Approve</button>
-                    <button onclick="submitForm('decline')" type="submit" name="type" value="decline" class="decline-button">Decline</button>
+                    <button type="submit" name="type" value="approve" class="approve-button">Approve</button>
+                    <button type="submit" name="type" value="decline" class="decline-button">Decline</button>
                 </form>
             </td>
         </tr>

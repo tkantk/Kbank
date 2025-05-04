@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/oil-and-gas-commodity,kbank:kbank-articles/energy-commodity]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="OPEC: The World Cannot Run on Renewable Energy and EVs"
+            jcr:uuid="98d0fa64-b57b-4d26-84e1-c858732cd7e7"
+            sling:resourceType="kbank/components/page"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/commodity/opec--the-world-cannot-run-on-renewable-energy-and-evs"
+                            paragraphScope="all"
+                            text="OPEC: The World Cannot Run on Renewable Energy and EVs Proponents of critical minerals as the way to have a world running solely on renewables and electric vehicles are not providing the full picture as their assessments of necessary investments and the speed of the energy transition sound unrealistic, according to OPEC Secretary General Haitham Al Ghais. Policymakers and forecasters, as well as advocates of a fast energy transition, need to carefully consider if the needed investments and volumes of critical minerals supply are feasible in their net-zero scenarios, Al Ghais wrote in an article published on OPEC’s website on Monday. Mining projects to extract critical minerals have long lead times from discovery to first production. Moreover, critical mineral mining is also an extremely energy-intensive activity, and one that today runs on hydrocarbons. It could not function otherwise,” OPEC’s top official wrote. Coal and natural gas are vital for the processing of raw critical minerals to refine them into battery-grade products ready to be used in clean energy and electric vehicles (EVs). “Petroleum-based products are also used for excavators, bulldozers, dump trucks on site, as well as various forms of transportation to move minerals from supply to demand centres,” Al Ghais said. Oil products and other fossil fuels are also used for the production of solar panels, wind turbines, and EVs. “The oil industry, renewables and EVs are not separate from each other. They do not work in silos,” said the head of OPEC, which reiterated its position that oil and gas cannot be removed from the global energy system and simply replaced with EVs and solar and wind power plants. “Is it realistic to think renewables can meet the expected electricity expansion alone, particularly given the world has invested over $9.5 trillion in ‘transitioning’ over the past two decades, yet wind and solar still only supply just under 4% of the world’s energy, and EVs have a total global penetration rate of between 2% and 3%,” Al Ghais wrote. Last month, Al Ghais said that peak oil demand is not on the horizon, blasting the International Energy Agency’s prediction that global oil demand would peak before 2030."
+                            variationName="master">
+                        <par11
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

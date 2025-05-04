@@ -8,10 +8,10 @@
     -o-transition:  padding-bottom 0s ease, padding-top 0s ;
     transition:  padding-bottom 0s ease-out, padding-top 0s ease 0s ease-out;
 
-
     .aem-Grid {
         @include container-content();
     }
+
 
      /* Tablet */
      @media (max-width: $screen-medium) {

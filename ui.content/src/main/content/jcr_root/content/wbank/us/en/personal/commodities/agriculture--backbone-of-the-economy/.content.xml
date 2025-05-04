@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/agricultural-commodity-market]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Agriculture: Backbone of the economy"
+            jcr:uuid="e1541746-924a-44e8-ad8d-cbbadbc64b23"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/commodity/agriculture--backbone-of-the-economy"
+                            paragraphScope="all"
+                            text="Agriculture: Backbone of the economy India is predominantly an agrarian economy, ranking second in farm production in the world. The contribution of agriculture to the nation’s GDP declined to less than 15 per cent in 2012¬–13, and the agricultural sector provided employment to about 52 per cent of the workforce. India exported $39 billion worth of agricultural products in 2013, making it the seventh largest agricultural exporter worldwide, and the sixth largest net exporter, says the USDA. Agriculture accounts for about 14.7 per cent of the total export earnings. Besides, goods made with the agricultural raw material also contribute about 20 per cent in Indian exports. In other words, agriculture and its related goods contribute about 38 per cent in total exports of the country. While keeping pace with the increasing population, the growing agricultural production over the past several decades has thrown up major challenges in marketing, as well as supply, storage, and distribution. With highly fragmented markets and volatile commodity prices, it is a challenge to ensure a ‘fair’ and ‘remunerative’ price for the Indian farmer. Keeping these in mind, the government introduced a number of reforms. In all this, the strengthening of existing institutions in spot and derivative trade has become crucial as commodity markets do influence the lives of millions of stakeholders in the country’s diverse and large commodity ecosystem. “Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals, and happiness”"
+                            variationName="master">
+                        <par4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

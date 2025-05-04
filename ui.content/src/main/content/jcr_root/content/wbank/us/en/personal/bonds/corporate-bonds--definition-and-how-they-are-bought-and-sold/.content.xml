@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/corporate-bonds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Corporate Bonds: Definition and How They are Bought and Sold"
+            jcr:uuid="68c393a8-81bc-446f-8fc4-f025c81c29f1"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/bonds/corporate-bonds--definition-and-how-they-are-bought-and-sold"
+                            paragraphScope="all"
+                            text="Corporate Bonds: Definition and How They are Bought and Sold What Are Corporate Bonds? Corporate bonds are debt securities issued by a corporation in order to raise money to grow the business, pay bills, make capital improvements, make acquisitions, and for other business needs. Bonds are sold to investors and the company gets the capital it needs and in return, the investor is paid a pre-established number of interest payments at either a fixed or variable interest rate. When the bond expires, or &quot;reaches maturity,&quot; the payments cease and the original investment is returned. The backing for the bond is generally the ability of the company to repay, which depends on its prospects for future revenues and profitability. In some cases, the company's physical assets may be used as collateral. KEY TAKEAWAYS A corporate bond is debt issued by a company in order for it to raise capital. An investor who buys a corporate bond is effectively lending money to the company in return for a series of interest payments, but these bonds may also actively trade on the secondary market. Corporate bonds are typically seen as somewhat riskier than U.S. government bonds, so they usually have higher interest rates to compensate for this additional risk. The highest quality (and safest, lower yielding) bonds are commonly referred to as &quot;Triple-A&quot; bonds, while the least creditworthy are termed &quot;junk&quot;. Understanding Corporate Bonds In the investment hierarchy, high-quality corporate bonds are considered a relatively safe and conservative investment. Investors building balanced portfolios often add bonds in order to offset riskier investments such as growth stocks. Over a lifetime, these investors tend to add more bonds and fewer risky investments in order to safeguard their accumulated capital. Retirees often invest a larger portion of their assets in bonds in order to establish a reliable income supplement. In general, corporate bonds are considered to have a higher risk than U.S. government bonds. As a result, interest rates are almost always higher on corporate bonds, even for companies with top-flight credit quality. The difference between the yields on highly-rated corporate bonds and U.S. Treasuries is called the credit spread. Corporate Bond Ratings Before being issued to investors, bonds are reviewed for the creditworthiness of the issuer by one or more of three U.S. rating agencies: Standard &amp; Poor's Global Ratings, Moody's Investor Services, and Fitch Ratings.123 Each has its own ranking system, but the highest-rated bonds are commonly referred to as &quot;Triple-A&quot; rated bonds. The lowest-rated corporate bonds are called high-yield bonds due to the greater interest rate applied to compensate for their higher risk. These are also known as &quot;junk&quot; bonds. Bond ratings are vital to alerting investors to the quality and stability of the bond in question. These ratings consequently greatly influence interest rates, investment appetite, and bond pricing. Companies with solvency problems, those trying to avoid bankruptcy, and those in reorganization might also offer income bonds, usually at an above-average rate. Income bonds can raise money for the struggling company and are not required to pay coupons or dividend payments. How Corporate Bonds Are Sold Corporate bonds are issued in blocks of $1,000 in face or par value. Almost all have a standard coupon payment structure. Typically a corporate issuer will enlist the help of an investment bank to underwrite and market the bond offering to investors. The investor receives regular interest payments from the issuer until the bond matures. At that point, the investor reclaims the face value of the bond. The bonds may have a fixed interest rate or a rate that floats according to the movements of a particular economic indicator. Corporate bonds sometimes have call provisions to allow for early prepayment if prevailing interest rates change so dramatically that the company deems it can do better by issuing a new bond. Investors may also opt to sell bonds before they mature. If a bond is sold, the owner gets less than face value. The amount it is worth is determined primarily by the number of payments that still are due before the bond matures. Investors may also gain access to corporate bonds by investing in any number of bond-focused mutual funds or ETFs. Why Corporations Sell Bonds Corporate bonds are a form of debt financing. They are a major source of capital for many businesses, along with equity, bank loans, and lines of credit. They often are issued to provide the ready cash for a particular project the company wants to undertake. Debt financing is sometimes preferable to issuing stock (equity financing) because it is typically cheaper for the borrowing firm and does not entail giving up any ownership stake or control in the company. Generally speaking, a company needs to have consistent earnings potential to be able to offer debt securities to the public at a favorable coupon rate. If a company's perceived credit quality is higher, it can issue more debt at lower rates. When a corporation needs a very short-term capital boost, it may sell commercial paper, which is similar to a bond but typically matures in 270 days or less. A balanced portfolio may contain some bonds to offset riskier investments. The percentage devoted to bonds may grow as the investor approaches retirement. Corporate Bonds vs. Stocks An investor who buys a corporate bond is lending money to the company. An investor who buys stock is buying an ownership share of the company. The value of a stock rises and falls, and the investor's stake rises or falls with it. The investor may make money by selling the stock when it reaches a higher price, by collecting dividends paid by the company, or both. By investing in bonds, an investor is paid in interest rather than profits. The original investment can only be at risk if the company collapses. One important difference is that even a bankrupt company must pay its bondholders and other creditors first. Stock owners may be reimbursed for their losses only after all of those debts are paid in full. Companies may also issue convertible bonds, which are able to be turned into shares of the company if certain conditions are met. Are Corporate Bonds Better Than Treasury Bonds? Whether corporate bonds are better than Treasury bonds will depend on the investor's financial profile and risk tolerance. Corporate bonds tend to pay higher interest rates because they carry more risk than government bonds. Corporations may be more likely to default than the U.S. government, hence the higher risk. Companies that have low-risk profiles will have bonds with lower rates than companies with higher-risk profiles. Do Corporate Bonds Pay Monthly? Most corporate bonds pay semi-annually; every six months; however, bonds can pay monthly, quarterly, or annually. Are Corporate Bonds FDIC Insured? No, corporate bonds are not FDIC insured. They are an investment security rather than a deposit of your funds, hence, they are not FDIC insured like your checking account is. The Bottom Line Companies need money to run their businesses. Even if they generate enough money through their core operations, it can be financially prudent to raise outside money. Companies generally have two options of doing this: equity financing and debt financing. Equity financing is the issuance of stocks and debt financing includes the issuance of bonds. Corporate bonds allow companies to raise capital without giving up ownership and to operate more freely. SPONSORED Buy, Trade, and Hold 350+ Cryptocurrencies Join 120 million registered users exchanging the world's most popular cryptocurrencies. Purchase and trade Bitcoin, Ethereum, or BNB, Binance's native coin. Whether you're a beginner trader, crypto enthusiast, or professional, you'll benefit from access to the global crypto markets while enjoying some of the lowest fees in the business. Plus, tools and guides that make it easy to safely and securely sell, buy and convert NFTs on the Binance app."
+                            variationName="master">
+                        <par43
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -32,11 +32,11 @@
                                             <personalized-email
                                                     jcr:primaryType="nt:unstructured"
                                                     text="Send Personalized Email"
-                                                    value="/content/kbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json"/>
+                                                    value="/content/wbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json"/>
                                             <bulk-email
                                                     jcr:primaryType="nt:unstructured"
                                                     text="Send Bulk Personalized Email"
-                                                    value="/content/kbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json"/>
+                                                    value="/content/wbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json"/>
                                         </items>
                                     </action-url>
                                 </items>

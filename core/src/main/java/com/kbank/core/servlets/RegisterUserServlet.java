@@ -1,8 +1,5 @@
 package com.kbank.core.servlets;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.AIGeneratedPersonalizedDataService;
@@ -14,7 +11,6 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.commons.json.JSONException;
@@ -34,8 +30,6 @@ import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
 
 @Component(service = Servlet.class)
 @SlingServletResourceTypes(
@@ -65,7 +59,7 @@ public class RegisterUserServlet extends SlingAllMethodsServlet {
 
     @Override
     protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response)
-            throws ServletException, IOException {
+            throws IOException {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
         JSONObject jsonResponse = new JSONObject();
@@ -77,11 +71,12 @@ public class RegisterUserServlet extends SlingAllMethodsServlet {
         String email = request.getParameter("j_email");
         String country = request.getParameter("j_country");
         String[] interests = request.getParameterValues("j_interests");
+        String approverEmail = request.getParameter("j_rmemail");
         try (ResourceResolver resourceResolver = resourceResolverService.getResourceResolver()) {
             if (username == null || password == null || username.isEmpty() || password.isEmpty()) {
                 jsonResponse.put("error", "Username and password must be provided");
                 response.setStatus(SlingHttpServletResponse.SC_BAD_REQUEST);
-                out.print(jsonResponse.toString());
+                out.print(jsonResponse);
                 return;
             }
 
@@ -123,11 +118,15 @@ public class RegisterUserServlet extends SlingAllMethodsServlet {
                                 Value countryValue = valueFactory.createValue(country, PropertyType.STRING);
                                 user.setProperty("profile/country", countryValue);
                             }
+                            if (approverEmail != null && !approverEmail.isEmpty()) {
+                                Value approverEmailValue = valueFactory.createValue(approverEmail, PropertyType.STRING);
+                                user.setProperty("profile/approver", approverEmailValue);
+                            }
 
-                            log.info("Generating personalized content");
+                            /*log.info("Generating personalized content");
                             JsonObject aiContent = aiGeneratedPersonalizedDataService.getPersonalizedAIGeneratedData(String.join(", ", interests), "data", null, null, request);
                             Value aiContentValue = valueFactory.createValue(aiContent.toString(), PropertyType.STRING);
-                            user.setProperty("profile/aidata", aiContentValue);
+                            user.setProperty("profile/aidata", aiContentValue);*/
 
                             // Add the user to the specified group
                             Group group = (Group) userManager.getAuthorizable("kbank-user-group");

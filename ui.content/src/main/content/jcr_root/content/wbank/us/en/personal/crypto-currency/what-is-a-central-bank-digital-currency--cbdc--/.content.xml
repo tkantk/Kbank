@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/central-bank-digital-currencies]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="What Is a Central Bank Digital Currency (CBDC)?"
+            jcr:uuid="f4e26faa-ff01-4820-8660-a05db2b86211"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/what-is-a-central-bank-digital-currency-(cbdc)-"
+                            paragraphScope="all"
+                            text="What Is a Central Bank Digital Currency (CBDC)? What Is a Central Bank Digital Currency (CBDC)? A central bank digital currency (CBDC) is a form of digital currency issued by a country's central bank. It is similar to cryptocurrencies, except that its value is fixed by the central bank and is equivalent to the country's fiat currency. Many countries are developing CBDCs, and some have even implemented them. Because so many countries are researching ways to transition to digital currencies, it's important to understand what CBDCs are and what they mean for society. KEY TAKEAWAYS A central bank digital currency (CBDC) is the digital form of a country's fiat currency. A nation's monetary authority, or central bank, issues a CBDC, which promotes financial inclusion and simplifies the implementation of monetary and fiscal policies. Many countries are exploring how CBDCs may affect their economies, financial networks, and stability. It's important for people and nations to understand central bank digital currencies because some of the world's economies are moving toward their use. Understanding Central Bank Digital Currencies (CBDCs) Fiat money is a government-issued currency that has no physical commodity like gold or silver backing it up. It is considered a form of legal tender that can be exchanged for goods and services. Traditionally, fiat money has been banknotes and coins, but technology has allowed governments and financial institutions to supplement physical fiat money with a credit-based currency model that records balances and transactions digitally. Physical currency is still widely exchanged and accepted. However, some developed countries have experienced a drop in its use, and that trend accelerated during the pandemic.1 The introduction and evolution of cryptocurrency and blockchain technology have spurred additional interest in cashless societies and digital currencies. Governments and central banks worldwide are exploring the possibility of using government-backed digital currencies. When and if they are implemented, these currencies would have the full faith and backing of the government that issues them, just as fiat money does. Purposes of CBDCs In the U.S. and many other countries, many individuals don't have access to financial services. In the U.S. alone, 6% of adults had no bank account in 2023.2 In many other countries, the numbers are much higher. With that in mind, the main purposes of CBDCs are: To provide businesses and consumers conducting financial transactions with privacy, transferability, convenience, accessibility, and financial security. Decrease the cost of maintenance that a complex financial system requires, reduce cross-border transaction costs, and provide those who currently use alternative money-transfer methods with lower-cost options.3 Reduce the risks of using digital currencies, or cryptocurrencies, in their current form. Cryptocurrencies are highly volatile, with their value constantly fluctuating. This volatility could cause severe financial stress in many households and affect the overall stability of an economy. CBDCs, backed by a government and controlled by a central bank, would give households, consumers, and businesses a secure means of exchanging digital currency. A CBDC also provides a country's central bank with the means to implement monetary policies to ensure stability, control growth, and influence inflation. Types of CBDCs There are two types of CBDCs: wholesale and retail. Financial institutions are the primary users of wholesale CBDCs, whereas consumers and businesses use retail CBDCs.4 Wholesale CBDCs Wholesale CBDCs function similarly to holding reserves in a central bank. The central bank grants an institution an account in which to deposit funds or to use to settle interbank transfers. Central banks can then use monetary policy tools, such as reserve requirements or interest on reserve balances, to set interest rates and influence lending. Retail CBDCs Retail CBDCs are government-backed digital currencies used by consumers and businesses. Retail CBDCs eliminate intermediary risk—the risk that private digital currency issuers might become bankrupt and lose customers' assets. There are two types of retail CBDCs. They differ in how individual users access and use their currency:4 Token-based retail CBDCs are accessible with private keys, public keys, or both. This method of validation allows users to execute transactions anonymously. Account-based retail CBDCs require digital identification to access an account.4 It is possible to develop and implement the two types of CBDCs and have them function in the same economy. Issues Concerning CBDCs The Federal Reserve has identified issues addressed by CBDCs, as well as matters that must be addressed before a CBDC can be designed and implemented.5 Issues Addressed By CBDCs Free from credit and liquidity risk Lower cross-border payment costs Support the international role of the dollar Aim for financial inclusion Expand access to the general public Issues Created by CBDCs Financial structure changes Financial system stability Monetary policy influence Privacy and protection Cybersecurity Issues Addressed by CBDCs Eliminate the third-party risk of events like bank failures or bank runs. Any residual risk that remains in the system rests with the central bank. Can lower high cross-border transaction costs by reducing the complex distribution systems and increasing jurisdictional cooperation between governments. Could support and protect U.S. dollar dominance; the U.S. dollar is still the most-used currency in the world.6 Remove the cost of implementing a financial structure within a country to bring financial access to the unbanked population. Can establish a direct connection between consumers and central banks, thus eliminating the need for expensive infrastructure. Issues Created by CBDCs If the U.S. financial structure drastically changes, it's unknown how it would affect household expenses, investments, banking reserves, interest rates, the financial services sector, or the economy. A switch to a CBDC could have an unknown effect on a financial system's stability. For example, there may not be enough central bank liquidity to facilitate withdrawals during a financial crisis. Central banks implement monetary policy to influence inflation, interest rates, lending, and spending, which in turn affects employment rates. Central banks must ensure that they have the tools needed to impact the economy positively. Privacy is one of the most significant drivers behind cryptocurrency. CBDCs would require an appropriate amount of intrusion by authorities to monitor for financial crimes; monitoring is also important because it supports efforts to combat money laundering and the financing of terrorism. Cryptocurrencies have been the target of hackers and thieves. A central bank-issued digital currency would likely attract the same crowd of thieves. Therefore, efforts to prevent system penetration and theft of assets and information would need to be robust. CBDCs vs. Cryptocurrencies The cryptocurrency ecosystem provides a glimpse of an alternative currency system in which cumbersome regulations don't dictate the terms of each transaction. Such transactions are hard to duplicate or counterfeit and are secured by consensus mechanisms that prevent tampering. Central bank digital currencies are designed to be similar to cryptocurrencies, but they may not require blockchain technology or consensus mechanisms.7 Additionally, cryptocurrencies are unregulated and decentralized. Their value is dictated by investor sentiments, usage, and user interest. They are volatile assets more suited for speculation, which makes them unlikely candidates for use in a financial system that requires stability. CBDCs mirror the value of fiat currency and are designed for stability and safety. CBDCs in Use and in Development Central banks in many countries have launched pilot programs and research projects to determine the viability and usability of a CBDC in their economies.8 As of March 2024, three countries had a functioning CBDC: the Bahamas, Jamaica, and Nigeria. The Eastern Caribbean Currency Union halted its CBDC for technical reasons and started a new pilot program.8 There are 36 CBDC pilots in operation and 8 of the G20 have programs in development. The BRICS countries—Brazil, Russia, India, China, and South Africa—are exploring a CBDC.8 One example of a failed CBDC attempt is the United Kingdom's Britcoin, which existed between 2011 and 2019.9 According to the Federal Reserve, the U.S. is one of those countries that is exploring whether a CBDC &quot;could improve on an already safe and efficient U.S. domestic payments system.&quot;108 What Is the Purpose of a CBDC? CBDCs are government-backed digital currencies that use blockchain or distributed ledger technology. Their purpose is to expand accessibility to financial services and lower the maintenance costs of current monetary systems. Is the U.S. Going to Digital Currency? Not yet. The Federal Reserve and its branches are researching CBDCs and ways to implement them in the U.S. financial system. President Joe Biden ordered the development of a national strategy on digital currencies.117 Has Any Country Launched a CBDC? Yes, Jamaica, Nigeria, and The Bahamas have launched CBDCs. Is CBDC a Threat? CBDCs should be implemented to enhance existing financial networks and fiat currencies, not replace them. If one was launched to replace a fiat currency, it might cause problems in a system—but no country has tried it yet, so the effects it might have are unknown or theoretical at best. The Bottom Line Many countries are researching or developing central bank digital currencies, and three have implemented them. A CBDC's main purpose is to provide businesses and consumers with privacy, transferability, convenience, accessibility, and financial security. Many individuals throughout the world have no access to bank accounts, so a CBDC would give them a way to be paid, hold their money, and pay bills. CBDCs could also decrease the maintenance a complex financial system requires, reduce cross-border transaction costs, and give people who use alternative money-transfer methods lower-cost options. The comments, opinions, and analyses expressed on Investopedia are for informational purposes online. Read our warranty and liability disclaimer for more info. SPONSORED Buy, Trade, and Hold 350+ Cryptocurrencies Join 120 million registered users exchanging the world's most popular cryptocurrencies. Purchase and trade Bitcoin, Ethereum, or BNB, Binance's native coin. Whether you're a beginner trader, crypto enthusiast, or professional, you'll benefit from access to the global crypto markets while enjoying some of the lowest fees in the business. Plus, tools and guides that make it easy to safely and securely sell, buy and convert NFTs on the Binance"
+                            variationName="master">
+                        <par66
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

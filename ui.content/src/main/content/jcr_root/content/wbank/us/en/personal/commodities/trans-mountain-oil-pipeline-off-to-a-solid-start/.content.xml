@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/commodity-market]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Trans Mountain Oil Pipeline Off to a Solid Start"
+            jcr:uuid="6fdc6616-3cf0-496a-ae63-852ba75c1b12"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/commodity/trans-mountain-oil-pipeline-off-to-a-solid-start"
+                            paragraphScope="all"
+                            text="Trans Mountain Oil Pipeline Off to a Solid Start The Trans Mountain pipeline delivered enough crude oil to load 20 tankers from Canada’s Pacific Coast in the first full month of operations of the expanded link, just below the company’s expectations, Reuters reported on Monday, citing data from tanker-tracking providers LSEG, Vortexa, and Kpler. The expanded Trans Mountain pipeline has tripled the capacity of the original pipeline to 890,000 barrels per day (bpd) from 300,000 bpd to carry crude from Alberta’s oil sands to British Columbia on the Pacific Coast. The higher shipment capacity gives Canadian crude additional access to international markets. The U.S. West Coast and Asian markets were expected to be the two top destinations for the crude now flowing through the expanded pipeline in Canada. And they were in the first month of operations of the Trans Mountain Expansion Project (TMX). A total of 20 vessels loaded crude delivered to Canada’s West Coast via TMX, compared to 22 the company – currently operated by the Canadian federal government – had expected. The initial volumes were slightly lower than expected, but this could be due to the early phase of operations, according to analysts. Traders and market analysts are closely watching Asia’s appetite for Canadian crude, as the TMX gives Canadian producers an outlet on the Asian markets and on the U.S. West Coast. The 20 tankers that left the Canadian Pacific Coast with crude delivered by TMX headed mostly to the U.S. West Coast and Asia. Some cargoes on Aframaxes – mid-sized ships that can carry about 550,000 barrels each – were loaded onto bigger tankers with destinations in India and China, per data from LSEG, Vortexa, and Kpler cited by Reuters. Rongsheng Petrochemical has become the latest refiner in China to have purchased crude oil delivered to Canada’s Pacific coast via the expanded Trans Mountain pipeline. The pipeline is set to boost the price of Canada’s heavy crude oil for years to come, top executives at the major energy firms say."
+                            variationName="master">
+                        <par10
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

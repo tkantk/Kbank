@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/stablecoins]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Stablecoins: Definition, How They Work, and Types"
+            jcr:uuid="cab87898-afe8-4b62-a633-b818108ae6a3"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/stablecoins--definition,-how-they-work,-and-types"
+                            paragraphScope="all"
+                            text="Stablecoins: Definition, How They Work, and Types What Are Stablecoins? Stablecoins are cryptocurrencies whose value is pegged, or tied, to that of another currency, commodity, or financial instrument. Stablecoins aim to provide an alternative to the high volatility of the most popular cryptocurrencies, including Bitcoin (BTC), which has made crypto investments less suitable for everyday transactions. KEY TAKEAWAYS Stablecoins are cryptocurrencies that attempt to peg their market value to some external reference. Stablecoins are more useful than volatile cryptocurrencies as a medium of exchange. Stablecoins may be pegged to a currency like the U.S. dollar or the price of a commodity such as gold. Stablecoins pursue price stability by maintaining reserve assets as collateral or through algorithmic formulas that are supposed to control supply. Stablecoins continue to come under scrutiny by regulators, given the rapid growth of the more than $162 billion market and its potential to affect the broader financial system.1 Investopedia / Daniel Fishel Why Are Stablecoins So Important? Though Bitcoin remains the most popular cryptocurrency, it tends to suffer from high volatility in its price, or exchange rate. For instance, Bitcoin's price rose from just under $5,000 in March 2020 to over $63,000 in April 2021, only to plunge almost 50% over the next two months. Intraday swings also can be wild; the cryptocurrency often moves more than 10% in the span of a few hours.2 All this volatility can be great for traders, but it turns routine transactions like purchases into risky speculation for the buyer and seller. Investors holding cryptocurrencies for long-term appreciation don't want to become famous for paying 10,000 Bitcoins for two pizzas. Meanwhile, most merchants don't want to end up taking a loss if the price of a cryptocurrency plunges after they get paid in it. To serve as a medium of exchange, a currency that's not legal tender must remain relatively stable, assuring those who accept it that it will retain purchasing power in the short term. Among traditional fiat currencies, daily moves of even 1% in forex trading are relatively rare. As the name implies, stablecoins aim to address this problem by promising to hold the value of the cryptocurrency steady in a variety of ways. Investors should approach stablecoins cautiously because they require independent auditors to verify collateral or reserves. Most auditors are honest in their work, but the fact remains that there needs to be an auditor to verify that commodities are held. Auditors are another third party involved in a &quot;decentralized&quot; monetary system intended to remove third parties that have, historically, been the ones propagating fraud and unethical practices. Some would argue that stablecoins are a solution in search of a problem, given the wide availability and acceptance of the U.S. dollar. Many cryptocurrency adherents, on the other hand, believe the future belongs to digital tender that is not controlled by central banks. With that in mind, four types of stablecoins, based on the assets used to stabilize their value, have been created. Fiat-Collateralized Stablecoins Fiat-collateralized stablecoins maintain a reserve of a fiat currency (or currencies), such as the U.S. dollar, as collateral, assuring the stablecoin's value. Such reserves are maintained by independent custodians and are regularly audited, something that should be considered cautiously. Tether (USDT) and TrueUSD (TUSD) are popular stablecoins backed by U.S. dollar reserves and denominated at parity to the dollar. As of late June 2024, Tether (USDT) was the third-largest cryptocurrency by market capitalization, worth more than $112 billion.3 You can invest in stablecoins like Tether on some of the best crypto exchanges and apps like Kraken and Coinbase. Commodity-Backed Stablecoins Somewhat of a sub-category of fiat-collateralized coins, commodity-backed stablecoins are cryptocurrencies that are pegged to the market value of commodities such as gold, silver, or oil. These stablecoins generally hold the commodity using third-party custodians or by investing in instruments that hold them. One of the most popular commodity-backed tokens is Tether Gold (XAUt), a cryptocurrency backed by gold reserves. The gold is thought to be held by an unnamed custodian in Switzerland, as the terms of service state: A Gold Token holder who has effectuated redemption can elect to receive physical delivery of their gold bar at a place of their choosing, acting reasonably, in Switzerland (subject to the payment of fees in accordance with the Gold Token Fee Schedule in effect at the time of redemption).4 Crypto-Collateralized Stablecoins Crypto-collateralized stablecoins are backed by other cryptocurrencies. Because the reserve cryptocurrency may also be prone to high volatility, such stablecoins are generally overcollateralized—that is, the value of cryptocurrency held in reserves exceeds the value of the stablecoins issued. Cryptocurrencies worth $2 million might be held as a reserve to issue $1 million in a crypto-backed stablecoin, insuring against a 50% decline in the price of the reserve cryptocurrency. For example, MakerDAO's Dai (DAI) stablecoin pegged to the U.S. dollar but is backed by Ethereum (ETH) and other cryptocurrencies worth about 155% of the DAI stablecoin in circulation.5 Algorithmic Stablecoins Algorithmic stablecoins may or may not hold reserve assets. Their primary distinction is the strategy of keeping the stablecoin's value stable by controlling its supply through an algorithm, essentially a computer program running a preset formula. In some ways, that's not so different from central banks, which also don't rely on a reserve asset to keep the value of the currency they issue stable. The difference is that a central bank like the U.S. Federal Reserve sets monetary policy publicly based on well-understood parameters, and its status as the issuer of legal tender does wonders for the credibility of that policy. Algorithmic stablecoin issuers can't fall back on such advantages in a crisis. The price of the TerraUSD (UST) algorithmic stablecoin plunged more than 60% on May 11, 2022, vaporizing its peg to the U.S. dollar, as the price of the related Luna token used to peg Terra slumped more than 80% overnight.6 Stablecoin Regulations Stablecoins continue to come under scrutiny by regulators, given the rapid growth of the $162 billion market and its potential to affect the broader financial system.7 In October 2021, the International Organization of Securities Commissions (IOSCO) said stablecoins should be regulated as financial market infrastructure alongside payment systems and clearinghouses. Its proposed rules focus on stablecoins that are deemed systemically important by regulators, those with the potential to disrupt payment and settlement transactions.8 Moreover, politicians in the U.S. have increased calls for tighter regulation of stablecoins. For instance, in November 2021, Senator Cynthia Lummis (R-Wyoming) called for regular audits of stablecoin issuers, while others back bank-like regulations for the sector.9 In 2024, Senators Lummis and Kirsten Gillibrand introduced a bill to create a regulatory framework for stablecoins. Their proposed framework would prohibit anyone from issuing a stablecoin unless they were a registered non-depository trust or a depository institution with authorization to issue them.10 In Europe, under the Markets in Crypto Assets Regulation, which took effect in 2023, algorithmic stablecoins are essentially banned, and all others must have assets held in custody by a third party. Reserves must be liquid and have a 1:1 ratio of assets to coins.11 Is Stablecoin a Bitcoin? Stablecoins are not bitcoins. Stablecoins aim to provide an alternative to the high volatility of popular cryptocurrencies, which can make cryptocurrency less suitable for common transactions. How Do Stablecoins Work? Stablecoins attempt to peg their market value to some external reference, usually a fiat currency. They are more useful than volatile cryptocurrencies as a medium of exchange. Stablecoins may be pegged to a currency like the U.S. dollar, the price of a commodity such as gold, or use an algorithm to control supply. They also maintain reserve assets as collateral or through algorithmic formulas that are supposed to control supply. Which Is the Best Stablecoin? The most popular and largest stablecoin by market capitalization is Tether (USDT).1 It is pegged to the U.S. dollar at a 1:1 ratio and backed by reserves. It's also consistently in the top five cryptocurrencies by market cap. You can find Tether on most major crypto exchanges, including Kraken, Binance, and Coinbase. The Bottom Line Stablecoins are cryptocurrencies with a peg to other assets, such as fiat currency or commodities held in reserve. The intent behind them is to create a crypto asset with much lower price volatility, which makes them better for use in transactions. Stablecoins have become or are becoming regulated in many jurisdictions because of the instabilities and losses that have occurred in past attempts to create stable coins. The comments, opinions, and analyses expressed on Investopedia are for informational purposes only. Read our warranty and liability disclaimer for more info. As of the date this article was written, the author does not own cryptocurrency. SPONSORED Trade on the Go. Anywhere, Anytime One of the world's largest crypto-asset exchanges is ready for you. Enjoy competitive fees and dedicated customer support while trading securely. You'll also have access to Binance tools that make it easier than ever to view your trade history, manage auto-investments, view price charts, and make conversions with zero fees. Make an account for free and join millions of traders and investors on the global crypto market."
+                            variationName="master">
+                        <par44
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -26,6 +26,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.jcr.RepositoryException;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -114,6 +115,8 @@ public class NewsLetterGeneratorScheduledTask implements Runnable {
         } catch (IOException | URISyntaxException | InterruptedException | LoginException | IllegalBlockSizeException |
                  NoSuchPaddingException | BadPaddingException | NoSuchAlgorithmException | InvalidKeyException |
                  RepositoryException e) {
+            throw new RuntimeException(e);
+        } catch (InvalidAlgorithmParameterException e) {
             throw new RuntimeException(e);
         }
     }

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/non-fungible-tokens,kbank:kbank-articles/utility-tokens]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Non-Fungible Token (NFT): What It Means and How It Works"
+            jcr:uuid="bc5e8c28-8c28-4c58-a050-54aeddf56f37"
+            sling:resourceType="kbank/components/page"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/non-fungible-token-(nft)--what-it-means-and-how-it-works"
+                            paragraphScope="all"
+                            text="Non-Fungible Token (NFT): What It Means and How It Works What Is a Non-Fungible Token (NFT)? Non-fungible tokens (NFTs) are assets like a piece of art, digital content, or video that have been tokenized via a blockchain. Tokens are unique identification codes created from metadata via an encryption function. These tokens are then stored on a blockchain, while the assets themselves are stored in other places. The connection between the token and the asset is what makes them unique. NFTs can be traded and exchanged for money, cryptocurrencies, or other NFTs—it all depends on the value the market and owners have placed on them. For instance, you could draw a smiley face on a banana, take a picture of it (which has metadata attached to it), and tokenize it on a blockchain. Whoever has the private keys to that token owns whatever rights you have assigned to it. Cryptocurrencies are tokens as well; however, the key difference is that two cryptocurrencies from the same blockchain are interchangeable—they are fungible. Two NFTs from the same blockchain can look identical, but they are not interchangeable. KEY TAKEAWAYS NFTs (non-fungible tokens) are unique cryptographic tokens that exist on a blockchain and cannot be replicated. NFTs can represent digital or real-world items like artwork and real estate. &quot;Tokenizing&quot; these real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can represent individuals' identities, property rights, and more. Collectors and investors initially sought NFTs after the public became more aware of them, but their popularity has since waned. Investopedia / Julie Bang History of Non-Fungible Tokens (NFTs) NFTs were created long before they became popular in the mainstream. Reportedly, the first NFT sold was &quot;Quantum,&quot; designed and tokenized by Kevin McKoy in 2014 on one blockchain (Namecoin), then minted on Ethereum and sold in 2021.1 NFTs are built following the ERC-721 (Ethereum Request for Comment #721) standard, which dictates how ownership is transferred, methods for confirming transactions, and how applications handle safe transfers (among other requirements).23 The ERC-1155 standard, approved six months after ERC-721, improves upon ERC-721 by batching multiple non-fungible tokens into a single contract, reducing transaction costs.45 In early March 2021, a group of NFTs by digital artist Beeple sold for over $69 million. The sale set a precedent and record for the most expensive digital art sold at the time. The artwork was a collage comprised of Beeple's first 5,000 days of work.6 How NFTs Work NFTs are created through a process called minting, in which the asset's information is encrypted and recorded on a blockchain. At a high level, the minting process entails a new block being created, NFT information being validated by a validator, and the block being closed. This minting process often entails incorporating smart contracts that assign ownership and manage NFT transfers. As tokens are minted, they are assigned a unique identifier directly linked to one blockchain address. Each token has an owner, and the ownership information (i.e., the address in which the minted token resides) is publicly available. Even if 5,000 NFTs of the same exact item are minted (similar to general admission tickets to a movie), each token has a unique identifier and can be distinguished from the others. Many blockchains can create NFTs, but they might be called something different. For instance, on the Bitcoin blockchain, they are called Ordinals. Like an Ethereum-based NFT, a Bitcoin Ordinal can be bought, sold, and traded. The difference is Ethereum creates tokens for the asset, while Ordinals have serial numbers (called identifiers) assigned to satoshis—the smallest bitcoin denomination.7 Blockchain and Fungibility Like physical money, cryptocurrencies are usually fungible from a financial perspective, meaning that they can be traded or exchanged, one for another. For example, one bitcoin is always equal in value to another bitcoin on a given exchange, similar to how every dollar bill of U.S. currency has an implicit exchange value of $1. This fungibility characteristic makes cryptocurrencies suitable as a secure medium of transaction in the digital economy. For this reason, NFTs shift the crypto paradigm by making each token unique and irreplaceable, making it impossible for one non-fungible token to be &quot;equal&quot; to another. They are digital representations of assets and have been likened to digital passports because each token contains a unique, non-transferable identity to distinguish it from other tokens. They are also extensible, meaning you can combine one NFT with another to create a third, unique NFT—the cryptocurrency industry calls this &quot;breeding.&quot; Examples of NFTs Perhaps the most famous use case for NFTs is that of cryptokitties. Launched in November 2017, cryptokitties are digital representations of cats with unique identifications on Ethereum’s blockchain. Each kitty is unique and has a different price. They &quot;reproduce&quot; among themselves and create new offspring with other attributes and valuations compared to their &quot;parents.&quot;8 Within a few short weeks of their launch, cryptokitties racked up a fan base that spent millions in ether to purchase, feed, and nurture them. Much of the earlier market for NFTs was centered around digital art and collectibles, but it has evolved into much more. For instance, the popular NFT marketplace OpenSea has several NFT categories: Photography: Photographers can tokenize their work and offer total or partial ownership. For example, OpenSea user erubes1 has an &quot;Ocean Intersection&quot; collection of beautiful ocean and surfing photos with several sales and owners. Sports: Collections of digital art based on celebrities and sports personalities. Trading cards: Tokenized digital trading cards. Some are collectibles, while others can be traded in video games. Utility: NFTs that can represent membership or unlock benefits. Virtual worlds: Virtual world NFTs grant you ownership of anything from avatar wearables to digital property. Art: A generalized category of NFTs that includes everything from pixel to abstract art. Collectibles: Bored Ape Yacht Club, Crypto Punks, and Pudgy Panda are some examples of NFTs in this category. Domain names: NFTs that represent ownership of domain names for your website(s) Music: Artists can tokenize their music, granting buyers the rights the artist wants them to have. Benefits of NFTs Perhaps the most apparent benefit of NFTs is market efficiency. Tokenizing a physical asset can streamline sales processes and remove intermediaries. NFTs representing digital or physical artwork on a blockchain can eliminate the need for agents and allow sellers to connect directly with their target audiences (assuming the artists know how to host their NFTs securely). Investing NFTs can also be used to streamline investing. For example, consulting firm Ernst &amp; Young developed an NFT solution for one of its fine wine investors—by storing wine in a secure environment and using NFTs to protect provenance.9 Real estate can also be tokenized—a property could be parceled into multiple sections, each containing different characteristics. For example, one of the sections might be on a lakeside, while another is closer to the forest. Depending on its features, each piece of land could be unique, priced differently, and represented by an NFT. Real estate trading, a complex and bureaucratic affair, could then be simplified by incorporating relevant metadata into a unique NFT associated with only the corresponding portion of the property. NFTs can represent ownership in a business, much like stocks—in fact, stock ownership is already tracked via ledgers that contain information such as the stockholder's name, date of issuance, certificate number, and the number of shares. A blockchain is a distributed and secured ledger, so issuing NFTs to represent shares serves the same purpose as issuing stocks. The main advantage to using NFTs and blockchain instead of a stock ledger is that smart contracts can automate ownership transferral—once an NFT share is sold, the blockchain can take care of everything else. Security Non-fungible tokens are also very useful in identity security. For example, personal information stored on an immutable blockchain cannot be accessed, stolen, or used by anyone who doesn't have the keys. NFTs can also democratize investing by fractionalizing physical assets. Fractionalized ownership through tokenization can extend to many assets. For instance, a painting need not always have a single owner—tokenization allows multiple people to purchase a share of it, transferring ownership of a fraction of the physical painting to them. Concerns About Non-Fungible Tokens While there are numerous benefits for creators, owners, investors, and other interested parties, there are several issues that should concern you if you're considering investing or minting NFTs. The token represents ownership via hashed metadata and matching key pairs generated by your wallet. The image, video, music, or other digitized item can be copied and circulated without your permission using various techniques. It's very easy to copy an image by right-clicking on it and saving it. The person who does this to a tokenized digital asset is pirating the asset because there is established ownership. However, it is up to the owner to locate and file charges against the multitudes of people who might do this. Non-fungible tokens are also very limited by their liquidity. They attract a specific audience of collectors or buyers because they are much more specific than cryptocurrencies. If you find yourself holding an NFT you no longer want, it might be difficult to find a buyer if that type is no longer popular. How Does NFT Make Money? It depends on what the NFT represents. If it is tokenized real estate, the NFT would be exchanged for the property's market value, which, if it has appreciated, would generate a return for the seller. If the NFT were an image of a monkey in a hat, it would depend on that specific token's market value. If its price had increased since it was last purchased, a seller would earn a profit. What Is the Point of Having NFTs? Non-fungible tokens can be valuable to the right person. To an investor, they might appreciate in value. To a collector, they might just be a collection they want to keep. Another person might only want to own it, yet another might consider it memorabilia of a specific moment they treasure. What Is the Meaning of NFT? Non-fungible token (NFT) is the opposite of a fungible token, which describes the interchangeability of a token. For example, say you had three notes with identical smiley faces drawn on them. When you tokenize one of them, that note becomes distinguishable from the others—it is non-fungible. The other two notes are indistinguishable, so they can each take the place of the other. What Is the Concept Behind NFTs? The idea behind NFTs is to create tokens that represent ownership. The token could represent anything from a digital image to partial ownership of an interstellar spaceship. In theory, because they are created using blockchain technology, they are immutable, secure, and don't require the intervention of third parties. The Bottom Line Non-fungible tokens are an evolution of the cryptocurrency concept. Modern finance systems consist of sophisticated trading and loan systems for different asset types, from real estate to lending contracts to artwork. By enabling digital representations of assets, NFTs are a step forward in the reinvention of this infrastructure. To be sure, the idea of digital representations of physical assets is not novel, nor is the use of unique identification. However, when these concepts are combined with the benefits of a tamper-resistant blockchain with smart contracts and automation, they become a potent force for change."
+                            variationName="master">
+                        <par47
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

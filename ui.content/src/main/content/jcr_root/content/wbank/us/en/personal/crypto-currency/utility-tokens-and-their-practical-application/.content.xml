@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/utility-tokens]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Utility Tokens And Their Practical Application"
+            jcr:uuid="a9cd1a20-1ae6-4124-832a-a4321f00fe27"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/utility-tokens-and-their-practical-application"
+                            paragraphScope="all"
+                            text="Utility Tokens And Their Practical Application Utility tokens will have to get in sync with the new reality to stay relevant. The decentralised market is highly segmented based on project type and the assets they employ to make their internal economies run and function smoothly. The segmentation is the 2017 ICO boom’s result, which saw the release of thousands of projects, each vying for its share of the market. The blockchain allows the release of various tokens that can be tethered to smart contracts and used as value and action vehicles within a project’s ecosystem. The most numerous type of tokens that emerged on the wave of the 2017 ICO hype era was the utility token. Utility Tokens Utility tokens are exactly what their namesake implies – they are utility carriers within blockchain systems. Each utility token is endowed with a smart contract that entails an “if-then” application scenario. Such tokens act as access keys to various functions within the framework of projects. Essentially acting as a premium currency, the utility token allows its holder to use the functionality the project provides. The use of utility tokens within projects, in some cases, has been proven a flop since the value of the underlying applications has not been properly founded. Such utility tokens have ended up worthless after the hype of their short-term trading and pumps wore off, and the releasing projects failed to attract a large enough following of actual users to operate. Nonetheless, the proper deployment of utility tokens endowed with additional features and rewards for their ownership has allowed some projects to develop working economies. The ability to burn utility tokens, permanently removing them from circulation, has also boosted their applicability as deflationary instruments, further increasing their value through artificial decreases in supply. Leading Exchange Tokens As leading hubs of decentralised market activity, cryptocurrency exchanges have leveraged utility tokens to the fullest extent, incorporating them as native platform currencies. Most of the major exchanges employ native utility tokens that give their holders a host of advantages and access to various additional functionality, ranging from lower commissions to shares of exchange profit distribution among communities. Cronos (CRO) Crypto.com, recently rebranded to Cronos, is a solid example of the use of utility tokens. Cronos positions itself as an all-in-one cryptocurrency platform for consumers offering services such as exchange, wallet, brokerage, debit cards, borrow/lend, payments, and DeFi. The native CRO utility token gives its holders the advantages of discounted trading fees, higher earnings, priority token allocations, preferential rates, exclusive benefits with mobile crypto payments, and much more. The CRO has been gaining traction since its launch in late 2018. The token saw an all-time high of $0.9 in November 2021 and an all-time low of $0.01 in February 2019. Binance (BNB) The Binance BNB token is another outstanding example of a market-favourite utility token. The Binance exchange is the leading trading venue, in no small part thanks to its BNB token, which allows its holders to rise the trading tiers and reduce trading fees. It also enables its owners to partake in IEO lotteries, use the BNB as a means of payment, access closed sales, receive rewards, and more. The BNB has risen since its humble launch in 2017 from $0.03 to an astounding all-time high of $686.31 in May of 2021. Uniswap (UNI) Uniswap is no less worthy of attention in this regard, as its UNI utility token is high on the heels of many of its competitors. Uniswap is a decentralised exchange (DEX) that makes it easy for users to swap an ERC-20 token for another ERC-20 token without a centralised intermediary. With a DEX, traders do not have to deposit their tokens on an exchange and be exposed to the security risks of a centralised exchange. All users of Uniswap need is a wallet to access the automated market maker mechanism where Liquidity Providers (LP) deposit tokens into the smart contract, and the liquidity then provides a price quote to traders without relying on any professional market makers. The UNI token facilitates all of the associated processes as a governance token introduced in September of 2020 through a retrospective airdrop to users who have interacted with the protocol by swapping tokens or providing liquidity. The UNI token allows token holders to participate in the protocol’s governance. Key decisions such as usage of the treasury or future upgrades can be decided through a governance vote. UNI has since seen an all-time low of $1.03 at launch and rose to $44.92 in May of 2021 before stabilising at its present price of $11.33. Bitcoin.com (Verse) But other competitors are encroaching, not the least of which is Bitcoin.com with its Verse rewards and utility token. The Bitcoin.com resource is best known as a gateway to all things Bitcoin, including news, educational materials, and the most secure and easy-to-use non-custodial multicoin wallet, accessible bridges between fiat and crypto. With its 29 million monthly active users, the channel is preparing to storm the utility tokens market, endowing Verse with user bootstrapping qualities that turn it into a powerful loyalty mechanism. Holders of Verse will be able to earn rewards, progress through a tier-based system, stake their Verse tokens in liquidity pools, and rely on it as an essential onramp to decentralised finance venues. Klever.io (KLV) Klever.io is an exchange that strives to make it as simple as possible to get onboarded into crypto. Always wanting the best for their community and its newcomers, Klever has recently partnered with Mercuryo, enabling them to onboard news users in over 160+ countries smoothly and simply. Thus, taking down yet another barrier to entry between prospective users and crypto. Their utility token, Klever (KLV), can be used in many ways on the platform. The Klever team believes having a utility token powering their products and services strengthens their relationship with their community and enables partnership deals that otherwise might not be possible. Klever ensures that anything on its platform can be done with KLV. Using KLV, you can pay Klever blockchain fees, exchanges and swaps, make and accept payments, or even purchase NFTs in their embedded Klever NFT marketplace. Issues of Utility Tokens The utility token’s value has come a long way since its 2017 heyday and has boiled down to the actual rewards it yields to its holders rather than its utility within a project’s framework. In addition to practical application issues, utility tokens remain unregulated, and their status is still moot. Most are still deemed as speculative assets. The Future of Utility Tokens As project development teams are starting to realise that using fiat funds within decentralised projects is more of pragmatic reality, rather than a betrayal of the virtues of decentralisation, the need for deploying utility tokens is eventually fading. The use of NFTs as versatile, cross-chain, and accessible instruments for interaction with the blockchain also casts a long shadow on the practical need for utility tokens. The ones that remain will do so largely thanks to the value they yield to their users in terms of the prominence of the issuing platform and the additional benefits they provide, as is the case with exchange tokens. The Bottom Line With the unstoppable development of the blockchain market, its growing adoption, and the emergence of entirely new types of digital assets, utility tokens will have to get in sync with the new reality to stay relevant. And that’s when the holder’s tangible value comes to the fore."
+                            variationName="master">
+                        <par34
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/forex-market,kbank:kbank-articles/spot-forex-market]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="What Is Spot Trading and How Do You Profit? How It Works"
+            jcr:uuid="92350ca0-90c0-4006-b529-a9baa60e0ba0"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="What Is Spot Trading and How Do You Profit? How It Works"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/forex/what-is-spot-trading-and-how-do-you-profit--how-it-works"
+                            paragraphScope="all"
+                            text="What Is Spot Trading and How Do You Profit? How It Works What Is a Spot Trade? A spot trade, also known as a spot transaction, refers to the purchase or sale of a foreign currency, financial instrument, or commodity for instant delivery on a specified spot date. Most spot contracts include the physical delivery of the currency, commodity, or instrument; the difference in the price of a future or forward contract versus a spot contract takes into account the time value of the payment, based on interest rates and the time to maturity. In a foreign exchange spot trade, the exchange rate on which the transaction is based is referred to as the spot exchange rate. A spot trade can be contrasted with a forward or futures trade. KEY TAKEAWAYS Spot trades involve securities traded for immediate delivery in the market on a specified date. Spot trades include the buying or selling of foreign currency, a financial instrument, or commodity Many assets quote a “spot price” and a “futures or forward price.” Most spot market transactions have a T+1 settlement date. Spot market transactions can take place on an exchange or over-the-counter. Understanding a Spot Trade Foreign exchange spot contracts are the most common type and are usually specified for delivery in two business days, while most other financial instruments settle the next business day. The spot foreign exchange (forex) market trades electronically around the world. It is the world's largest market, with over $7.55 trillion traded daily; its size dwarfs both the interest rate and commodity markets.123 The current price of a financial instrument is called the spot price. It is the price at which an instrument can be sold or bought immediately. Buyers and sellers create the spot price by posting their buy and sell orders. In liquid markets, the spot price may change by the second, as outstanding orders get filled and new ones enter the marketplace. Foreign exchange spot contracts are the most popular and the spot foreign exchange market, traded electronically, is the largest in the world.4 Special Considerations Forward Pricing The price for any instrument that settles later than the spot is a combination of the spot price and the interest cost until the settlement date. In the case of forex, the interest rate differential between the two currencies is used for this calculation. Other Spot Markets Most interest rate products, such as bonds and options, trade for spot settlement on the next business day. Contracts are most commonly between two financial institutions, but they can also be between a company and a financial institution. An interest rate swap in which the near leg is for the spot date usually settles in one business days.5 Commodities are usually traded on an exchange. The most popular is the CME Group (previously known as the Chicago Mercantile Exchange) and the Intercontinental Exchange, which owns the New York Stock Exchange (NYSE).67 Most commodity trading is for future settlement and is not delivered; the contract is sold back to the exchange prior to maturity, and the gain or loss is settled in cash. SPONSORED Buy, Trade, and Hold 350+ Cryptocurrencies Join 120 million registered users exchanging the world's most popular cryptocurrencies. Purchase and trade Bitcoin, Ethereum, or BNB, Binance's native coin. Whether you're a beginner trader, crypto enthusiast, or professional, you'll benefit from access to the global crypto markets while enjoying some of the lowest fees in the business. Plus, tools and guides that make it easy to safely and securely sell, buy and convert NFTs on the Binance app."
+                            variationName="master">
+                        <par18
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

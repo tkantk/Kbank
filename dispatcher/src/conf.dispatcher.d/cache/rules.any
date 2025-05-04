@@ -5,3 +5,20 @@
 #
 
 $include "./default_rules.any"
+/0900 {
+    /glob "/content/${CONTENT_FOLDER_NAME}/*"
+    /type "allow"
+}
+/0901 {
+    /glob "*.png"
+    /type "allow"
+}
+/0902 {
+    /glob "*.jpg"
+    /type "allow"
+}
+/0903 {
+    /glob "*.svg"
+    /type "allow"
+}
+

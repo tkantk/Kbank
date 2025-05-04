@@ -1,108 +1,100 @@
-/*
- *  Copyright 2019 Adobe Systems Incorporated
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
 
-/* kbank Article Card Default Style */
-@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
-@import 'mixins';
 
-.blog-wrapper{
-  padding:15px;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  flex-wrap:wrap;
-  .blog-card{
-    @include transition(.3s);
-    max-width:300px;
-    margin:15px;
-    background:#fff;
-    border:1px solid #00a94f;
-    text-align:center;
-    cursor:pointer;
-    &:hover{
-      box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
-      .card-img{
-        img{
-          opacity:0.8;
-        }
-      }
+/* kbank Article Card Default Style*/
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Asar&display=swap);
+
+.blog-wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .blog-card {
+    max-width: 340px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: #00a94f;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    .card-img{
-      position:relative;
-      text-align:center;
-      background:#00a94f;
-      img{
-        @include transition(.3s);
-        max-height:180px;
-        width:100%;
-        border-bottom:4px solid #00a94f;
+
+    .card-img {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
       }
-      &:before{
-        content:'';
+
+      h1 {
         position: absolute;
-        bottom: -8px;
-        left: 50%;
-        margin-left: -10px;
-        width: 0;
-        height: 0;
-        border-top: solid 10px #00a94f;
-        border-left: solid 10px transparent;
-        border-right: solid 10px transparent;
-      }
-      h1{
-        position:absolute;
-        margin:0;
-        font-size:28px;
-        bottom:15px;
-        width:100%;
-        color:#fff;
-        font-family: 'Slabo 27px', serif;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 24px;
+        color: #fff;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
       }
     }
-    .card-details{
-      margin-top:30px;
-      font-family: 'Roboto', sans-serif;
-      color:#3C3C3C;
-      span{
-        padding:0 30px;
-        i{
-          margin-right:5px;
-        }
 
+    .card-details {
+      padding: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #555;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 5px;
+          color: #00a94f;
+        }
       }
     }
-    .card-text{
-      padding:30px 15px;
-      font-family: 'Roboto', sans-serif;
-      line-height:22px;
+
+    .card-text {
+      padding: 0 20px 20px;
+      font-family: 'Asar', serif;
+      line-height: 1.6;
+      color: #333;
     }
-    .read-more{
-      @include transition(.3s);
-      display:inline-block;
-      width:auto;
-      text-align:center;
-      text-transform:uppercase;
-      background:#00a94f;
-      color:#fff;
-      padding:15px;
-      margin-bottom:30px;
-      font-family: 'Oswald', sans-serif;
-      &:hover{
-        background: darken(#00a94f,20%);
+
+    .read-more {
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      text-transform: uppercase;
+      background: #00a94f;
+      color: #fff;
+      padding: 12px 25px;
+      margin: 0 20px 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background: #008f42;
       }
+
       a {
         color: #fff;
         text-decoration: none;
@@ -111,3 +103,156 @@
   }
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  overflow: hidden; // Changed from overflow-y: auto
+  font-family: 'Source Sans Pro', sans-serif;
+  will-change: opacity;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.popup.active {
+  display: block;
+  opacity: 1;
+}
+
+.popup-content {
+  position: absolute; // Changed from relative
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh; // Added max-height
+  overflow-y: auto; // Added scroll to content instead of entire popup
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  will-change: transform;
+}
+
+.popup-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 15px;
+  letter-spacing: 0.5px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.popup-description {
+  font-size: 1.1rem;
+  font-family: 'Asar', serif;
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.popup-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00a94f;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  &:hover {
+    background-color: #008f42;
+    transform: translateY(-2px);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: #bdc3c7;
+  transition: color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    color: #7f8c8d;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .popup-content {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .popup-title {
+    font-size: 1.7em;
+  }
+
+  .popup-description {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}

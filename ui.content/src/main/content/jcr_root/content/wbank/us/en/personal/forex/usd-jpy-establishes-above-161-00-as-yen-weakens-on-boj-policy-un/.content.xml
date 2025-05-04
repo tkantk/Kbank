@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/forex-market]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="USD/JPY establishes above 161.00 as Yen weakens on BoJ policy uncertainty"
+            jcr:uuid="4be815bf-e7eb-410c-ba02-278b78f6fe03"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/forex/usd-jpy-establishes-above-161-00-as-yen-weakens-on-boj-policy-uncertainty"
+                            paragraphScope="all"
+                            text="USD/JPY establishes above 161.00 as Yen weakens on BoJ policy uncertainty USD/JPY stays strong above 161.00 amid sheer weakness in the Japanese Yen. The BoJ eyes further policy tightening due to the weak Yen. Weak US Manufacturing PMI weighs on the US Dollar. The USD/JPY pair shifts auction above 161.00 in Monday’s New York session. The asset strengthens further as the Japanese Yen weakens amid uncertainty over Bank of Japan’s policy outlook. Recent BoJ policy minutes showed that officials favored further policy tightening as the weak Japanese Yen is boosting inflationary pressures. Sheer depreciation in the Japanese currency has made exports more competitive and has prompted import costs. Growing speculation for more rate hikes appears to be unpleasant for investors as they expect that the wage-growth spiral should be the reason behind further policy tightening. Also, expectations of Japan’s intervention in the FX domain are high as Yen has weakened to a multi-decade low against the US Dollar (USD). Japan’s administration has been warning of a stealth intervention against rapid, one-sided FX moves. Meanwhile, the US Dollar faces pressure due to weak United States (US) ISM Manufacturing PMI data for June. The Manufacturing PMI, which gauges activities in the factory sector, unexpectedly declined to 48.5. Economists expected the factory activity to improve to 49.1 from the prior release of 48.7. A figure below the 50.0 threshold is considered as contraction in manufacturing activities. Inflation in the manufacturing sector also dropped as the Prices Paid index, which indicates prices paid for inputs such as raw materials and wages, expanded at a slower pace to 52.1 from the estimates of 55.9 and the prior release of 57.0. A decline in the Prices Paid suggests a softening of price pressures. This will boost expectations of early rate cuts by the Federal Reserve (Fed). ECONOMIC INDICATOR ISM Manufacturing PMI The Institute for Supply Management (ISM) Manufacturing Purchasing Managers Index (PMI), released on a monthly basis, is a leading indicator gauging business activity in the US manufacturing sector. The indicator is obtained from a survey of manufacturing supply executives based on information they have collected within their respective organizations. Survey responses reflect the change, if any, in the current month compared to the previous month. A reading above 50 indicates that the manufacturing economy is generally expanding, a bullish sign for the US Dollar (USD). A reading below 50 signals that factory activity is generally declining, which is seen as bearish for USD. Read more. Last release: Mon Jul 01, 2024 14:00 Frequency: Monthly Actual: 48.5 Consensus: 49.1 Previous: 48.7 Source: Institute for Supply Management Why it matters to traders? The Institute for Supply Management’s (ISM) Manufacturing Purchasing Managers Index (PMI) provides a reliable outlook on the state of the US manufacturing sector. A reading above 50 suggests that the business activity expanded during the survey period and vice versa. PMIs are considered to be leading indicators and could signal a shift in the economic cycle. Stronger-than-expected prints usually have a positive impact on the USD. In addition to the headline PMI, the Employment Index and the Prices Paid Index numbers are watched closely as they shine a light on the labour market and inflation."
+                            variationName="master">
+                        <par19
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

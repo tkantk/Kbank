@@ -4,11 +4,7 @@ import com.google.gson.JsonObject;
 import com.kbank.core.schedulers.NewsLetterGeneratorScheduledTask;
 import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.AIGeneratedPersonalizedDataService;
-import com.kbank.core.services.ResourceResolverService;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.jackrabbit.api.security.user.Authorizable;
-import org.apache.jackrabbit.api.security.user.Group;
-import org.apache.jackrabbit.api.security.user.User;
 import org.apache.jackrabbit.api.security.user.UserManager;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -16,8 +12,6 @@ import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
-import org.apache.sling.commons.json.JSONException;
-import org.apache.sling.commons.json.JSONObject;
 import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -27,16 +21,17 @@ import org.slf4j.LoggerFactory;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import javax.jcr.*;
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
+import javax.jcr.Session;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.*;
-import java.util.stream.Collectors;
 
 @Component(service = Servlet.class)
 @SlingServletResourceTypes(
@@ -62,7 +57,7 @@ public class SendPersonalizedEmail extends SlingAllMethodsServlet {
 
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
-            throws ServletException, IOException {
+            throws IOException {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
         JsonObject jsonResponse = new JsonObject();
@@ -79,9 +74,12 @@ public class SendPersonalizedEmail extends SlingAllMethodsServlet {
             UserManager userManager = resourceResolver.adaptTo(UserManager.class);
 
             // Get the Authorizable object for the current user
+            assert userManager != null;
+            assert session != null;
             Authorizable authorizable = userManager.getAuthorizable(session.getUserID());
 
             // Get the user's profile
+            assert authorizable != null;
             Node profileNode = (Node) session.getItem(authorizable.getPath() + "/profile");
             if ("bulkEmail".equalsIgnoreCase(type)) {
                 // Send the bulk email
@@ -128,9 +126,11 @@ public class SendPersonalizedEmail extends SlingAllMethodsServlet {
             log.error("Error getting user profile details", e);
             jsonResponse.addProperty("status", "error");
             jsonResponse.addProperty("message", "Error sending personalized email");
+        } catch (InvalidAlgorithmParameterException e) {
+            throw new RuntimeException(e);
         }
 
-        out.print(jsonResponse.toString());
+        out.print(jsonResponse);
     }
 
 }

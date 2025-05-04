@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/payment-cryptocurrency]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Bitcoin price today: climbs near $63K with Mt Gox, rate signals in focus"
+            jcr:uuid="fb896919-2434-43fa-9c7c-e37705936803"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/bitcoin-price-today--climbs-near-$63k-with-mt-gox,-rate-signals-in-focus"
+                            paragraphScope="all"
+                            text="Bitcoin price today: climbs near $63K with Mt Gox, rate signals in focus Investing.com-- Bitcoin price climbed on Monday, recovering a measure of recent losses, although sentiment towards the token and broader crypto markets remained largely negative. Markets were on edge over a potential, major liquidation event with the now defunct exchange Mt Gox set to begin distributions of stolen tokens from this week. Anticipation of more cues on U.S. interest rates, from the Federal Reserve and from economic data, also kept sentiment on edge. Bitcoin rose more than 2% in the past 24 hours to $62,838.9 by 08:59 ET (12:59 GMT). The token also took some support from weakness in the dollar, with the greenback losing some 0.2% on Monday. Mt Gox Bitcoin distribution set to begin The liquidators of Mt Gox said they will begin distributing Bitcoin stolen during a 2014 hack from early July. Traders speculated that receivers of the stolen tokens will be largely inclined to sell, given that Bitcoin saw a massive spike in valuation over the past decade. Such an event presents massive selling pressure on Bitcoin, and could spark substantial price losses. The token saw steep losses in late-June on this notion. Crypto investment products also logged two straight weeks of outflows amid fears of selling pressure on Bitcoin. Crypto price today: Altcoins rise with rate jitters in play Among broader crypto markets, altcoin prices rose on Monday, recovering a measure of steep losses from June. World no.2 token Ether added 2.6% to $3,475.84, also taking support from speculation that the Securities and Exchange Commission will approve a spot Ether exchange-traded fund as soon as this week. 3rd party Ad. Not an offer or recommendation by Investing.com. See disclosure here or remove ads. SOL, XRP and ADA rose between 1.9% and 4.5%, although trading volumes in all three were slim. Meme tokens DOGE and SHIB climbed over 2% and 1%, respectively. But sentiment towards crypto still remained on edge before a slew of more cues on U.S. interest rates this week. Federal Reserve Chair Jerome Powell is set to speak on Tuesday, while the minutes of the Fed’s June meeting are due on Wednesday. Nonfarm payrolls data is due on Friday and is also set to provide more cues on interest rates. Traders were seen increasing their bets that the Fed will cut rates by 25 basis points in September- a notion that also offered some support to crypto. Bitcoin could face selling pressure at $65K, per on-chain data Bitcoin could face resistance around the $65,000 level, on-chain data suggests. The leading cryptocurrency is attempting to bounce back after ending June with a 7% decline, a drop that reversed May's gains primarily due to miner selling and concerns over ETF inflows being non-directional arbitrage bets rather than outright bullish investments. The recent decline has pushed Bitcoin prices below the aggregate cost basis of short-term holders—wallets that have held BTC for 155 days or less. According to LookIntoBitcoin, this aggregate cost basis is now at $65,000. On-chain analytics firms use realized price as the aggregate cost basis, reflecting the average price at which coins were last moved on-chain. In practical terms, this means short-term holders are now facing losses or holding positions in the red, which may lead them to sell at a loss or breakeven, potentially adding selling pressure around the $65,000 mark. 3rd party Ad. Not an offer or recommendation by Investing.com. See disclosure here or remove ads. &quot;The price of Bitcoin has fallen below the aggregate cost basis of short-term holders for the first time since August 2023. In the short term, we should expect some resistance around the ~$65,000 level as short-term market speculators may look to exit their positions at a 'breakeven' level,&quot; analysts at Blockware Intelligence said in a note seen by CoinDesk. &quot;Last summer, when BTC lost the STH RP [realized price] support level, the price traded sideways for another two months before finally breaking out again,” they added. Which stock should you buy in your very next trade? AI computing powers are changing the stock market. Investing.com’s ProPicks are 6 winning stock portfolios chosen by our advanced AI. In 2024 alone, ProPicks' AI identified 2 stocks that surged over 150%, 4 additional stocks that leaped over 30%, and 3 more that climbed over 25%. Which stock will be the next to soar?"
+                            variationName="master">
+                        <par30
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/energy-commodity]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Consolidation Wave in U.S. Oil and Gas is Big Boon for Private Equity"
+            jcr:uuid="0ee7ba84-d842-46f4-b6dd-1ceff864281a"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/commodity/consolidation-wave-in-u-s--oil-and-gas-is-big-boon-for-private-equity"
+                            paragraphScope="all"
+                            text="Consolidation Wave in U.S. Oil and Gas is Big Boon for Private Equity A couple of years ago, private equity funds were having trouble convincing investors that there was still money to be made in oil and gas. At that time, everyone wanted in on the ESG game. Fast forward two years—private equity funds that stayed exposed to the oil and gas industry are making billions from their exits. At the end of last month, EnCap Investments sold its portfolio company XCL Resources to SM Energy and Northern Oil and Gas. The total price tag was about $2.5 billion. Also in June, EnCap sold assets of another portfolio company, this one in the Permian, to Matador Resources for close to $2 billion. EnCap has been cashing in on the consolidation spree in the shale patch and on its bet that oil and gas investments could be profitable. The bet turned out to be a winner. And the private equity firms that made it are set to profit from current trends in the industry. They might as well hurry up before it ends. According to a recent Reuters article, Big Oil majors were facing a challenging period trying to find buyers for their asset divestment plans, which, per the article, are used to fund dividends and stay on investors’ good side in volatile transition times. What aggravated the situation, Reuters writers said, was the fact that private equity was no longer interested in oil and gas. According to them, private equity was going full ESG. Meanwhile, the news broke that Quantum Capital Group was buying a Rocky Mountain oil and gas producer, for which the private equity company agreed to pay some $1.8 billion. The sellers were also private equity players, while Bloomberg’s commentary on the deal was that “buyout firms are increasingly eager to put money to work in the oil and gas sector, which has been undergoing a deals boom.” The boom, the publication said, followed the Covid lockdowns’ end and the rebound in energy demand. That rebound, as has become evident, could not be met by alternative energy sources, which ensured strong demand for oil and gas remained, drawing the attention of energy-focused investment firms—and not only in the Permian. The most prolific shale play has been the focus of merger and acquisition activity for years now. Most big-ticket deals in the oil and gas space take place in the Permian. Yet EnCap’s XCL Resources operates in the Uinta Basin in Utah, and Caerus, the company that Quantum Capital bought from a trio of fellow private equity firms, operates in Colorado. In other words, the consolidation wave is spreading, and private equity is very much a part of it. In the first quarter of the year, merger and acquisition activity in the oil patch hit a record high of $51 billion after a whole record-breaking 2023 as Big Oil sought to become even bigger and had the money to make it happen after the surge in oil and gas prices from 2022 that extended into 2023. It looks like the rest of 2024 will be busy in M&amp;A as well, and it looks like private equity will be among the main characters after firms spent years backing independent drillers that have turned into acquisition targets. But they might also become buyers once again. In that same Reuters article that claimed private equity firms were no longer interested in oil and gas, the authors mentioned that Big Oil majors were looking to offload some assets—including in the Permian—to streamline their most lucrative operations. They would need buyers for those assets, and what better buyers than private equity firms after the wake-up call that said ESG investing was not the sure winner it was supposed to be. In the latest edition of its annual Statistical Review of World Energy, the Energy Institute reported that last year, global oil consumption had topped 100 million barrels daily for the first time ever. The figure exceeded oil consumption by some 4 million barrels daily, which suggests the balance between supply and demand for oil remains precarious despite multiple reports about a surplus. In other words, oil remains very much in demand—as does natural gas. The United States is the biggest producer of both crude oil and natural gas in the world. This makes it an important supplier to the global market—and a profitable opportunity for investors, including investors from the private equity world. As the business world begins to quietly shelve its emission-related plans amid increased regulatory pressure, private equity interest in oil and gas might even increase. Several years ago, private equity stepped in to fill the void left by banks that were starting to suspend their business relations with the oil and gas industry. These banks must be kicking themselves now, while private equity is making billions on investments of several hundred million."
+                            variationName="master">
+                        <par14
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

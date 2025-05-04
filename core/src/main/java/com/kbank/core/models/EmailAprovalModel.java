@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
@@ -18,12 +19,12 @@ public interface EmailAprovalModel {
     /**
      * @return a collection of objects representing the items that compose the the list.
      */
-    Collection<ListItem> getListItems() throws NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException;
+    Collection<ListItem> getListItems() throws NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, InvalidAlgorithmParameterException;
 
     /**
      * @return true if this component has no list items to display.
      */
-    boolean isEmpty() throws NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchAlgorithmException;
+    boolean isEmpty() throws NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchAlgorithmException, InvalidAlgorithmParameterException;
 
     /**
      * @return JSON data to populate the data layer

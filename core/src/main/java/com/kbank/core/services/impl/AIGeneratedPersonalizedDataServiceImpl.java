@@ -9,7 +9,6 @@ import com.kbank.core.utils.KbankUserServiceUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.LoginException;
-import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -25,17 +24,21 @@ import javax.crypto.NoSuchPaddingException;
 import javax.jcr.RepositoryException;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Component(service = AIGeneratedPersonalizedDataService.class, immediate = true)
 @Designate(ocd = AIGeneratedPersonalizedDataServiceImpl.Config.class)
 public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPersonalizedDataService {
 
-    private static Logger log = LoggerFactory.getLogger(AIGeneratedPersonalizedDataServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(AIGeneratedPersonalizedDataServiceImpl.class);
 
     @ObjectClassDefinition(name = "AI Generated Personalized Data Service", description = "AI Generated Personalized Data Service")
     public @interface Config {
@@ -67,6 +70,8 @@ public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPerson
     private String approverCampaignID;
     private String articleCampaignID;
 
+    private Config config;
+
     private static final String CONTENT_TEMPLATE_PATH = "/apps/kbank/components/email_templates/news-letter.html";
     private static final String APPROVAL_TEMPLATE_PATH = "/apps/kbank/components/email_templates/approval-template.html";
 
@@ -74,12 +79,13 @@ public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPerson
 
     @Activate
     protected void activate(Config config) {
+        this.config = config;
         this.approverCampaignID = config.approverCampaignID();
         this.articleCampaignID = config.articleCampaignID();
     }
 
     @Override
-    public JsonObject getPersonalizedAIGeneratedData(String interests, String type, String emailID, String name, SlingHttpServletRequest request) throws LoginException, IllegalBlockSizeException, NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, RepositoryException, URISyntaxException, InterruptedException {
+    public JsonObject getPersonalizedAIGeneratedData(String interests, String type, String emailID, String name, SlingHttpServletRequest request) throws LoginException, IllegalBlockSizeException, NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, RepositoryException, URISyntaxException, InterruptedException, InvalidAlgorithmParameterException {
 
         JsonObject response = new JsonObject();
 
@@ -96,7 +102,7 @@ public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPerson
             response.addProperty("error", "Error in AI response");
             return response;
         }
-        JsonArray filteredResponse = getFilteredResponse(aiResponse, fireFlyToken);
+        JsonArray filteredResponse = getFilteredResponse(aiResponse, fireFlyToken, type);
         if ("email".equalsIgnoreCase(type)) {
             JsonObject placeholders = new JsonObject();
 
@@ -146,7 +152,12 @@ public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPerson
         return response;
     }
 
-    private JsonArray getFilteredResponse(JsonArray aiResponse, String token) {
+    @Override
+    public String getArticleCampaignID() {
+        return config.articleCampaignID();
+    }
+
+    private JsonArray getFilteredResponse(JsonArray aiResponse, String token, String type) {
         JsonArray filteredResponse = new JsonArray();
         List<String> responseIds = new ArrayList<>();
         JsonArray repeatedArticles = new JsonArray();
@@ -160,9 +171,11 @@ public class AIGeneratedPersonalizedDataServiceImpl implements AIGeneratedPerson
                 filteredResponse.add(article);
                 responseIds.add(article.get("heading").getAsString());
                 try {
-                    String imagePath = fireFlyService.getFireFlyImage(token, article.get("heading").getAsString(), 1);
-                    if (!StringUtils.isEmpty(imagePath)) {
-                        article.addProperty("urlToImage", imagePath);
+                    if (!"articlelist".equalsIgnoreCase(type)) {
+                        String imagePath = fireFlyService.getFireFlyImage(token, article.get("heading").getAsString(), 1);
+                        if (!StringUtils.isEmpty(imagePath)) {
+                            article.addProperty("urlToImage", imagePath);
+                        }
                     }
                     repeatedArticles.add(article);
                 } catch (IOException | URISyntaxException | InterruptedException e) {

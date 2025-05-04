@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/oil-and-gas-commodity,kbank:kbank-articles/energy-commodity]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="China Factory Slowdown Raises Questions for Global Oil Market"
+            jcr:uuid="b581741c-8551-4fc8-ac8b-cae39f33ef31"
+            sling:resourceType="kbank/components/page"
+            pwaCachestrategy="staleWhileRevalidate"
+            pwaDisplay="standalone"
+            pwaOrientation="any">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/commodity/china-factory-slowdown-raises-questions-for-global-oil-market"
+                            paragraphScope="all"
+                            text="China Factory Slowdown Raises Questions for Global Oil Market Factory activity in China slowed down further last month, with the country’s statistics bureau reporting a PMI reading of 49.5—the lowest in five months, Reuters noted in a report. However, a private PMI reading, calculated by S&amp;P Global, showed an uptick in manufacturing activity among smaller companies, Reuters reported separately, with the increase attributed to strong overseas orders. What’s more, one Economist Intelligence Unit analyst told Reuters that the official figures that suggested a slowdown may not be accurate. “Actual industrial activity should be stronger than the data suggests as our observation is that the official PMI fails to fully capture the current export momentum, which has been the major economic driver this year,” Xu Tianchen, chief economist at the EIU, told Reuters. Oil prices, meanwhile, began the month with a gain today, driven by expectations of strong peak season demand and tight supply amid the latest extension of the OPEC+ cuts. The uptick in prices followed a U.S. Energy Information Administration report that revealed oil production and demand in April had jumped to a four-month high, with demand specifically rising to 20 million barrels daily. The slowdown in Chinese factory activity may dampen some of that enthusiasm but the effect may not be lasting in light of such demand figures. What could aggravate a potential bearish effect, however, is the news that Chinese oil imports during the first half of the year declined by 300,000 barrels daily from the first half of 2023 While the decline could be seen as a natural trend following growth to a record high in imports last year, any news of a decline in China’s oil consumption tends to weigh on international prices, even in the presence of bullish factors. This week, the bullish factors include fears of an escalation in the Middle East and a change in the political landscape in Europe after the right-wing National Rally party won the first round of snap elections on Sunday, according to exit polls."
+                            variationName="master">
+                        <par9
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+        <cq:featuredimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/image/v3/image"
+                altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

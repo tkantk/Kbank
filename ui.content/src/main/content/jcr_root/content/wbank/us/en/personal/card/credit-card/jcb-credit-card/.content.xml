@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-cards/kbank-credit-card]"
+            cq:template="/conf/wbank/settings/wcm/templates/content-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="JCB Credit Card"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"
+                        alt="Credit Card"
+                        altValueFromDAM="false"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/wbank-shared/en/articles/jch_hl_banner.png"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        titleValueFromDAM="true"/>
+                <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/title"/>
+                <image_191808550
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"
+                        alt="Credit Card"
+                        altValueFromDAM="false"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/wbank-shared/en/articles/Jcb_Credit Card.png"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        titleValueFromDAM="true"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/form/container"
+                        action="/content/usergenerated/kbank/us/en/personal/card/credit-card/jcb-credit-card/cq-gen1718640123604/"
+                        actionType="foundation/components/form/actions/store"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

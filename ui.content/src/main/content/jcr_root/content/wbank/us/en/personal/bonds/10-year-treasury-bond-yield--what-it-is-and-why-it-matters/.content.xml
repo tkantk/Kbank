@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:41.460Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/treasury-bonds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="10-Year Treasury Bond Yield: What It Is and Why It Matters"
+            jcr:uuid="dc3ce567-575b-4bb0-a4bc-8151fc506d5c"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/bonds/10-year-treasury-bond-yield--what-it-is-and-why-it-matters"
+                            paragraphScope="all"
+                            text="10-Year Treasury Bond Yield: What It Is and Why It Matters The 10-year Treasury bond yield is the interest rate the U.S. government pays to borrow money for a decade, serving as a benchmark for other interest rates and a key indicator of investor sentiment about economic conditions. It matters because it influences borrowing costs, impacts the valuation of financial assets, and signals expectations about inflation and economic growth. KEY TAKEAWAYS Treasury securities are loans to the federal government whose maturities range from weeks to as many as 30 years. Treasury securities are considered safer investments relative to stocks because they are backed by the U.S. government. Bond prices and yields move in opposite directions, which means that falling prices boost yields and rising prices lower yields. The 10-year yield is used as a proxy for mortgage rates and is also seen as a sign of investor sentiment about the economy. A rising yield indicates falling demand for Treasury bonds, which means investors prefer higher-risk, higher-reward investments, while falling yield suggests the opposite. Richcano / Getty Images Understanding 10-Year Treasury Bond Yields The importance of the 10-year Treasury bond yield goes beyond just understanding the return on investment (ROI) for the security. The 10-year is used as a proxy for many other important financial matters, such as mortgage rates. This bond also tends to signal investor confidence. The U.S Treasury sells bonds via auction and yields are set through a bidding process.1 Prices for the 10-year bond drop when confidence is high, which causes yields to rise. This is because investors feel they can find higher-returning investments elsewhere and do not feel they need to play it safe. When confidence is low, bond prices rise and yields fall as there is more demand for this safe investment. Put simply, falling yields indicate caution in the markets. This confidence factor is also felt outside of the U.S. as it points to the future of the global economy. The geopolitical situations of other countries can affect U.S. government bond prices, as the U.S. is seen as safe haven for capital. This can push up prices of U.S. government bonds as demand increases, thus lowering yields. Another factor related to the yield is the time to maturity. The longer the Treasury bond's time to maturity, the higher the rates (or yields) because investors demand to get paid more the longer their money is tied up. Short-term debt typically pays lower yields than long-term debt, which is called a normal yield curve. At times, the yield curve can be inverted with shorter maturities paying higher yields. The U.S. Department of the Treasury issues four types of debt to finance government spending: Treasury bonds, Treasury bills, Treasury notes, and Treasury Inflation-Protected Securities (TIPS). Each varies by maturity and coupon payments.2345 Changing Yields Over Time Because 10-year Treasury yields are so closely scrutinized, knowledge of its historical patterns is integral to understanding how today's yields fare as compared to historical rates. Below is a chart of the yields going back a decade. While rates do not have a wide dispersion, any change is considered highly significant. Large changes of 100 basis points (bps) can, over time, redefine the economic landscape. The yield curve has been flattening at an accelerated pace, which could be construed as a worry over economic growth and investor uncertainty regarding monetary policy.6 Perhaps the most relevant aspect is in comparing current rates with historical rates or following the trend to analyze whether near-term rates will rise or fall based on historical patterns. Using the U.S. Treasury website, investors can easily analyze historical 10-year Treasury bond yields. The 10-year Treasury is an economic indicator. Its yield provides information about investor confidence. While historical yield ranges do not appear wide, any basis point movement is a signal to the market. Importance of 10-Year Treasury Yields Here are some of the more important factors related to 10-year Treasury yields: Benchmarks Interest Rates The 10-year Treasury yield serves as a benchmark for a wide range of interest rates including those for mortgages, corporate bonds, and other loans. When the yield on the 10-year Treasury rises, borrowing costs across the economy typically increase as well. This affects everything from consumer spending on big-ticket items like homes and cars to business investments in new projects and expansions. When the yield falls, it lowers borrowing costs which can stimulate the economy. Indicates Economic Health The yield on the 10-year Treasury is a key indicator of investor sentiment about the economy’s future health. A rising yield often suggests that investors expect stronger economic growth and higher inflation which prompts them to demand higher returns. A declining yield indicates that investors are seeking safety amid economic uncertainty which can be a sign of anticipated economic slowdown or deflation. Impacts Financial Markets The 10-year Treasury yield plays a part in the valuation of financial assets. It is commonly used as a discount rate in models that value future earnings and cash flows. When the yield is low, it can boost stock prices because the present value of future earnings is higher. A higher yield can lead to lower stock valuations as the cost of capital increases, making equities less attractive compared to the risk-free return on government bonds. Influences Monetary Policy The 10-year Treasury yield is closely watched by the Federal Reserve and other central banks as part of their assessment of economic conditions. It helps guide decisions on setting short-term interest rates and other monetary policy measures. A rising yield might prompt the Fed to raise short-term rates to prevent the economy from overheating, while a falling yield could lead to lower rates to support economic growth. Drives Global Investment Decisions As a safe and highly liquid investment, the 10-year Treasury bond is a pretty big part of global financial markets. Its yield influences investment decisions worldwide, affecting capital flows between countries. For example, higher yields attract foreign investors seeking stable returns who might have otherwise kept their capital in their domestic country. Factors that Affect the 10-Year Treasury Yield Several factors influence the 10-year Treasury yield. When the economy is strong, investors may demand higher yields to compensate for the opportunity cost of investing in safer government bonds versus higher-yielding assets like stocks. On the other hand, in times of economic uncertainty or recession, investors flock to the safety of Treasuries, driving prices up and yields down due to the increased demand for secure, low-risk investments. Inflation expectations also play a role in shaping the 10-year Treasury yield. When investors anticipate higher inflation in the future, they require higher yields to offset the eroding purchasing power of their returns. This expectation causes yields to rise. If inflation is expected to remain low, the demand for fixed-income securities with stable returns increases, leading to lower yields. Monetary policy decisions by the Federal Reserve are another contributor to the 10-year Treasury yield. When the Fed raises short-term interest rates to curb inflation or cool down an overheating economy, yields on longer-term Treasuries like the 10-year bond often increase in response. This is because higher short-term rates can signal future rate hikes, leading investors to demand higher yields for longer-term investments. When the Fed lowers rates to stimulate economic growth, yields on longer-term Treasuries typically fall as lower short-term rates signal a more accommodative monetary policy stance. Last, there's always the risk that global economic conditions and geopolitical events also influence the 10-year Treasury yield. International economic slowdowns or crises in other countries can drive international investors to seek the relative safety of U.S. Treasuries. Additionally, geopolitical tensions or uncertainties such as trade wars or political instability can lead to flight-to-safety behavior among investors, making some flock towards safer securities and making others move away. Can You Lose Money on Treasury Bills? The short answer is no, as your principal is protected by the government. However, Treasury bills are highly subject to inflationary pressure. If an investor were to purchase a bond today, and then inflation picks up, the purchasing power of their principal will be severely diminished by the time their security reaches expiration. Even though that investor receives their principal plus interest, they are in effect losing money due to the money being worth less when they withdraw it. What Does the 10-Year Treasury Yield Mean? The 10-year Treasury yield is the yield that the government pays investors that purchase the specific security. Purchase of the 10-year note is essentially a loan made to the U.S. government. The yield is considered a marker for investor confidence in the markets, shining a light on whether investors feel they can make a higher return than the yield offered on a 10-year note by investing in stocks, ETFs, or other riskier securities. What Factors Affect the 10-Year Treasury Yield? Some factors that affect the 10-year Treasury yield are inflation, interest rate risk, and investor confidence in both the Treasury security and the overall economy. What Are the Different Types of U.S. Treasury Securities? There are four different types of Treasury securities that are offered to investors by the U.S. government. Treasury Bills are loans to the federal government that mature at terms ranging from a few days to 52 weeks. A Treasury Note matures in two to 10 years, while a Treasury Bond matures in 20 or 30 years. Treasury Inflation-Protected Securities are assets whose principal balance changes based on fluctuations in the Consumer Price Index (CPI). They mature withing 5, 10, and 30 years.7 The Bottom Line The 10-year Treasury yield is used to determine investor confidence in the markets. It moves to the inverse of the price of the 10-year Treasury note and is considered one of the safest—if lowest returning—investments that can be made. Although the investment is guaranteed by the U.S. government, investors could still lose money if inflation outpaces the 10-year yield. SPONSORED Trade on the Go. Anywhere, Anytime One of the world's largest crypto-asset exchanges is ready for you. Enjoy competitive fees and dedicated customer support while trading securely. You'll also have access to Binance tools that make it easier than ever to view your trade history, manage auto-investments, view price charts, and make conversions with zero fees. Make an account for free and join millions of traders and investors on the global crypto market."
+                            variationName="master">
+                        <par46
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

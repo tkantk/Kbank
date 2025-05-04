@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-mutual-funds/flexi-cap-funds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Are Flexi Cap Funds Worth Their Salt?"
+            jcr:uuid="bbea255a-d3f2-4944-9320-7e70ba5c4514"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/mutual-fund/are-flexi-cap-funds-worth-their-salt-"
+                            paragraphScope="all"
+                            text="Are Flexi Cap Funds Worth Their Salt? When it comes to mutual funds, flexi-cap funds have the most flexibility in terms of their investment mandate. They can invest anywhere they want and in any proportion. If we compare this with other equity categories, then large-cap funds must invest at least 80% of their corpus in large-cap stocks. Similarly, Mid-cap and small-cap funds must invest at least 65% in mid-cap and small-cap stocks, respectively. Now, given this flexibility, investors love flexi cap funds. This is evident from the high AUM of top flexi cap funds. For Example, Parag Parikh Flexi Cap Fund, HDFC Flexi Cap Fund and Kotak Flexi Cap Fund have a combined AUM of more than Rs. 1.3 Lakh Crore. However, are flexi cap funds really the best investment option when it comes to investing in a diversified fund? And is one flexi cap fund enough to take care of all the requirements? Let’s find out the answer in this article. Below we will explore 3 questions: How do flexi cap funds work? In other words, how have they invested across large, mid and small caps. How has their performance been? What are your options if you want to go beyond flexi-cap funds? How Do Flexi Cap Funds Work? According to SEBI’s investment mandate, flexi cap funds invest in stocks across market caps and in any proportion. So, they are expected to rotate their assets strategically between large cap, mid cap and small cap stocks and generate superior returns for their investors. To see how these funds rotate their assets, we looked at the market cap allocation of these funds and the results are summarised in the chart below. As you can see, the average allocation to large caps stood at around 65%, and for the first time in 6 years, it fell below 60% in 2023. So, it is clear that flexi-cap funds love large-cap stocks and that they don’t shift their allocations towards mid and small-caps as opportunistically as you might want them to. This trend is even more pronounced in the top 10 flexi-cap funds by AUM, with average allocation to large cap being 69% with the lowest being around 66% in the last 6 years. Now, the reason for even a higher allocation in the top 10 flexi cap funds could be their large AUM. A large AUM makes it difficult to invest in mid and small-caps. The reason for this difficulty is the less liquidity in mid and small caps, especially small caps, which makes it difficult for a fund to buy or sell a large quantity of their stock. A large buy or sell order can also make the stock price shoot up or tank, resulting in the fund manager not getting the desired price easily. We also looked at the 10 smallest flexi-cap funds. Since they have smaller AUM, they should not face the issue of deploying assets in mid and small-cap stocks. Still, their average allocation to large caps stood around 64% on average, which is on the higher side. So, it would be safe to infer that flexi-cap funds historically have maintained a healthy large-cap bias. And, if you invest in a flexi cap fund, you can expect the majority of your money to be invested in large-cap stocks. But has this higher allocation to large-cap index affected the performance of these funds? Let’s see. Performance of Flexi Cap Funds Intuitively, flexi-cap funds should do better than an active large cap fund or a large cap index thanks to their mid/small-cap allocations. To check, we looked at the average 3-year rolling returns of flexi-cap funds and compared it with the Nifty 50 returns. We found that the 3 year average rolling returns of flexi-cap funds was 20.4% while the Nifty 50 TRI managed to deliver 18.71%. So, flexi-cap funds have outperformed the Nifty 50 TRI by about 2 percentage points. Further, we looked at the 5-year rolling returns to take a slightly longer time horizon. Here, also the Flexi cap funds outperformed the NIFTY 50 however, the differential is not very high. While Flexi Cap funds generated 12.7%, the NIFTY 50 generated a return of 12.14%. So, it appears that flexi-cap funds may have missed the opportunity to create higher wealth for their investors when they could have profited more from mid and small-caps. Over the last 10 years, as of September-end 2023, the Nifty 50 has gone up by 14.26%, while Midcap 150 TRI has and Nifty Smallcap 250 TRI delivered annual returns of 22.3% and 20.9%, respectively. Category 10-year return Nifty 50 TRI 14.3% p.a Nifty Midcap 150 TRI 22.3% p.a Nifty Smallcap 250 TRI 20.9% p.a So, are there any alternative investment options to flexi cap funds that can generate even better returns and also provide ample diversification across the market cap? Alternatives To Flexi-Cap Funds If you want to go beyond flexi cap, then you have two options: large &amp; mid-cap funds and multi-cap funds. Both these categories are diversified and have a better representation of market caps. Large and Mid cap funds must invest at least 35% of their corpus each in large and mid-caps. So, at all times, they will be invested at least 35% in mid-caps. The chart below shows the market-cap allocation of large &amp; mid-cap funds since September 2018. From the chart, we can see that these funds have parked close to 50% of their assets into large cap stocks, while the mid cap allocation stood between 35%-40%. The small cap allocation is low for these funds too. However, in terms of performance, these have done better than flexi-cap funds. Their 3-year average rolling returns were 22.25% against 20.45% of flexi cap funds. So, possibly, the higher allocation to mid-cap stocks has worked to their advantage. The next option is multi-cap funds. These funds are mandated to invest at least 25% each in large, mid, and small caps. So, at any time, you are assured of a sizable allocation to all market caps. Talking about the returns, the multi-cap category came into being only in January 2021. So, we looked at the calendar year returns for Years 2021, 2022, and 2023 to measure their performance. We found that their performance was better than flexi cap funds in 2022 and 2023. Lastly, another option for you to have a better market-cap representation in your portfolio is to invest in a large-cap, a mid-cap, and a small-cap fund separately and in the proportion of your choice. For instance, you may like to invest 50% in a large-cap fund, 35% in a mid-cap fund, and the rest 15% in a small-cap fund. This portfolio can then be rebalanced from time to time to restore the original market-cap allocation. Do note that while large &amp; mid-cap funds and multi-cap funds have a better return profile, they also have higher volatility. That’s natural, given their higher mid-cap and small-cap exposure. Now, in terms of taxation, investing in a flexi-cap fund, large and mid-cap fund, or a multi-cap fund will have an equity like tax treatment. Short-term capital gain tax will apply if they are sold within one year of investing and will be taxed at 15%. If they are sold after 1 year then long term capital gain tax will apply, and gains beyond Rs. 1 Lakh will be taxed at 10%. However, if you choose to form your own flexi cap fund then periodical rebalancing might have a higher tax implication if you rebalance within one year of investing. Conclusion Even though flexi cap funds have the most flexible investment mandate, they invest a majority of their assets in large cap stocks. This large cap bias has led to their performance being in line with NIFTY 50 index. Next, we also saw that investing in Multicap funds, or large and mid cap funds can be an alternative to investing in flexi-cap funds. Further, you can also consider investing separately in a Large cap, mid cap and a small cap index based on your preferred market cap allocation. With a periodical rebalancing, this can act as a customised flexi cap fund. We hope you found the above article insightful. If you have not started your mutual fund investments yet, then you can get started with ET Money. Here, not only can you invest without paying any commissions, but also get a comprehensive mutual fund portfolio health check up for free. It will analyze your portfolio across as many as 12 parameters, from asset allocation to portfolio returns to management fees, and help you identify hidden risk in your portfolio."
+                            variationName="master">
+                        <par38
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

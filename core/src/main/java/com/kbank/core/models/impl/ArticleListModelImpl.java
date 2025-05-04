@@ -15,52 +15,32 @@
  */
 package com.kbank.core.models.impl;
 
-import com.adobe.cq.wcm.core.components.models.Image;
 import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 import com.adobe.cq.wcm.core.components.models.datalayer.builder.DataLayerBuilder;
 import com.adobe.cq.wcm.core.components.util.ComponentUtils;
-import com.day.cq.commons.jcr.JcrConstants;
-import com.day.cq.search.Predicate;
-import com.day.cq.search.PredicateConverter;
-import com.day.cq.search.PredicateGroup;
-import com.day.cq.search.QueryBuilder;
-import com.day.cq.search.eval.JcrPropertyPredicateEvaluator;
-import com.day.cq.search.eval.PathPredicateEvaluator;
-import com.day.cq.search.eval.TypePredicateEvaluator;
 import com.day.cq.wcm.api.Page;
-import com.day.cq.wcm.api.PageManager;
 import com.day.cq.wcm.api.components.ComponentContext;
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.kbank.core.models.ArticleListModel;
-import com.kbank.core.models.ImageList;
 import com.kbank.core.services.AEPUtilService;
 import com.kbank.core.services.AIGeneratedPersonalizedDataService;
 import com.kbank.core.services.ResourceResolverService;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.jackrabbit.api.security.user.User;
 import org.apache.jackrabbit.api.security.user.UserManager;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.api.resource.ResourceWrapper;
-import org.apache.sling.api.resource.ValueMap;
-import org.apache.sling.api.wrappers.ValueMapDecorator;
-import org.apache.sling.jcr.resource.api.JcrResourceConstants;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Required;
-import org.apache.sling.models.annotations.Via;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.Self;
-import org.apache.sling.models.annotations.via.ResourceSuperType;
-import org.osgi.service.component.annotations.Reference;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -70,8 +50,10 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
 
 @Model(
         adaptables = {SlingHttpServletRequest.class},
@@ -84,13 +66,12 @@ public class ArticleListModelImpl implements ArticleListModel {
 
     protected static final String RESOURCE_TYPE = "kbank/components/articlecard";
 
+    @ValueMapValue
+    private String configurationType;
+
     @Self
     @Required
     private SlingHttpServletRequest request;
-
-    @OSGiService
-    @Required
-    private QueryBuilder queryBuilder;
 
     @ScriptVariable
     private Page currentPage;
@@ -144,9 +125,15 @@ public class ArticleListModelImpl implements ArticleListModel {
                         currentUser.hasProperty("profile/email"))  {
                     //JsonObject data = JsonParser.parseString(currentUser.getProperty("profile/aidata")[0].getString()).getAsJsonObject();
                     assert aepUtilService != null;
-                    String interests = aepUtilService.getInterestsFromAEP(currentUser.getProperty("profile/email")[0].getString());
-                    JsonObject data = aiGeneratedPersonalizedDataService.getPersonalizedAIGeneratedData(interests, "articlelist", null, null, request);
-                    items = data.getAsJsonArray("data");
+                    assert configurationType != null;
+                    //if (configurationType != null && configurationType.equalsIgnoreCase("currentuserprofileview")) {
+                        String interests = aepUtilService.getInterestsFromAEP(currentUser.getProperty("profile/email")[0].getString());
+                        assert aiGeneratedPersonalizedDataService != null;
+                        JsonObject data = aiGeneratedPersonalizedDataService.getPersonalizedAIGeneratedData(interests, "articlelist", null, null, request);
+                        items = data.getAsJsonArray("data");
+                    /*} else {
+                        items = JsonParser.parseString(currentUser.getProperty("profile/aidata")[0].getString()).getAsJsonArray();
+                    }*/
                 } else {
                     return null;
                 }
@@ -213,6 +200,11 @@ public class ArticleListModelImpl implements ArticleListModel {
         @Override
         public String getDescription() {
             return article.substring(0, 50) + "...";
+        }
+
+        @Override
+        public String getFullDescription() {
+            return article;
         }
 
         @Override

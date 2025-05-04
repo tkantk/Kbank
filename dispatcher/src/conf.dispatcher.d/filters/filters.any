@@ -13,7 +13,7 @@ $include "./default_filters.any"
 /0102 { /type "allow" /method '(GET|POST)' /extension "webmanifest" /path "/content/*/manifest" }
 
 #Allow "GET" & "POST" requests for Resource Type Servlets
-/0103 { /type "allow" /extension "json" /path "/content/kbank/us/en/servlets-content-folder/*" }
+/0103 { /type "allow" /extension "json" /path "/content/wbank/us/en/servlets-content-folder/*" }
 
 # Allow Quick Search
 /0110 { /type "allow" /extension "json" /selectors "searchresults" /path "/content/*" }

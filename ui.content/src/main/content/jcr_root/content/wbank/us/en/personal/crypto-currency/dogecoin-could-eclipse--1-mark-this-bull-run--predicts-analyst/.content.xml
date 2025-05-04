@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/payment-cryptocurrency]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Dogecoin Could Eclipse $1 Mark This Bull Run, Predicts Analyst"
+            jcr:uuid="1647874f-c201-46f9-9aab-27cbfced8014"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/dogecoin-could-eclipse-$1-mark-this-bull-run,-predicts-analyst"
+                            paragraphScope="all"
+                            text="Dogecoin Could Eclipse $1 Mark This Bull Run, Predicts Analyst In a technical analysis, noted crypto analyst Big Mike (@Michael_EWpro), has revealed a bullish forecast for Dogecoin (DOGE) that suggests the meme coin could surpass the $1 threshold in this bull cycle. The Dogecoin price prediction is rooted in the Elliott Wave theory, and is further reinforced by a robust set of technical indicators that underscore the coin’s strong upward potential. Dogecoin Could Peak Above $1 In 2025 The weekly chart (DOGE/USDT) highlights Dogecoin’s previous market performance, where it completed a 5-wave Elliott Wave pattern during the last significant bull run. This pattern saw the price of Dogecoin escalate to just above $0.70. DOGE /USDT possible count into 2025 | Source: X @Michael_EWpro Following this surge, the market entered a corrective phase characterized by a WXY pattern—a complex Elliott Wave correction structure that typically consists of three distinct price movements. This corrective phase marked a period of consolidation and retraction in Dogecoin’s price trajectory following its peak. Since late 2023, according to Big Mike’s analysis, Dogecoin has embarked on a new 5-wave pattern. This nascent formation is anticipated to drive the Dogecoin price significantly higher than its previous highs. The first wave propelled the DOGE price to a peak just shy of $0.23. Following this, the second wave commenced, resulting in a retracement that pulled the price down to as low as $0.1140. The analysis indicates that Dogecoin is currently in the initial stages of the third wave of this Elliott Wave pattern. Traditionally, the third wave is the most dynamic and typically extends the furthest, especially within a strong bullish context. Notably, Big Mike highlights the existence of an ascending channel starting from the onset of wave 1 further corroborates the bullish sentiment maintained in this analysis. This channel maps out the potential pathway that Dogecoin might follow as it aims for new highs. The wave 3 could peak at the upper trendline of the channel, at around $0.60. Wave 4 could potentially pull the Dogecoin price back to the lower boundary of the ascending channel, approximately around $0.25. This retracement would set the stage for Wave 5, the climactic phase of the Dogecoin bull run, which is projected to propel DOGE above the $1 mark, coinciding with the upper resistance line of the channel. The chart carefully marks critical Fibonacci extension levels which are drawn from the beginning to the peak of the last bull run. that are expected to play pivotal roles in determining future price points during this bull run. The first notable Fibonacci extension at 2.618 is positioned at approximately $0.14591, serving as an intermediate station within the bull cycle. The 3.618 extension at $0.68835 serves as an intermediary target for the final fifth wave. The Volume Profile Visible Range (VPVR) on the chart reveals that the current price zone has a high concentration of traded volume, suggesting it acts as a robust foundation for the current price level. The absence of significant volume above this area hints at minimal resistance, which could allow for an accelerated price climb once Dogecoin breaks above existing resistance levels. Technical indicators such as the weekly Stochastic RSI and the weekly Relative Strength Index (RSI) support an imminent bullish phase. The Stochastic RSI is in the oversold region, indicating potential for a price recovery. Meanwhile, the RSI’s upward trend with higher lows suggests growing bullish momentum. At press time, DOGE traded at $0.1247."
+                            variationName="master">
+                        <par15
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

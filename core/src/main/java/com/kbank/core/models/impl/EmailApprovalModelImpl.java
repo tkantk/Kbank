@@ -24,13 +24,9 @@ import com.day.cq.wcm.api.components.ComponentContext;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
-import com.kbank.core.models.ArticleListModel;
 import com.kbank.core.models.EmailAprovalModel;
-import com.kbank.core.services.AEPUtilService;
-import com.kbank.core.services.AIGeneratedPersonalizedDataService;
 import com.kbank.core.services.ResourceResolverService;
 import com.kbank.core.utils.KbankEncryptData;
 import com.kbank.core.utils.KbankUserServiceUtil;
@@ -56,6 +52,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import java.lang.reflect.Type;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDate;
@@ -105,7 +102,7 @@ public class EmailApprovalModelImpl implements EmailAprovalModel {
     private List<ListItem> articleListItems;
 
     @Override
-    public final Collection<ListItem> getListItems() throws NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
+    public final Collection<ListItem> getListItems() throws NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, InvalidAlgorithmParameterException {
         if (articleListItems == null) {
             String hashedEmail = getFirstSelector();
             String email = kbankEncryptData.decryptData(hashedEmail);
@@ -149,7 +146,7 @@ public class EmailApprovalModelImpl implements EmailAprovalModel {
     }
 
     @Override
-    public final boolean isEmpty() throws NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchAlgorithmException {
+    public final boolean isEmpty() throws NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchAlgorithmException, InvalidAlgorithmParameterException {
         return getListItems().isEmpty();
     }
 
@@ -169,7 +166,8 @@ public class EmailApprovalModelImpl implements EmailAprovalModel {
             String lastName = kbankUserServiceUtil.getUserProfileDataById(email, "familyName", resourceResolver);
             fullName = firstName + " " + lastName;
         } catch (LoginException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException |
-                 IllegalBlockSizeException | BadPaddingException | RepositoryException e) {
+                 IllegalBlockSizeException | BadPaddingException | RepositoryException |
+                 InvalidAlgorithmParameterException e) {
             throw new RuntimeException(e);
         }
         return fullName;
@@ -189,7 +187,7 @@ public class EmailApprovalModelImpl implements EmailAprovalModel {
         try {
             return kbankEncryptData.decryptData(hashedEmail);
         } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | IllegalBlockSizeException |
-                 BadPaddingException e) {
+                 BadPaddingException | InvalidAlgorithmParameterException e) {
             throw new RuntimeException(e);
         }
     }

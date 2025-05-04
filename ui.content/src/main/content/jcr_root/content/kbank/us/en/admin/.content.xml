@@ -31,7 +31,7 @@
                     <admin_form
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="kbank/components/form/admin-form"
-                            actionUrl="/content/kbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json">
+                            actionUrl="/content/wbank/us/en/servlets-content-folder/send-personalized-email/jcr:content.json">
                         <container
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kbank/components/container">

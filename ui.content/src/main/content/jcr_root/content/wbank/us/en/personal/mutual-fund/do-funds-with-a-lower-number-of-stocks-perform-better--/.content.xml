@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-mutual-funds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Do funds with a lower number of stocks perform better? "
+            jcr:uuid="ff137766-9d39-43e5-9e49-0e1dfa565f0d"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/mutual-fund/do-funds-with-a-lower-number-of-stocks-perform-better-"
+                            paragraphScope="all"
+                            text="Do funds with a lower number of stocks perform better? When choosing a mutual fund, most people look at returns. Some experienced investors may look at some more parameters. These could be rolling returns, volatility, etc. But there’s one thing that most investors overlook – the number of stocks in a fund’s portfolio. Theoretically, an overabundance of stocks within a fund could lead to underperformance. However, does this truly happen in the practical world of investing? Do mutual funds with a lower number of stocks perform better than ones with a large number of stocks? And if they do, should you use this as a parameter to select mutual funds? We will explore answers to all these questions below. How did we select the mutual fund categories? There are four points that you should keep in your mind. We analyzed four fund categories: large-cap, mid-cap, small-cap and flexi-cap. We then looked at the number of stocks in the portfolio and the performance of these funds for the past six years. We placed the funds in four buckets. The first bucket is of funds with 50 stocks or less. Then, schemes that have between 51 and 75 stocks. The third bucket is with funds with 76 to 100 stocks. Finally, the last bucket is schemes with over 100 stocks. We have also compared the funds’ returns with the relevant benchmarks to give you a clear picture. Okay, so now, let’s look at what we found. How many stocks do top-performing large cap funds have? First, we looked at large cap mutual funds. The table below shows the number of schemes in different buckets. For example, 8 schemes had less than 50 stocks in their portfolio in the last six years. To classify funds in these buckets, we looked at the number of stocks in the scheme’s portfolio for the last six years, and then their median was used to place them in one of the buckets. After placing the funds in their respective buckets, we found that the funds with up to 50 stocks did better than those with 50-75 stocks. The schemes with up to 50 stocks had an average rolling return of 13.51%, whereas those with more than 50 stocks had 13.05%. So the difference was just about half a percent, which isn’t massive. No schemes had more than 75 stocks. Large-cap funds: No. of stocks in the portfolio No. of stocks No. of funds Avg of 3Y avg rolling returns (% pa) 3Y avg rolling return (% pa) – Nifty 50 TRI 0-50 8 13.51 14.07 50-75 18 13.05 14.07 75-100 0 NA 14.07 Over 100 0 NA 14.07 Data between August-end 2018 and August-end 2023 and for direct plans Next, we wanted to know whether other categories will show the same trend. Do schemes with up to 50 stocks outperform others? So, let’s look at mid-cap funds next. How many stocks do top-performing mid-cap funds have? Surprisingly, we got similar results. Mid cap mutual funds that had up to 50 stocks did the best here. Their 3-year average rolling returns were 17.39%. Whereas the average rolling returns of funds in the next bucket (50-75 Stocks) was 16.69%. The returns were even lower for funds that had 75-100 stocks in their portfolio. Mid-cap funds: No. of stocks in the portfolio No. of stocks No. of funds Avg of 3Y avg rolling returns (% pa) 3Y avg rolling return (% pa) – Nifty Midcap 150 TRI 0-50 5 17.39 15.58 50-75 17 16.69 15.58 75-100 2 14.55 15.58 Over 100 0 NA 15.58 Data between August-end 2018 and August-end 2023 and for direct plans Next, let’s look at the small-cap fund category to validate the above trend. How many stocks do top-performing small-cap funds have? In the small cap mutual funds category majority of the funds have between 50-75 Stocks in their portfolio. But here, too, funds that had up to 50 stocks have done the best. The funds that had up to 50 stocks in their portfolio had an average rolling return of 26.14%, and that of funds with 50-75 stocks was 22.22%. The performance went down further as the number of stocks in the portfolio started to go up. Small-cap funds: No. of stocks in the portfolio No. of stocks No. of funds Avg of 3Y avg rolling returns (% pa) 3Y avg rolling return (% pa) – Nifty Smallcap 250 TRI 0-50 4 26.14 11.78 50-75 14 22.22 11.78 75-100 2 21.71 11.78 Over 100 1 20.14 11.78 Data between August-end 2018 and August-end 2023 and for direct plans There were just 2 funds that had 75 to 100 stocks in their portfolio. Only one fund – Nippon India Small Cap – had more than 100 stocks. Now, let’s look at the final category – Flexi Cap funds. How many stocks do top-performing flexi-cap funds have? The table below shows the performance of the flexi-cap schemes. And here, too, the same trend persists. Funds that had up to 50 stocks had higher average rolling returns than funds that had a higher number of stocks. Flexi-cap funds: No. of stocks in the portfolio No. of stocks No. of funds Avg of 3Y avg rolling returns (% pa) 3Y avg rolling return (% pa) – Nifty 500 TRI 0-50 9 15.87 13.74 50-75 15 14.69 13.74 75-100 0 NA 13.74 Over 100 0 NA 13.74 Data between August-end 2018 and August-end 2023 and for direct plans So, these were the four categories that we looked at. If we combine the analysis all together, an interesting trend clearly emerges: Funds with up to 50 stocks did better than funds with more stocks. As the number of stocks increases in a portfolio, the performance decreases. Category returns on the basis of the number of stocks in the portfolio No. of stocks Large cap Mid cap Small cap Flexi cap 0-50 13.51 17.39 26.14 15.87 50-75 13.05 16.69 22.22 14.69 75-100 NA 14.55 21.71 NA Over 100 NA NA 20.14 NA Returns are average of 3 year rolling return between August-end 2018 and August-end 2023 and for direct plans. But why does it happen? And more importantly, should you deliberately pick funds that have up to 50 stocks and avoid the ones that have more than this number? Are Mutual Funds with a lower number of stocks better? From this study, it does appear that funds with a lower number of stocks do better. One possible reason for this trend could be underperformance due to over-diversification. That’s because as the number of stocks in a portfolio rises, it becomes difficult for a majority of them to do well, and the returns also dilute. However, a single parameter should not be a directive wand when it comes to selecting mutual funds. Investors must have a framework to pick funds, and you can consider adding this as one of the parameters to your framework. Further, there are a few funds that have done well despite a higher number of stocks in their portfolios. Nippon India Small Cap is one such example. By the end of October 2023, the fund had over 190 stocks. Yet, it was the best-performing small-cap scheme. The same goes for HDFC Large and Mid Cap Fund, which holds around 170 stocks in its portfolio. So, don’t start worrying if your fund starts to increase the number of stocks in its portfolio. Rather, you should look at the underlying reason for the increase in the number of stocks in the portfolio. For example, when a fund becomes popular and its AUM starts growing, the fund manager needs to increase the stocks to be able to deploy its assets. Adding more stocks as the fund becomes larger is a normal thing. All schemes go through this. In such cases, you should monitor the performance of the scheme, and if the scheme starts to underperform its peers consistently, then you can consider changing your fund."
+                            variationName="master">
+                        <par33
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

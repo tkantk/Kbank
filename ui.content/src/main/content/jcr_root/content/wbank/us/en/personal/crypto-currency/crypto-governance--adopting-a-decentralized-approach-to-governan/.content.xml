@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-articles/utility-tokens,kbank:kbank-articles/governance-tokens]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="CRYPTO GOVERNANCE: ADOPTING A DECENTRALIZED APPROACH TO GOVERNANCE"
+            jcr:uuid="b5d6053d-2e24-4285-a39e-c266af78ec24"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/crypto-currency/crypto-governance--adopting-a-decentralized-approach-to-governance"
+                            paragraphScope="all"
+                            text="CRYPTO GOVERNANCE: ADOPTING A DECENTRALIZED APPROACH TO GOVERNANCE Crypto governance: Adopting a decentralised approach to governance This article was originally published on e27.co, authored by Biju Mathew, Vice President Industry Solutions Group at Mphasis. A revolution in financial services is occurring quicker than anyone anticipated. Digital assets, a loose term encompassing cryptocurrencies, NFTs, and security tokens, have gained attention in banking and capital markets. Crypto-native financial institutions, Decentralised Finance (DeFi), have driven much of the innovation in the ecosystem to date by offering blockchain-based products and services to their customers. Permissionless blockchains such as Bitcoin and DeFi Protocol providers have also adopted a radically different, decentralised approach to governance. Governance deals with decision-making, including who gets to propose changes to the code’s rules that make up a DeFi protocol or blockchain. How to respond to a specific market condition? How are developer grants decided in a decentralised autonomous organisation (DAO)? How will the social consensus be reached in a decentralised ecosystem efficiently and timely manner? Many of the blockchain networks and DeFi protocols organise themselves as DAO. It is a topic gaining attention after the Securities and Exchange Commission (SEC) started to explore how decentralised the DeFi protocols are. We have tried to capture our understanding of the governance processes followed by Bitcoin, Balancer DeFi, and Polka Dot in the crypto space. Examples also include permissionless blockchain and DeFi. Decentralised decision-making Governance tokens enable token holders to participate in the decentralised decision-making process. With multiple participants, including investors, developers, and community token holders focusing on their interests, it is a complex problem that will require constant evaluation and tweaking. Token engineering is a subject that deals with the issue of designing the token to incentives and disincentivise certain types of behaviours. A real-world example would be the negative interest rate by central banks to increase spending. The objective is to incentivise behaviours toward the desired outcome. Adam Smith, the Scottish economist, said, “It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their interest.” Decentralised decision-making Any Bitcoin Improvement Proposal (BIP) starts with documenting the proposal, and the author champions the proposal to gain community consensus. It includes the bitcoin developers. BIP can go through various statuses, such as draft, proposed/rejected/withdrawn, final, etc. Ultimately, any BIP acceptance will require a 95 per cent vote. Balancer, a DeFi protocol, has a Balancer Governance token. The holder of this token has the power to modify protocol fees that are collected from users using the protocol. They also get to decide how to spend the costs collected. Can quadratic voting improve transparency and efficiency in governance? Polka dot has an interesting approach to governance. Anyone can propose by depositing a minimum number of tokens for a period. The longer the period, the higher the value of the vote. For example, if Sam proposes five DOT with a one week lock-in period. Converting it to a number of votes would mean 5*1 = 5 votes. When James seconds the proposal with a ‘yes,’ voting with five DOT for an eight week lock-in period, it converts to 5*2 = 10 votes. DAOs that disperse grants are exploring the option of quadratic voting. Quadratic voting introduces the concept of ‘cost of the vote.’ The approach offers voters the option of giving up their influence on some proposals to impact others. For example, if Jim has 100 governance tokens for a DAO and wants to strongly support one of the proposals from the list of five with ten votes, it will cost him 100 governance tokens. The formula applied here is the cost of vote = (Number of Vote) ^ 2. It leaves Jim with no votes for other proposals. A token-based voting approach comes with its own sets of limitations: Token voters will vote in favour of proposals that benefit them. A fee increase in any DAO is a good example. Beneficiaries of a fee increase will probably vote for an increase. The consumers of the DAOs services who end up paying don’t get to voice their options. The concentration of tokens leading to centralised decision making is another challenge. Some of the proposals can be technical. In the case of DAO, ‘code is law’ and ‘code is open-source’ can be misleading. How many can decision-making participants read the code? It leads to dependence on experts in the network. While governance in DAO as a topic is in its early stages, some of the experiments that have been explored include vote delegation, minimum quorum, specialised committees, upgradeable smart contracts, time delays on sensitive actions, etc. Not all governance requirements can be addressed by voting. Depending on the kind of service offered by the DAO, one should tailor the governance process. While doing this, the emphasis should be on a human-centric governance approach that integrates on-chain and off-chain solutions in ways that preserve transparency and efficiency."
+                            variationName="master">
+                        <par32
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

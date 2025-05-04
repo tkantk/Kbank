@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-mutual-funds/investment-funds]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="What are Alternative Investment Funds?"
+            jcr:uuid="f6c72dca-be4a-4eb3-b922-56e80e793a5b"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="What are Alternative Investment Funds?"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/mutual-fund/what-are-alternative-investment-funds-"
+                            paragraphScope="all"
+                            text="What are Alternative Investment Funds? The alternative investment fund is a unique investment vehicle that is beyond traditional investments like fixed deposits, equity, mutual funds, stocks, etc. It is quite popular among mature investors, who are willing to earn higher returns by taking higher risks. As per the recent SEBI data, it has shown an overall growth of 30% in FY 2022-23. As of March 2022, the total commitment raised was Rs 6.41 lakh crore; in March 2023, it increased to Rs 8.34 lakh crore. In this article, we all understand alternative investment funds, their types, and their benefits. And we will understand its taxation and why you should invest in this fund. What is an Alternative Investment Fund? Alternative Investment Fund or AIF is a privately pooled investment vehicle that invests in alternative asset classes such as private equity, venture capital, hedge funds, real estate, commodities, and derivatives. Generally, HNIs (High net worth individuals) and institutions invest in the AIFs as the investment amount is substantially higher. AIFs are regulated by the SEBI (Securities and Exchange Board of India). As per the SEBI (Alternative Investment Funds) Regulations, 2012, an AIF can be set up as a trust, a company, a limited liability partnership, or a corporate body. However, many of the AIFs that have been registered with SEBI are in the form of trusts. Types of AIFs in India AIFs can be further divided into three categories, such as: Category I AIF: This category of AIF invests in start-ups, early-stage ventures, social ventures, SMEs, or infrastructure or other sectors considered socially or economically beneficial by the government or regulators fall into this category. It may be further classified into: Venture capital funds (Including Angel Funds): This fund specifically invests in start-up or early-stage ventures that have high growth potential. SME Funds: This fund invests in small and medium enterprises with a good track record in profitability and growth. Social Venture Funds: This fund invests in companies that aim to make a positive impact on society or the environment, such as sustainability, clean energy, etc. It has also generated favorable returns in the past. Infrastructure funds: This fund invests in infrastructure projects such as railways, bridges, airports, etc. Category II AIF: These are the AIFs that do not fall under categories I and III. They do not use leverage or debts other than to cover their day-to-day operational expenses. Some of the funds included in the Category II are as follows: Private Equity Funds: It makes equity investments in unlisted companies and helps them to raise capital. As unlisted companies face problems in raising capital through debt or equity, private equity funds allow them to raise capital easily. Debt Funds: This fund invests in the debt securities of the unlisted companies via debt instruments such as bonds, debentures, and other fixed-income instruments. Fund of Funds: This fund invests in multiple AIFs. It doesn’t directly buy stocks or bonds. Instead, it invests in a portfolio of other investment funds. Category III AIF: These AIFs use complex trading strategies in their investment. It may use leverage or debt for investment in listed or unlisted derivatives. Some of the funds included in Category III are: Private Investment in Public Equity Fund (PIPE): This fund invests in the equity of companies that are listed on the stock exchange. This often happens when the value of the company’s shares has dropped, and the company is looking to raise capital. Hence, in this case, AIFs receive the equity at a discounted price. Hedge fund: Hedge fund uses various investment strategies like short selling, arbitrage, futures, derivatives, and margin trading to generate maximum returns for the investor. Who can invest in an AIF? The following are the criteria for investing in AIF: Indian Residents, NRIs (Non-Resident of India), and foreign nationals are eligible to invest in these funds. Joint investors can also invest in AIF. They can be spouse, parents, or children of investors. The minimum investment amount for investors is Rs1 crore for investors. For directors, employees, and fund managers, this limit is Rs 25 lakh. Most AIFs come with a minimum lock-in period of three years. The maximum number of investors in every scheme is capped at 1,000. However, in the case of angel fund, the cap is 49. Why invest in AIFs? AIFs can be an attractive option for some investors seeking diversification and potentially higher returns outside traditional asset classes like stocks and bonds. Here are some reasons why investors might consider investing in AIFs: Potential for Higher Returns: AIFs may offer higher returns than traditional investments due to their exposure to a broader range of assets and investment strategies. However, this higher return also comes with higher risk. Portfolio Diversification: By giving investors access to alternative asset classes, including hedge funds, real estate, and private equity, AIFs help them diversify their portfolios. Low Volatility: AIFs are unrelated to the stock market and, hence, are less volatile than other investments like equity or mutual funds investments. Alternative Investment Fund (AIF) Taxation AIF taxation depends on the type of the category of AIFs you have invested in. Let’s understand how different categories of AIFs are taxed: Category I and Category II investments have been given a pass-through status. This means any income (Other than business income) earned by the AIF is tax-exempted. These gains will be taxable in the hands of investors. It will be taxed as if you have personally made the investments, even though the AIF is the one actually making the investments. Category III has not been given a pass-through status. This means that the income earned will be taxable in the hands of the fund. However, taxation varies depending on the type of the fund (Company, LLP, trust, etc.). In this category, investors are not required to pay any taxes on the gains. Conclusion In conclusion, AIFs can be a good option for diversification, but only mature investors should go for them as they are complex products. It allows them to diversify their portfolios and access exclusive investing techniques through Alternative Investing Funds. However, investing in AIFs may not be an ideal option for small investors who want to invest a small amount regularly, as investing in AIFs requires a big chunk of corpus. Hence, AIFs are generally considered suitable for individuals with huge corpus, like HNIs (High net worth individuals), who are willing to take a higher risk and can invest a substantial corpus in one go. Despite the possibility of greater returns, it is important to carefully weigh the risks and conduct extensive due research before investing."
+                            variationName="master">
+                        <par26
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

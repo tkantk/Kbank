@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:isDelivered="{Boolean}false"
+            cq:lastReplicated_publish="{Date}2024-07-31T09:29:32.400Z"
+            cq:lastReplicatedBy_publish="workflow-process-service"
+            cq:lastReplicationAction_publish="Activate"
+            cq:tags="[kbank:kbank-mutual-funds/wealth-creation,kbank:kbank-mutual-funds/financial-planning]"
+            cq:template="/conf/wbank/settings/wcm/templates/article-page-template"
+            jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Why you should increase your mutual fund SIPs every year"
+            jcr:uuid="f9bff47f-1eba-476a-b029-3e360d629361"
+            sling:resourceType="kbank/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kbank/components/container"
+                layout="responsiveGrid">
+            <container
+                    cq:styleIds="[1554340406437]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kbank/components/container"
+                    layout="responsiveGrid">
+                <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/image"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/title"
+                            type="h1"/>
+                    <title_875115054
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="By Author Name"
+                            sling:resourceType="kbank/components/title"
+                            type="h4"/>
+                    <contentfragment
+                            cq:styleIds="[1594172987604]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/contentfragment"
+                            displayMode="singleText"
+                            elementNames="main"
+                            fragmentPath="/content/dam/wbank-shared/en/articles/mutual-fund/why-you-should-increase-your-mutual-fund-sips-every-year"
+                            paragraphScope="all"
+                            text="Why you should increase your mutual fund SIPs every year &lt;div _ngcontent-qwx-c363=&quot;&quot; class=&quot;insightsVInnerDiv&quot;>&lt;p>An apple a day keeps the doctor away, and just as consistently, annual SIP increases may keep financial worries at bay! A Systematic Investment Plan (SIP) enables you to invest small but regular amounts in a mutual fund scheme of your choice. Even though a mutual fund SIP offers the advantage of making smaller, pocket-friendly investments, increasing your investments every year can provide you with benefits. Let's explore why enhancing your investments each year makes sense. &amp;nbsp;&amp;nbsp;&lt;/p>&lt;h2>&lt;strong>Four reasons to increase your SIP amount every year&lt;/strong>&lt;/h2>&lt;ol>&lt;li>&lt;strong>Speeds up your investment journey:&amp;nbsp;&lt;/strong>Increasing your investments, even by small increments, helps unlock greater potential on your invested capital. Every additional contribution, no matter how modest, can get you closer to your financial objectives at a faster pace. While increasing your SIP amount every now and then may seem challenging with your ongoing expenses and other financial goals, doing so every year can help you seize the opportunity to enhance your investments and systematically speed up your path to financial success.&lt;br>&lt;br>&lt;/li>&lt;li>&lt;strong>Helps beat inflation:&lt;/strong>&amp;nbsp;Inflation continues to rise regardless of whether you increase your investments. As the prices of goods and services rise over time, failing to increase your investments can erode the value of your accumulated capital. Therefore, it is essential to increase the value of your mutual fund&amp;nbsp;&lt;a href=&quot;https://www.edelweissmf.com/sip&quot;>SIP&lt;/a>&amp;nbsp;annually to preserve and grow your wealth in the face of inflation&lt;strong>.&lt;br>&lt;br>&lt;/strong>&lt;/li>&lt;li>&lt;strong>Boosts the power of compounding:&amp;nbsp;&lt;/strong>When you invest your money in a&amp;nbsp;&lt;a href=&quot;https://www.edelweissmf.com/types-of-mutual-funds&quot;>mutual fund scheme&lt;/a>, both your initial capital and any returns earned on it are reinvested to generate further profits. This method, known as compounding, helps you earn returns at an accelerated pace. Increasing the SIP amount enables you to amplify the compounding benefits and potentially boost your earnings over time, leading to wealth accumulation in the future.&lt;br>&lt;br>&lt;/li>&lt;li>&lt;strong>Ensures discipline and optimal use of your income:&amp;nbsp;&lt;/strong>Any increase in income is more often than not quickly spent on rising expenses. Normally, people tend to enhance their standard of living rather than saving for future needs. However, increasing your SIP amount every year helps you instil financial discipline and ensure that the additional income is mindfully directed towards something worthwhile. This not only optimises the use of your income but also secures your financial future.&lt;/li>&lt;/ol>&lt;h2>&lt;strong>Four things to keep in mind when increasing your SIP amount&lt;/strong>&lt;/h2>&lt;ol>&lt;li>&lt;strong>Ensure diversification:&amp;nbsp;&lt;/strong>Diversification is crucial for managing your mutual fund portfolio risk. When you increase your investment, you must evaluate your portfolio to ensure it is well-diversified. Instead of merely adding to your existing SIPs, consider whether your portfolio covers a range of asset classes, sectors, and market capitalisation. If it is not well-diversified, you can use the additional funds to start a new SIP in a different type of fund. If your portfolio is already well-diversified, topping up your existing investments can be a good option.&lt;br>&lt;br>&lt;/li>&lt;li>&lt;strong>Consider your risk appetite:&lt;/strong>&amp;nbsp;Your risk appetite can change over the years. Before you increase your SIP amount, evaluate your current risk tolerance level. This assessment can help you decide whether to allocate additional investments to equity funds, which are higher risk, or to debt funds, which are lower risk.&lt;br>&lt;br>&lt;/li>&lt;li>&lt;strong>Evaluate the performance of your mutual fund schemes:&amp;nbsp;&lt;/strong>Before increasing your SIP amount in an existing fund, you must review its performance. Check if the fund has performed well compared to its benchmark and other competitors in the market. If a fund is consistently underperforming, you can consider allocating your additional investment to a better-performing fund.&lt;/li>&lt;/ol>&lt;p>&amp;nbsp;&lt;/p>&lt;ol start=&quot;4&quot;>&lt;li>&lt;strong>Make mindful decisions:&amp;nbsp;&lt;/strong>It is important to make prudent decisions when increasing your SIP value. You can use an&amp;nbsp;&lt;a href=&quot;https://www.edelweissmf.com/calculators/sip-calculator&quot;>SIP calculator&lt;/a>&amp;nbsp;for mutual funds to estimate your investment returns for different time periods and understand whether the same aligns with your financial needs and goals. The tool can help you assess the impact of your choices and make well-calculated decisions.&lt;/li>&lt;/ol>&lt;h2>&lt;strong>How do you decide the value of an SIP increase each year?&lt;/strong>&lt;/h2>&lt;p>There is no fixed percentage for how much you should increase your SIP every year. To determine the appropriate amount, you must review your overall finances, including your income, expenses, and future goals, as well as factor in inflation. It is advisable to make an informed decision based on your financial situation and wealth accumulation targets.&lt;/p>&lt;p>&lt;strong>Conclusion&lt;/strong>&lt;/p>&lt;p>Even small increases in your savings or investment strategy can accelerate your progress towards your financial targets. This effect is particularly potent in mutual funds, where the power of compounding can further amplify the benefits over time. Therefore, it is crucial to consider increasing your SIPs to take full advantage of these compounding benefits and achieve your goals sooner.&amp;nbsp;&amp;nbsp;&lt;/p>&lt;p>&amp;nbsp;&lt;/p>&lt;p>&amp;nbsp;&lt;/p>&lt;p>&lt;strong>An investor education initiative by Edelweiss Mutual Fund&lt;/strong>&lt;/p>&lt;p>&amp;nbsp;&lt;/p>&lt;p>&lt;strong>All Mutual Fund Investors have to go through a one-time KYC process. Investors should deal only with Registered Mutual Fund (RMF). For more info on KYC, RMF and procedure to lodge/redress any complaints, visit -&amp;nbsp;&lt;/strong>&lt;a href=&quot;https://www.edelweissmf.com/kyc-norms&quot;>&lt;strong>https://www.edelweissmf.com/kyc-norms&lt;/strong>&lt;/a>&lt;strong>&amp;nbsp;&amp;nbsp;&lt;/strong>&lt;/p>&lt;p>&amp;nbsp;&lt;/p>&lt;p>&lt;strong>MUTUAL FUND INVESTMENTS ARE SUBJECT TO MARKET RISKS. READ ALL SCHEME-RELATED DOCUMENTS CAREFULLY&lt;/strong>&lt;/p>&lt;/div>"
+                            variationName="master">
+                        <par16
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    </contentfragment>
+                </container>
+                <container_223059690
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kbank/components/container"
+                        layout="responsiveGrid">
+                    <title
+                            cq:styleIds="[1569449156797,1568996420379,1569448853340]"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="SHARE THIS STORY"
+                            sling:resourceType="kbank/components/title"
+                            type="h5"/>
+                    <sharing
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/sharing"/>
+                    <separator
+                            cq:styleIds="[1571075919520,1571075910473]"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/separator"/>
+                    <download
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/download"/>
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kbank/components/list"/>
+                </container_223059690>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

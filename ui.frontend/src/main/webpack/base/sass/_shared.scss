@@ -55,7 +55,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,15 +64,68 @@
 }
 
 .loader {
-	border: 16px solid #f3f3f3; /* Light grey */
-	border-top: 16px solid #00a94f; /* Green */
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.loader:before,
+.loader:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	animation: spin 2s linear infinite;
+	border: 5px solid transparent;
+}
+
+.loader:before {
+	border-top-color: #00a94f; /* Primary green color */
+	animation: spin 1.5s linear infinite;
+}
+
+.loader:after {
+	border-bottom-color: #00a94f; /* Primary green color */
+	animation: spin 1s linear infinite reverse;
+}
+
+.loader-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #00a94f;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	animation: pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes spin {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+	0%, 100% { opacity: 0.5; }
+	50% { opacity: 1; }
+}
+
+/* Optional: Add a subtle gradient background to the overlay */
+.loader-overlay {
+	background: linear-gradient(120deg, rgba(255,255,255,0.9), rgba(240,255,240,0.9));
+}
+
+/* Optional: Add a shadow to the loader for depth */
+.loader:before,
+.loader:after {
+	box-shadow: 0 0 20px rgba(0,169,79,0.2);
+}
+
+body.popup-open {
+	overflow: hidden;
 }
